@@ -1,0 +1,10 @@
+@import '@fontsource/dm-serif-display';
+@import '@fontsource-variable/inter';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Inter Variable', sans-serif;
+}
