@@ -28,7 +28,7 @@ const AboutPageSection = ({ section, opposite, contact }) => {
               <TextReveal>
                 <div
                   data-theme="dark"
-                  className="w-[70px] h-[70px] flex items-center justify-center rounded-full mb-4 max-md:hidden"
+                  className="w-[70px] h-[70px] flex items-center justify-center rounded-full mb-4 max-md:hidden bg-accent"
                 >
                   <section.icon stroke={2} size={"40%"} color="white" />
                 </div>

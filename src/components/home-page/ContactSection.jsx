@@ -57,7 +57,7 @@ const ContactSection = () => {
                 // data-theme="dark"
                 className="w-[70px] sm:w-[100px] h-[70px] sm:h-[100px] flex items-center justify-center rounded-full bg-accent"
               >
-                <contact.icon stroke={1} size={"40%"} color="white"/>
+                <contact.icon stroke={2} size={"40%"} color="white"/>
               </div>
               <div className="w-[70%] flex flex-col justify-center">
                 <h3 className="text-2xl md:text-3xl font-dm-serif-display max-sm:text-center">
