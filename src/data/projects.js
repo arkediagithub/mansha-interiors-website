@@ -8,7 +8,7 @@ import BinitJiImg from "../assets/projects/binit-ji.png";
 import BimalJiImg from "../assets/projects/bimal-ji.png";
 import BikeTriImg from "../assets/projects/bike-and-tri.png";
 import AshokMardaImg from "../assets/projects/ashok-marda.png";
-import AnupJiImg from "../assets/projects/anup-ji.png";
+import AnupJiImg from "../assets/projects/anup-ji.jpg";
 import SanjayAgarwalImg from "../assets/projects/sanjay-agarwal.png";
 
 export const projects = [
