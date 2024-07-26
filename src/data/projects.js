@@ -1,11 +1,14 @@
 import { randomId } from "@mantine/hooks";
 
+import VastuOfficeImg from "../assets/projects/vastu-office.png";
+
 export const projects = [
   {
     id: randomId(),
     name: "Vastu Office",
-    image:
-      "https://www.manshainteriors.com/wp-content/uploads/2022/12/Untitled-design-5.png",
+    image: VastuOfficeImg,
+    // image:
+    //   "https://www.manshainteriors.com/wp-content/uploads/2022/12/Untitled-design-5.png",
     tags: ["interior design", "office"],
     link: "",
   },
