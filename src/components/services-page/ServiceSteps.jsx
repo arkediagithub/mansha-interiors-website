@@ -2,11 +2,12 @@ import { Link } from "react-router-dom";
 import { serviceSteps } from "../../data/serviceSteps";
 import TextReveal from "../TextReveal";
 import Reveal from "../Reveal";
+import SectionWrapper from "../SectionWrapper";
 
 const ServiceSteps = () => {
   return (
     <>
-      <section className="mx-auto px-4 py-6 sm:px-6 sm:py-8 lg:px-8 lg:py-12">
+      <SectionWrapper>
         {/* heading */}
         <div className="flex flex-col justify-center items-center gap-2 px-10">
           <Reveal>
@@ -38,7 +39,7 @@ const ServiceSteps = () => {
             Contact Us Today
           </Link>
         </div>
-      </section>
+      </SectionWrapper>
     </>
   );
 };

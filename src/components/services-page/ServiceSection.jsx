@@ -1,12 +1,12 @@
 import { services } from "../../data/services";
 import TextReveal from "../TextReveal";
 import Reveal from "../Reveal";
+import SectionWrapper from "../SectionWrapper";
 
 const ServiceSection = () => {
   return (
     <>
-      {/* <Reveal></Reveal> */}
-      <section className="px-4 py-6 sm:px-8 sm:py-8 lg:px-8 lg:py-12">
+      <SectionWrapper>
         {/* heading */}
         <div className="flex flex-col justify-center items-center gap-2 px-10">
           <Reveal>
@@ -36,7 +36,7 @@ const ServiceSection = () => {
             </div>
           ))}
         </div>
-      </section>
+      </SectionWrapper>
     </>
   );
 };
