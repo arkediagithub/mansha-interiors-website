@@ -1,16 +1,20 @@
 import { Link } from "react-router-dom";
 import { serviceSteps } from "../../data/serviceSteps";
 import TextReveal from "../TextReveal";
+import Reveal from "../Reveal";
 
 const ServiceSteps = () => {
   return (
     <>
       <section className="mx-auto px-4 py-6 sm:px-6 sm:py-8 lg:px-8 lg:py-12">
-        <header className="max-w-xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-dm-serif-display tracking-wider text-center">
-            How We work?
-          </h2>
-        </header>
+        {/* heading */}
+        <div className="flex flex-col justify-center items-center gap-2 px-10">
+          <Reveal>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-dm-serif-display tracking-wider md:max-w-xl text-center mx-auto">
+              How We work?
+            </h2>
+          </Reveal>
+        </div>
 
         <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {serviceSteps.map((serviceStep, idx) => (
