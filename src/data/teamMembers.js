@@ -6,7 +6,7 @@ import MayuriAgarwalImage from "../assets/teams/Mayuri-agarwal.jpg";
 import NikitaImage from "../assets/teams/Nikita.jpg";
 import RavinYadavImage from "../assets/teams/Ravin-Yadav.jpg";
 import RuchikaAgarwalImage from "../assets/teams/Ruchika-Agarwal.jpg";
-import FounderImage from "../assets/teams/goutam-agarwal-founder.jpg";
+import FounderImage from "../assets/teams/founer_image.jpg";
 
 export const founder = {
   name: "Gautam Agarwal",
