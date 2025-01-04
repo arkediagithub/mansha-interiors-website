@@ -23,7 +23,7 @@ const Header = () => {
       <div className="navbar bg-base-100 px-4">
         <div className="navbar-start">
           <Link to="/">
-            <img src={logo} alt="logo" className="h-12 w-12" />
+            <img src={logo} alt="logo" className="w-16 aspect-square" />
           </Link>
         </div>
 

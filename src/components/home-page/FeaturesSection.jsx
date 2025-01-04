@@ -2,6 +2,8 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { features } from "../../data/features";
+import SectionWrapper from "../SectionWrapper";
+import Reveal from "../Reveal";
 
 const FeaturesSection = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -37,15 +39,19 @@ const FeaturesSection = () => {
   }, []);
 
   return (
-    <section className="px-4 sm:px-6 md:px-8 lg:px-12 py-6" id="featureSection">
-      <div id="featuresHeadings">
-        <p className="text-accent text-xl font-semibold md:font-bold">
-          BEST SERVICE
-        </p>
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-dm-serif-display tracking-wider my-6">
-          Designing Future Rooms <br />
-          One at a Time
-        </h2>
+    <SectionWrapper id="home page feature section">
+      <div id="features Headings">
+        <Reveal>
+          <p className="text-accent text-xl font-semibold md:font-bold">
+            BEST SERVICE
+          </p>
+        </Reveal>
+        <Reveal className="my-2">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-dm-serif-display tracking-wider my-6">
+            Designing Future Rooms <br />
+            One at a Time
+          </h2>
+        </Reveal>
       </div>
 
       <div
@@ -68,7 +74,7 @@ const FeaturesSection = () => {
           </div>
         ))}
       </div>
-    </section>
+    </SectionWrapper>
   );
 };
 

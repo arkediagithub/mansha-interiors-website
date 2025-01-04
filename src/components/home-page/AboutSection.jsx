@@ -3,9 +3,10 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 
 import aboutImg from "../../assets/about.avif";
-import ImageReveal from "../ImageReveal";
 import { aboutInfo } from "../../data/about";
-import TextReveal from "../TextReveal";
+
+import Reveal from "../Reveal";
+import SectionWrapper from "../SectionWrapper";
 
 const AboutSection = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -28,42 +29,43 @@ const AboutSection = () => {
 
   return (
     <>
-      <section
-        id="aboutSection"
-        className=" px-4 py-6 sm:px-6 sm:py-8 lg:px-8 lg:py-12"
-      >
-        <div className="mx-auto max-w-screen-xl">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16">
-            <ImageReveal
+      <SectionWrapper id="home page about section">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16">
+          <Reveal>
+            <img
               src={aboutImg}
               alt="interior design service image"
-              classNames="h-64 sm:h-96 md:h-full max-md:order-last"
+              className="h-64 sm:h-96 md:h-full max-md:order-last"
             />
+          </Reveal>
 
-            <div id="aboutDetails" className="flex flex-col justify-center">
-              <TextReveal>
-                <p className="text-accent text-xl font-semibold md:font-bold">
-                  {aboutInfo.title.toUpperCase()}
-                </p>
+          <div id="aboutDetails" className="flex flex-col justify-center">
+            <Reveal>
+              <p className="text-accent text-xl font-semibold md:font-bold">
+                {aboutInfo.title.toUpperCase()}
+              </p>
+            </Reveal>
 
-                <h2 className="text-3xl sm:text-4xl md:text-5xl font-dm-serif-display tracking-wider">
-                  {aboutInfo.subtitle}
-                </h2>
+            <Reveal>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-dm-serif-display tracking-wider">
+                {aboutInfo.subtitle}
+              </h2>
+            </Reveal>
 
-                {aboutInfo.description.slice(0, 2).map((item, idx) => (
-                  <p key={idx} className="mt-4 text-gray-600 lg:text-lg">
-                    {item}
-                  </p>
-                ))}
+            {aboutInfo.description.slice(0, 2).map((item, idx) => (
+              <Reveal key={idx} className="mt-4">
+                <p className="text-gray-600 lg:text-lg">{item}</p>
+              </Reveal>
+            ))}
 
-                <p className="mt-4 text-gray-600 lg:text-lg">
-                  {aboutInfo.description[aboutInfo.description.length - 1]}
-                </p>
-              </TextReveal>
-            </div>
+            <Reveal>
+              <p className="mt-4 text-gray-600 lg:text-lg">
+                {aboutInfo.description[aboutInfo.description.length - 1]}
+              </p>
+            </Reveal>
           </div>
         </div>
-      </section>
+      </SectionWrapper>
     </>
   );
 };

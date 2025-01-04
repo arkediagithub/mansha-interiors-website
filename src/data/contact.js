@@ -15,7 +15,7 @@ export const contactInfo = [
   },
   {
     title: "Location",
-    description: "Shop 33, 2nd Floor, The Planet Mall Sevoke Road, Siliguri",
+    description: "Shop 33, 2nd Floor, The Planet Mall, Siliguri",
     icon: IconMapPin,
     id: randomId(),
   },
@@ -27,7 +27,7 @@ export const contactInfo = [
   },
   {
     title: "Phone",
-    description: "+91-9609930991 / 9832049481",
+    description: "+91-9609930991/9832049481",
     icon: IconPhone,
     id: randomId(),
   },
