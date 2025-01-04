@@ -25,15 +25,15 @@ const TeamSection = () => {
         {teamMembers.map((member) => (
           <div
             key={member.id}
-            className="relative group h-[300px] lg:h-[400px]"
+            className="relative group h-[300px] lg:h-[400px] overflow-hidden"
           >
             {/* image */}
-            <Reveal className="w-full overflow-hidden">
+            <Reveal className="w-full">
               <img
                 src={member.image}
                 alt={member.name}
                 className="w-full h-full object-cover"
-                style={{ objectPosition: "50% 40%" }}
+                style={{ objectPosition: "50% 50%" }}
               />
             </Reveal>
             {/* overlay */}
