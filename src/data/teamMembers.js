@@ -7,6 +7,10 @@ import NikitaImage from "../assets/teams/Nikita.jpg";
 import RavinYadavImage from "../assets/teams/Ravin-Yadav.jpg";
 import RuchikaAgarwalImage from "../assets/teams/Ruchika-Agarwal.jpg";
 import FounderImage from "../assets/teams/founer_image.jpg";
+import ArtiBansalImage from "../assets/teams/Arti_Bansal.jpg";
+import MoumitaDharBhowmikImage from "../assets/teams/Moumita_dhar_bhowmik .jpg";
+import RitikshaGuptaImage from "../assets/teams/Ritiksha_Gupta.jpg";
+import RiyaTibrewalImage from "../assets/teams/Riya_Tibrewal.jpg";
 
 export const founder = {
   name: "Gautam Agarwal",
@@ -60,5 +64,29 @@ export const teamMembers = [
     name: "Ruchika Agarwal",
     designation: "",
     image: RuchikaAgarwalImage,
+  },
+  {
+    id: randomId(),
+    name: "Arti Bansal",
+    designation: "",
+    image: ArtiBansalImage,
+  },
+  {
+    id: randomId(),
+    name: "Moumita Dhar Bhowmi",
+    designation: "",
+    image: MoumitaDharBhowmikImage,
+  },
+  {
+    id: randomId(),
+    name: "Ritiksha Gupta",
+    designation: "",
+    image: RitikshaGuptaImage,
+  },
+  {
+    id: randomId(),
+    name: "Riya Tibrewal",
+    designation: "",
+    image: RiyaTibrewalImage,
   },
 ];
