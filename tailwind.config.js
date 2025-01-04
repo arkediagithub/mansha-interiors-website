@@ -1,4 +1,4 @@
-const daisyui = require("daisyui");
+import daisyui from "daisyui";
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -14,7 +14,7 @@ export default {
       },
       fontFamily: {
         "dm-serif-display": ["DM Serif Display"],
-        "inter": ["Inter"],
+        inter: ["Inter"],
       },
     },
   },
