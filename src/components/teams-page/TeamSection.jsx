@@ -28,7 +28,7 @@ const TeamSection = () => {
             className="relative group h-[300px] lg:h-[400px]"
           >
             {/* image */}
-            <Reveal width="w-full">
+            <Reveal className="w-full overflow-hidden">
               <img
                 src={member.image}
                 alt={member.name}

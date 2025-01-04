@@ -6,7 +6,7 @@ import TeamSection from "../components/teams-page/TeamSection";
 const TeamPage = () => {
   return (
     <>
-      <MetaTags title="Mansha Interior | Team" />
+      <MetaTags title="Team | Mansha Interior" />
       <PageHeader
         title="Team Members"
         subtitle="Meet the Creative Minds Behind the Designs"

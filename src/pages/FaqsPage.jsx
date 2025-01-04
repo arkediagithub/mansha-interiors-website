@@ -6,7 +6,7 @@ import { faqsPageContent } from "../data/faq-page-content";
 const FaqsPage = () => {
   return (
     <>
-      <MetaTags title="Mansha Interior | FAQs" />
+      <MetaTags title="FAQs | Mansha Interior" />
       <PageHeader
         title={faqsPageContent.title}
         subtitle={faqsPageContent.subtitle}

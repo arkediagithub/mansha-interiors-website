@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { twMerge } from "tailwind-merge";
 import { motion, useAnimation, useInView } from "motion/react";
 
-const Reveal = ({ children, width = "w-fit", className = "" }) => {
+const Reveal = ({ children, className = "" }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
@@ -21,7 +21,7 @@ const Reveal = ({ children, width = "w-fit", className = "" }) => {
   return (
     <div
       ref={ref}
-      className={twMerge("relative overflow-hidden h-full", width, className)}
+      className={twMerge("relative overflow-hidden w-fit", className)}
     >
       <motion.div
         className="h-full"

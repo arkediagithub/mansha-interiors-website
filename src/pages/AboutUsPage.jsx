@@ -15,7 +15,7 @@ const AboutUsPage = () => {
 
   return (
     <>
-      <MetaTags title="Mansha Interior | About Us" />
+      <MetaTags title="About Us | Mansha Interior" />
       <PageHeader
         title={aboutUsContent.title}
         subtitle={aboutUsContent.subtitle}

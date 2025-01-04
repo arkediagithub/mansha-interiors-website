@@ -34,7 +34,7 @@ const ProjectsPage = () => {
 
   return (
     <>
-      <MetaTags title="Mansha Interior | Projects" />
+      <MetaTags title="Projects | Mansha Interior" />
       <PageHeader
         title="Our Projects"
         subtitle={"Explore Our Portfolio of Completed Projects"}

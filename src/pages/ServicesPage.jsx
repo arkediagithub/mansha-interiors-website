@@ -14,7 +14,7 @@ const ServicesPage = () => {
 
   return (
     <>
-      <MetaTags title="Mansha Interior | Services" />
+      <MetaTags title="Services | Mansha Interior" />
       <PageHeader
         title="Our Services"
         subtitle="Comprehensive Design Services for Your Needs"

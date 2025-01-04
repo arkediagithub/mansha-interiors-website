@@ -4,7 +4,7 @@ const ProjectCard = ({ project }) => {
   return (
     <div className="relative group h-[300px] lg:h-[400px]">
       {/* image */}
-      <Reveal className="h-full" width="w-full">
+      <Reveal className="h-full w-full">
         <img
           src={project.image}
           alt={project.name}
