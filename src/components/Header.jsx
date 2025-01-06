@@ -1,11 +1,54 @@
-import { IconMenu } from "@tabler/icons-react";
+import { IconMenuDeep } from "@tabler/icons-react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
-import { useHeadroom } from "@mantine/hooks";
+import { randomId, useHeadroom } from "@mantine/hooks";
 import logo from "../assets/logo.png";
 
 const Header = () => {
   const pinned = useHeadroom({ fixedAt: 120 });
   const navigate = useNavigate();
+
+  const menuLinks = [
+    {
+      id: randomId(),
+      to: "/",
+      label: "Home",
+    },
+    {
+      id: randomId(),
+      to: "/about",
+      label: "About Us",
+    },
+    {
+      id: randomId(),
+      to: "/about",
+      label: "About Us",
+    },
+    {
+      id: randomId(),
+      to: "/projects",
+      label: "Projects",
+    },
+    {
+      id: randomId(),
+      to: "/services",
+      label: "Services",
+    },
+    {
+      id: randomId(),
+      to: "/team",
+      label: "Our Team",
+    },
+    {
+      id: randomId(),
+      to: "/contact",
+      label: "Contact",
+    },
+    {
+      id: randomId(),
+      to: "/faqs",
+      label: "FAQs",
+    },
+  ];
 
   return (
     <header
@@ -30,36 +73,20 @@ const Header = () => {
         {/* desktop links */}
         <div className="navbar-center hidden md:flex">
           <ul className="menu menu-horizontal px-1 gap-2">
-            <li>
-              <NavLink to={"/"}>Home</NavLink>
-            </li>
-            <li>
-              <NavLink to={"/about"}>About Us</NavLink>
-            </li>
-            <li>
-              <NavLink to={"/projects"}>Projects</NavLink>
-            </li>
-            <li>
-              <NavLink to={"/services"}>Services</NavLink>
-            </li>
-            <li>
-              <NavLink to={"/teams"}>Teams</NavLink>
-            </li>
-            <li>
-              <NavLink to={"/contact"}>Contact</NavLink>
-            </li>
-            <li>
-              <NavLink to={"/faqs"}>FAQs</NavLink>
-            </li>
+            {menuLinks.map((link) => (
+              <li key={link.id} className="rounded-full overflow-hidden">
+                <NavLink to={link.to}>{link.label}</NavLink>
+              </li>
+            ))}
           </ul>
         </div>
 
         <div className="navbar-end">
           <button
-            className="btn btn-outline max-md:mr-2 max-md:hidden"
+            className="btn btn-outline rounded-full max-md:mr-2 max-md:hidden"
             onClick={() => navigate("/contact")}
           >
-            Get a Quote
+            Get in Touch
           </button>
 
           {/* drawer button */}
@@ -67,7 +94,7 @@ const Header = () => {
             htmlFor="my-drawer"
             className="btn drawer-button btn-ghost md:hidden"
           >
-            <IconMenu stroke={2} />
+            <IconMenuDeep stroke={2} />
           </label>
         </div>
       </div>
@@ -81,36 +108,20 @@ const Header = () => {
             className="drawer-overlay"
           ></label>
 
-          {/* drawer sidebar content*/}
           {/* mobile navigation */}
+          {/* drawer sidebar content*/}
           <ul className="menu bg-base-200 text-base-content min-h-full w-80 p-4">
-            <li>
-              <NavLink to={"/"}>Home</NavLink>
-            </li>
-            <li>
-              <NavLink to={"/about"}>About Us</NavLink>
-            </li>
-            <li>
-              <NavLink to={"/projects"}>Projects</NavLink>
-            </li>
-            <li>
-              <NavLink to={"/services"}>Services</NavLink>
-            </li>
-            <li>
-              <NavLink to={"/teams"}>Teams</NavLink>
-            </li>
-            <li>
-              <NavLink to={"/contact"}>Contact</NavLink>
-            </li>
-            <li>
-              <NavLink to={"/faqs"}>FAQs</NavLink>
-            </li>
+            {menuLinks.map((link) => (
+              <li key={link.id} className="rounded-full overflow-hidden">
+                <NavLink to={link.to}>{link.label}</NavLink>
+              </li>
+            ))}
             <li>
               <button
                 className="btn btn-outline mt-4"
                 onClick={() => navigate("/contact")}
               >
-                Get a Quote
+                Get in Touch
               </button>
             </li>
           </ul>
