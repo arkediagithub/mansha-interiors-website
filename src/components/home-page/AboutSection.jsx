@@ -12,7 +12,7 @@ const AboutSection = () => {
             <img
               src={aboutImg}
               alt="interior design service image"
-              className="h-64 sm:h-96 md:h-full w-full max-md:order-last"
+              className="h-64 sm:h-96 md:h-full w-full max-md:order-last object-cover"
             />
           </Reveal>
 
