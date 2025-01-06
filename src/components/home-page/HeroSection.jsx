@@ -35,13 +35,13 @@ const HeroSection = () => {
   return (
     <>
       <section
-        className={`px-4 sm:px-6 md:px-8 lg:px-12 pt-12 md:pt-16 pb-28 max-md:pb-10`}
+        className={`px-4 sm:px-6 md:px-8 lg:px-12 pt-12 md:pt-16 pb-0 md:pb-20`}
       >
-        {/* hero heading text */}
+        {/* hero heading text for md screens */}
         <h1
           ref={headingRef}
           id="heroHeading"
-          className="text-4xl sm:text-5xl lg:text-7xl text-center  mt-32 md:mt-16 mb-8 md:mb-14 tracking-wider text-balance md:w-3/4 mx-auto font-dm-serif-display"
+          className="text-4xl sm:text-5xl lg:text-7xl text-center  mt-24 md:mt-16 mb-10 md:mb-14 tracking-wider text-balance md:w-3/4 mx-auto font-dm-serif-display"
         >
           {splitText}
         </h1>
@@ -55,7 +55,7 @@ const HeroSection = () => {
           />
 
           {/* floating contact card */}
-          <div className="w-fit p-4 md:p-8 bg-white border-t-4 border-t-accent absolute shadow-lg animate-bounce-slow top-[80%] sm:top-[10%] right-[1%] sm:right-[3%] z-10 max-sm:hidden">
+          <div className="w-fit p-4 md:p-8 bg-white border-t-4 border-t-accent absolute shadow-lg animate-bounce-slow top-[80%] sm:top-[10%] right-[1%] sm:right-[3%] z-10 max-md:hidden">
             <StatsCounter
               minimum={0}
               maximum={104}
@@ -74,7 +74,7 @@ const HeroSection = () => {
           </div>
 
           {/* floating clients card */}
-          <div className="w-fit p-4 md:p-8 bg-white border-t-4 border-t-accent absolute shadow-lg animate-bounce-slow top-[95%] sm:top-[65%] left-[1%] sm:left-[3%] z-10 max-sm:hidden">
+          <div className="w-fit p-4 md:p-8 bg-white border-t-4 border-t-accent absolute shadow-lg animate-bounce-slow top-[95%] sm:top-[65%] left-[1%] sm:left-[3%] z-10 max-md:hidden">
             <p className="text-sm sm:text-base md:text-lg mb-4 ">Contact:</p>
             <p className="text-sm sm:text-base font-bold">+91 96099 30991</p>
             <p className="text-sm sm:text-base font-bold">

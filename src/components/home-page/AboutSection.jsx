@@ -8,7 +8,7 @@ const AboutSection = () => {
     <>
       <SectionWrapper id="home_page_about_section">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16">
-          <Reveal className="w-full">
+          <Reveal className="w-full max-md:order-2">
             <img
               src={aboutImg}
               alt="interior design service image"
