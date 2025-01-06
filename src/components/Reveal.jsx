@@ -2,7 +2,11 @@ import { useEffect, useRef } from "react";
 import { twMerge } from "tailwind-merge";
 import { motion, useAnimation, useInView } from "motion/react";
 
-const Reveal = ({ children, className = "" }) => {
+const Reveal = ({
+  children,
+  className = "",
+  overlayClassName = "bg-accent",
+}) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
@@ -40,7 +44,7 @@ const Reveal = ({ children, className = "" }) => {
       </motion.div>
       {/* overlay slide animation */}
       <motion.div
-        className="absolute inset-0 bg-black z-20"
+        className={twMerge("absolute inset-0 top-1 bottom-1 z-20", overlayClassName)}
         variants={{
           hidden: { left: 0 },
           visible: { left: "100%" },
