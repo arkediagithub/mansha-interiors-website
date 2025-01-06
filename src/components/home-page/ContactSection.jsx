@@ -1,39 +1,8 @@
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
 import { contactInfo } from "../../data/contact";
 import Reveal from "../Reveal";
 import SectionWrapper from "../SectionWrapper";
 
 const ContactSection = () => {
-  gsap.registerPlugin(ScrollTrigger);
-
-  useGSAP(() => {
-    const tl = gsap.timeline();
-    tl.from("#contactHeading", {
-      scrollTrigger: {
-        trigger: "#contactSection",
-        start: "top 80%",
-        end: "top 50%",
-        scrub: true,
-        once: true,
-      },
-      opacity: 0,
-      duration: 3,
-    });
-    tl.from("#contactDetails", {
-      scrollTrigger: {
-        trigger: "#contactSection",
-        start: "top 80%",
-        end: "top 50%",
-        scrub: true,
-        once: true,
-      },
-      opacity: 0,
-      duration: 3,
-    });
-  }, []);
-
   return (
     <SectionWrapper id="home page contact section">
       <div className="flex flex-col justify-center items-center">
