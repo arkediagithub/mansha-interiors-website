@@ -4,7 +4,7 @@ import SectionWrapper from "../SectionWrapper";
 
 const ContactSection = () => {
   return (
-    <SectionWrapper id="home page contact section">
+    <SectionWrapper id="home_page_contact_section">
       <div className="flex flex-col justify-center items-center">
         <Reveal>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-dm-serif-display tracking-wider mt-4 mb-4 md:mb-8 text-balance text-center">

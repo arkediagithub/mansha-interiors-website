@@ -1,35 +1,12 @@
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
-
 import aboutImg from "../../assets/about.avif";
 import { aboutInfo } from "../../data/about";
-
 import Reveal from "../Reveal";
 import SectionWrapper from "../SectionWrapper";
 
 const AboutSection = () => {
-  gsap.registerPlugin(ScrollTrigger);
-
-  useGSAP(() => {
-    const tl = gsap.timeline();
-    tl.from("#aboutDetails", {
-      scrollTrigger: {
-        trigger: "#aboutSection",
-        start: "top 90%",
-        end: "top 50%",
-        scrub: true,
-        once: true,
-      },
-      opacity: 0,
-      duration: 10,
-      y: 100,
-    });
-  }, []);
-
   return (
     <>
-      <SectionWrapper id="home page about section">
+      <SectionWrapper id="home_page_about_section">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16">
           <Reveal className="w-full">
             <img
@@ -39,7 +16,7 @@ const AboutSection = () => {
             />
           </Reveal>
 
-          <div id="aboutDetails" className="flex flex-col justify-center">
+          <div id="about_details" className="flex flex-col justify-center">
             <Reveal>
               <p className="text-accent text-xl font-semibold md:font-bold">
                 {aboutInfo.title.toUpperCase()}

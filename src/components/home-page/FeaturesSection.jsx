@@ -39,8 +39,8 @@ const FeaturesSection = () => {
   }, []);
 
   return (
-    <SectionWrapper id="home page feature section">
-      <div id="features Headings">
+    <SectionWrapper id="home_page_feature_section">
+      <div id="features_headings">
         <Reveal>
           <p className="text-accent text-xl font-semibold md:font-bold">
             BEST SERVICE
