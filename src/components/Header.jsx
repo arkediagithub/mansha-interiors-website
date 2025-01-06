@@ -20,11 +20,6 @@ const Header = () => {
     },
     {
       id: randomId(),
-      to: "/about",
-      label: "About Us",
-    },
-    {
-      id: randomId(),
       to: "/projects",
       label: "Projects",
     },
