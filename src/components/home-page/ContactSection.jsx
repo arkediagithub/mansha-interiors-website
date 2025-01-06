@@ -46,15 +46,9 @@ const ContactSection = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 my-10">
         {contactInfo.map((contact) => (
-          <Reveal key={contact.id}>
-            <div
-              key={contact.id}
-              className="flex flex-col items-center sm:flex-row gap-1 sm:gap-4"
-            >
-              <div
-                // data-theme="dark"
-                className="w-[70px] sm:w-[100px] h-[70px] sm:h-[100px] flex items-center justify-center rounded-full bg-accent"
-              >
+          <Reveal key={contact.id} className="w-full">
+            <div className="flex flex-col items-center justify-center sm:flex-row gap-1 sm:gap-4">
+              <div className="w-[70px] sm:w-[100px] h-[70px] sm:h-[100px] flex items-center justify-center rounded-full bg-accent">
                 <contact.icon stroke={2} size={"40%"} color="white" />
               </div>
               <div className="w-[70%] flex flex-col justify-center">

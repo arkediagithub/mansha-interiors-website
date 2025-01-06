@@ -31,11 +31,11 @@ const AboutSection = () => {
     <>
       <SectionWrapper id="home page about section">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16">
-          <Reveal>
+          <Reveal className="w-full">
             <img
               src={aboutImg}
               alt="interior design service image"
-              className="h-64 sm:h-96 md:h-full max-md:order-last"
+              className="h-64 sm:h-96 md:h-full w-full max-md:order-last"
             />
           </Reveal>
 
