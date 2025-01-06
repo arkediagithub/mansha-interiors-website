@@ -1,30 +1,10 @@
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import { useRef } from "react";
-
 import heroImg1 from "../../assets/hero.jpg";
 import StatsCounter from "../StatsCounter";
 import ImageSlideshow from "../ImageSlideshow";
 import SectionWrapper from "../SectionWrapper";
+import HeadingAnimation from "../HeadingAnimation";
 
 const HeroSection = () => {
-  const headingRef = useRef(null);
-  const headingText = "Transform Your Space with Elegance and Style";
-
-  const splitText = headingText.split("").map((char, index) => (
-    <span key={index} className="char">
-      {char}
-    </span>
-  ));
-
-  useGSAP(() => {
-    gsap.fromTo(
-      ".char",
-      { opacity: 0 },
-      { opacity: 1, stagger: 0.03, duration: 1 }
-    );
-  }, []);
-
   // hero images
   const images = [
     heroImg1,
@@ -36,14 +16,11 @@ const HeroSection = () => {
   return (
     <>
       <SectionWrapper className={`pt-12 md:pt-16 pb-0 md:pb-8`}>
-        {/* hero heading text for md screens */}
-        <h1
-          ref={headingRef}
-          id="heroHeading"
+        {/* hero heading text */}
+        <HeadingAnimation
+          text="Transform Your Space with Elegance and Style"
           className="text-4xl sm:text-5xl lg:text-7xl text-center  mt-24 md:mt-16 mb-10 md:mb-14 tracking-wider text-balance lg:w-3/4 mx-auto font-dm-serif-display"
-        >
-          {splitText}
-        </h1>
+        />
 
         {/* relative image container */}
         <div className="relative">
