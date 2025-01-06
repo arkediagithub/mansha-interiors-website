@@ -1,6 +1,7 @@
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
 import gsap from "gsap";
+import StatsCounter from "../StatsCounter";
 
 const AchievementSection = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -47,7 +48,7 @@ const AchievementSection = () => {
           <div className=" stats shadow">
             <div className="stat text-center">
               <div className="stat-value text-accent">
-                <span className="achievement">4</span>M
+                <StatsCounter minimum={0} maximum={4} delay={500} suffix="M" />
               </div>
               <div className="stat-desc whitespace-normal">
                 SQUARE FEET BUILT
@@ -58,7 +59,7 @@ const AchievementSection = () => {
           <div className=" stats shadow">
             <div className="stat text-center">
               <div className="stat-value text-accent">
-                <span className="achievement">104</span>
+                <StatsCounter minimum={0} maximum={100} delay={20} suffix="+" />
               </div>
               <div className="stat-desc whitespace-normal">HAPPY CLIENTS</div>
             </div>
@@ -67,7 +68,7 @@ const AchievementSection = () => {
           <div className=" stats shadow">
             <div className="stat text-center">
               <div className="stat-value text-accent">
-                <span className="achievement">98</span>
+                <StatsCounter minimum={0} maximum={98} delay={20} />
               </div>
               <div className="stat-desc whitespace-normal">AWARDS RECEIVED</div>
             </div>
@@ -76,7 +77,7 @@ const AchievementSection = () => {
           <div className=" stats shadow">
             <div className="stat text-center">
               <div className="stat-value text-accent">
-                <span className="achievement">105</span>
+                <StatsCounter minimum={0} maximum={105} delay={20} />
               </div>
               <div className="stat-desc whitespace-normal">
                 WORK IN PROGRESS

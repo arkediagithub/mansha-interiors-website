@@ -3,6 +3,7 @@ import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
 
 import heroImg1 from "../../assets/hero.jpg";
+import StatsCounter from "../StatsCounter";
 
 const HeroSection = () => {
   const headingRef = useRef(null);
@@ -92,20 +93,30 @@ const HeroSection = () => {
 
           {/* floating contact card */}
           <div className="w-fit p-4 md:p-8 bg-white border-t-4 border-t-accent absolute shadow-lg animate-bounce-slow top-[80%] sm:top-[10%] right-[1%] sm:right-[3%] z-10 max-sm:hidden">
+            <StatsCounter
+              minimum={0}
+              maximum={104}
+              delay={10}
+              className="text-xl md:text-3xl font-bold text-accent"
+            />
+            <p className="text-sm sm:text-base">HAPPY CLIENTS</p>
+            <div className="my-4 md:my-8"></div>
+            <StatsCounter
+              minimum={0}
+              maximum={98}
+              delay={20}
+              className="text-xl md:text-3xl font-bold text-accent"
+            />
+            <p className="text-sm sm:text-base">AWARDS RECEIVED</p>
+          </div>
+
+          {/* floating clients card */}
+          <div className="w-fit p-4 md:p-8 bg-white border-t-4 border-t-accent absolute shadow-lg animate-bounce-slow top-[95%] sm:top-[65%] left-[1%] sm:left-[3%] z-10 max-sm:hidden">
             <p className="text-sm sm:text-base md:text-lg mb-4 ">Contact:</p>
             <p className="text-sm sm:text-base font-bold">+91 96099 30991</p>
             <p className="text-sm sm:text-base font-bold">
               mi@manshainteriors.com
             </p>
-          </div>
-
-          {/* floating clients card */}
-          <div className="w-fit p-4 md:p-8 bg-white border-t-4 border-t-accent absolute shadow-lg animate-bounce-slow top-[95%] sm:top-[65%] left-[1%] sm:left-[3%] z-10 max-sm:hidden">
-            <p className="text-xl md:text-3xl font-bold text-accent">104</p>
-            <p className="text-sm sm:text-base">HAPPY CLIENTS</p>
-            <div className="my-4 md:my-8"></div>
-            <p className="text-xl md:text-3xl font-bold text-accent">98</p>
-            <p className="text-sm sm:text-base">AWARDS RECEIVED</p>
           </div>
         </div>
       </section>
