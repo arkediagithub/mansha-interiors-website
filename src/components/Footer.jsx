@@ -22,7 +22,9 @@ const Footer = () => {
         </aside>
 
         <nav>
-          <h6 className="footer-title font-dm-serif-display">SERVICES</h6>
+          <h6 className="footer-title font-dm-serif-display opacity-80 text-white tracking-widest">
+            Services
+          </h6>
           <p className="text-base">Interior Design</p>
           <p className="text-base">Architecture Design</p>
           <p className="text-base">Space Planning</p>
@@ -31,7 +33,30 @@ const Footer = () => {
         </nav>
 
         <nav>
-          <h6 className="footer-title font-dm-serif-display">FOLLOW US</h6>
+          <h6 className="footer-title font-dm-serif-display opacity-80 text-white tracking-widest">
+            Quick Links
+          </h6>
+          <Link to={"/"} className="link link-hover text-base">
+            Home
+          </Link>
+          <Link to={"/about"} className="link link-hover text-base">
+            About Us
+          </Link>
+          <Link to={"/projects"} className="link link-hover text-base">
+            Projects
+          </Link>
+          <Link to={"/services"} className="link link-hover text-base">
+            Services
+          </Link>
+          <Link to={"/faqs"} className="link link-hover text-base">
+            FAQs
+          </Link>
+        </nav>
+
+        <nav>
+          <h6 className="footer-title font-dm-serif-display opacity-80 text-white tracking-widest">
+            Follow Us
+          </h6>
 
           {socialMedia.map((social) => (
             <Link
@@ -42,16 +67,6 @@ const Footer = () => {
               {social.label}
             </Link>
           ))}
-        </nav>
-
-        <nav>
-          <h6 className="footer-title font-dm-serif-display">LEGAL</h6>
-          <Link to={"/"} className="link link-hover text-base">
-            Privacy policy
-          </Link>
-          <Link to={"/"} className="link link-hover text-base">
-            Cookie policy
-          </Link>
         </nav>
       </div>
 
