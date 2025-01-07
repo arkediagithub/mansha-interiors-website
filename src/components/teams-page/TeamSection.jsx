@@ -1,10 +1,10 @@
 import { teamMembers } from "../../data/teamMembers";
 import Reveal from "../Reveal";
+import SectionWrapper from "../SectionWrapper";
 
 const TeamSection = () => {
   return (
-    <section className="px-4 py-6 sm:px-8 sm:py-8 lg:px-8 lg:py-12 mx-auto">
-      {/* <Reveal></Reveal> */}
+    <SectionWrapper>
       {/* headings */}
       <div className="max-w-xl md:max-w-[700px] mx-auto mb-6 flex flex-col justify-center items-center gap-2">
         <Reveal>
@@ -25,7 +25,7 @@ const TeamSection = () => {
         {teamMembers.map((member) => (
           <div
             key={member.id}
-            className="relative group h-[300px] lg:h-[400px] overflow-hidden"
+            className="relative group h-[300px] lg:max-h-[400px] overflow-hidden"
           >
             {/* image */}
             <Reveal className="w-full">
@@ -52,7 +52,7 @@ const TeamSection = () => {
           </div>
         ))}
       </div>
-    </section>
+    </SectionWrapper>
   );
 };
 
