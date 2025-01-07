@@ -48,7 +48,13 @@ const AchievementSection = () => {
           <div className=" stats shadow">
             <div className="stat text-center">
               <div className="stat-value text-accent">
-                <StatsCounter minimum={0} maximum={4} delay={500} suffix="M" />
+                <StatsCounter
+                  minimum={0}
+                  maximum={4}
+                  delay={500}
+                  suffix="M"
+                  className="lg:text-5xl"
+                />
               </div>
               <div className="stat-desc whitespace-normal">
                 SQUARE FEET BUILT
@@ -59,7 +65,13 @@ const AchievementSection = () => {
           <div className=" stats shadow">
             <div className="stat text-center">
               <div className="stat-value text-accent">
-                <StatsCounter minimum={0} maximum={100} delay={20} suffix="+" />
+                <StatsCounter
+                  minimum={0}
+                  maximum={100}
+                  delay={20}
+                  suffix="+"
+                  className="lg:text-5xl"
+                />
               </div>
               <div className="stat-desc whitespace-normal">HAPPY CLIENTS</div>
             </div>
@@ -68,7 +80,12 @@ const AchievementSection = () => {
           <div className=" stats shadow">
             <div className="stat text-center">
               <div className="stat-value text-accent">
-                <StatsCounter minimum={0} maximum={98} delay={20} />
+                <StatsCounter
+                  minimum={0}
+                  maximum={98}
+                  delay={20}
+                  className="lg:text-5xl"
+                />
               </div>
               <div className="stat-desc whitespace-normal">AWARDS RECEIVED</div>
             </div>
@@ -77,7 +94,12 @@ const AchievementSection = () => {
           <div className=" stats shadow">
             <div className="stat text-center">
               <div className="stat-value text-accent">
-                <StatsCounter minimum={0} maximum={105} delay={20} />
+                <StatsCounter
+                  minimum={0}
+                  maximum={105}
+                  delay={20}
+                  className="lg:text-5xl"
+                />
               </div>
               <div className="stat-desc whitespace-normal">
                 WORK IN PROGRESS
