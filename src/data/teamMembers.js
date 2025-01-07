@@ -1,11 +1,11 @@
 import { randomId } from "@mantine/hooks";
-import DishaGargImage from "../assets/teams/Disha-Garg.jpg";
 import RahulPaulImage from "../assets/teams/Rahul-Paul.jpg";
-import PragyaGiyaImage from "../assets/teams/Pragya-Giya.jpg";
-import MayuriAgarwalImage from "../assets/teams/Mayuri-agarwal.jpg";
-import NikitaImage from "../assets/teams/Nikita.jpg";
-import RavinYadavImage from "../assets/teams/Ravin-Yadav.jpg";
-import RuchikaAgarwalImage from "../assets/teams/Ruchika-Agarwal.jpg";
+// import DishaGargImage from "../assets/teams/Disha-Garg.jpg";
+// import PragyaGiyaImage from "../assets/teams/Pragya-Giya.jpg";
+// import MayuriAgarwalImage from "../assets/teams/Mayuri-agarwal.jpg";
+// import NikitaImage from "../assets/teams/Nikita.jpg";
+// import RavinYadavImage from "../assets/teams/Ravin-Yadav.jpg";
+// import RuchikaAgarwalImage from "../assets/teams/Ruchika-Agarwal.jpg";
 import FounderImage from "../assets/teams/founer_image.jpg";
 import ArtiBansalImage from "../assets/teams/Arti_Bansal.jpg";
 import MoumitaDharBhowmikImage from "../assets/teams/Moumita_dhar_bhowmik .jpg";
@@ -23,48 +23,48 @@ export const founder = {
 };
 
 export const teamMembers = [
-  {
-    id: randomId(),
-    name: "Disha Garg",
-    designation: "",
-    image: DishaGargImage,
-  },
+  // {
+  //   id: randomId(),
+  //   name: "Disha Garg",
+  //   designation: "",
+  //   image: DishaGargImage,
+  // },
   {
     id: randomId(),
     name: "Rahul Paul",
     designation: "",
     image: RahulPaulImage,
   },
-  {
-    id: randomId(),
-    name: "Pragya Giya",
-    designation: "",
-    image: PragyaGiyaImage,
-  },
-  {
-    id: randomId(),
-    name: "Mayuri Agarwal",
-    designation: "",
-    image: MayuriAgarwalImage,
-  },
-  {
-    id: randomId(),
-    name: "Nikita",
-    designation: "",
-    image: NikitaImage,
-  },
-  {
-    id: randomId(),
-    name: "Ravin Yadav",
-    designation: "",
-    image: RavinYadavImage,
-  },
-  {
-    id: randomId(),
-    name: "Ruchika Agarwal",
-    designation: "",
-    image: RuchikaAgarwalImage,
-  },
+  // {
+  //   id: randomId(),
+  //   name: "Pragya Giya",
+  //   designation: "",
+  //   image: PragyaGiyaImage,
+  // },
+  // {
+  //   id: randomId(),
+  //   name: "Mayuri Agarwal",
+  //   designation: "",
+  //   image: MayuriAgarwalImage,
+  // },
+  // {
+  //   id: randomId(),
+  //   name: "Nikita",
+  //   designation: "",
+  //   image: NikitaImage,
+  // },
+  // {
+  //   id: randomId(),
+  //   name: "Ravin Yadav",
+  //   designation: "",
+  //   image: RavinYadavImage,
+  // },
+  // {
+  //   id: randomId(),
+  //   name: "Ruchika Agarwal",
+  //   designation: "",
+  //   image: RuchikaAgarwalImage,
+  // },
   {
     id: randomId(),
     name: "Arti Bansal",
