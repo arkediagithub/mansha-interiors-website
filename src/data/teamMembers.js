@@ -34,6 +34,7 @@ export const teamMembers = [
     name: "Rahul Paul",
     designation: "",
     image: RahulPaulImage,
+    details: "",
   },
   // {
   //   id: randomId(),
@@ -70,23 +71,31 @@ export const teamMembers = [
     name: "Arti Bansal",
     designation: "",
     image: ArtiBansalImage,
+    details:
+      "Creativity, when truly desired, can be found within oneself. Many artists express themselves uniquely within their chosen fields. In the realm of interior design, I strive to express my own creative vision.",
   },
   {
     id: randomId(),
     name: "Moumita Dhar Bhowmi",
     designation: "",
     image: MoumitaDharBhowmikImage,
+    details:
+      "Hello! My name is Moumita Dhar, and I currently live in Siliguri. I am passionate about interior designing, which is both my profession and my creative outlet. In addition to my career, I absolutely love traveling. Exploring new places, experiencing different cultures and spending time with my loved ones and always look forward to what's next. Thank you for getting to know a little about me!",
   },
   {
     id: randomId(),
     name: "Ritiksha Gupta",
     designation: "",
     image: RitikshaGuptaImage,
+    details:
+      "Hi ! my name is Ritiksha Gupta. As a passionate and creative individual , I am enthusiastic about translating my love for design into a fulfilling career as an Interior designer.",
   },
   {
     id: randomId(),
     name: "Riya Tibrewal",
     designation: "",
     image: RiyaTibrewalImage,
+    details:
+      "I am a professional interior designer with two years of experience dedicated to designing spaces that are both functional and visually appealing tailored to individual needs and lifestyles.",
   },
 ];

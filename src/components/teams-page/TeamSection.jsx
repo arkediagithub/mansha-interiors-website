@@ -25,7 +25,7 @@ const TeamSection = () => {
         {teamMembers.map((member) => (
           <div
             key={member.id}
-            className="relative group h-[300px] lg:max-h-[400px] overflow-hidden"
+            className="relative group h-full max-h-[300px] lg:max-h-[400px] overflow-hidden"
           >
             {/* image */}
             <Reveal className="w-full">
@@ -39,13 +39,16 @@ const TeamSection = () => {
             {/* overlay */}
             <div className="absolute bg-black opacity-0 inset-0 transition-all group-hover:opacity-50 group-hover:z-10"></div>
             {/* member info */}
-            <div className="absolute bottom-5 left-5 opacity-0 transition-all group-hover:opacity-100 group-hover:z-10">
+            <div className="absolute bottom-5 left-5 right-5 opacity-0 transition-all group-hover:opacity-100 group-hover:z-10">
               <div className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
                 <p className="text-xl font-bold text-white sm:text-2xl">
                   {member.name}
                 </p>
-                <p className="text-sm font-medium uppercase tracking-widest text-pink-500">
+                <p className="text-sm font-medium uppercase tracking-widest text-white">
                   {member.designation}
+                </p>
+                <p className="text-sm font-medium uppercase tracking-widest text-white">
+                  {member.details}
                 </p>
               </div>
             </div>
