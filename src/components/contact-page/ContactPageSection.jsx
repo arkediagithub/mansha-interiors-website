@@ -31,7 +31,7 @@ const ContactPageSection = () => {
             className="flex flex-col py-6 space-y-6 md:py-0 md:px-6"
           >
             <label className="block">
-              <span className="mb-1">Full name</span>
+              <span className="mb-1">Full Name</span>
               <input
                 type="text"
                 placeholder="Type name here"
@@ -39,7 +39,7 @@ const ContactPageSection = () => {
               />
             </label>
             <label className="block">
-              <span className="mb-1">Email address</span>
+              <span className="mb-1">Email Address</span>
               <input
                 type="email"
                 placeholder="Type email here"
@@ -50,7 +50,7 @@ const ContactPageSection = () => {
               <span className="mb-1">Message</span>
               <textarea
                 className="block w-full textarea textarea-bordered"
-                placeholder="Bio"
+                placeholder="Your Message"
               ></textarea>
             </label>
             <button type="button" className="btn btn-neutral md:text-lg">
