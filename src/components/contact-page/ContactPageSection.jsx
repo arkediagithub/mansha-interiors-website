@@ -1,28 +1,40 @@
 import TextReveal from "../TextReveal";
 import { contactInfo } from "../../data/contact";
+import { Link } from "react-router-dom";
+import Reveal from "../Reveal";
 
 const ContactPageSection = () => {
   return (
     <section className="px-4 py-6 sm:px-6 sm:py-8 lg:px-8 lg:py-12 bg-gray-100 text-gray-900">
       <div className="grid grid-cols-1 lg:px-8 md:grid-cols-2 md:divide-x">
         <div className="py-6 md:py-0 md:px-6 flex flex-col justify-center md:items-center">
-          <TextReveal>
-            <h1 className="text-2xl sm:text-4xl font-dm-serif-display">
-              Get in touch
-            </h1>
-            <p className="pt-2 pb-4 md:text-lg">
-              We are here to answer any question you may have. Feel free to
-              reach via contact form.
-            </p>
+          <div>
+            <Reveal>
+              <h1 className="text-2xl sm:text-4xl font-dm-serif-display">
+                Get in touch
+              </h1>
+            </Reveal>
+            <Reveal>
+              <p className="pt-2 pb-4 md:text-lg">
+                We are here to answer any question you may have. Feel free to
+                reach via contact form.
+              </p>
+            </Reveal>
             <div className="space-y-4">
               {contactInfo.map((contact) => (
-                <p key={contact.id} className="flex items-center gap-4">
-                  <contact.icon stroke={2} />
-                  <span>{contact.description}</span>
-                </p>
+                <Reveal key={contact.id}>
+                  <p className="flex items-center gap-4">
+                    <contact.icon stroke={2} />
+                    {contact.type === "link" ? (
+                      <Link to={contact.linkTo}>{contact.description}</Link>
+                    ) : (
+                      <span>{contact.description}</span>
+                    )}
+                  </p>
+                </Reveal>
               ))}
             </div>
-          </TextReveal>
+          </div>
         </div>
 
         <TextReveal>

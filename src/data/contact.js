@@ -8,27 +8,35 @@ import {
 
 export const contactInfo = [
   {
+    id: randomId(),
     title: "Timing",
     description: "Monday-Friday: 10AM-7PM",
     icon: IconClockHour4,
-    id: randomId(),
+    type: "text",
+    linkTo: "",
   },
   {
+    id: randomId(),
     title: "Location",
     description: "Shop 33, 2nd Floor, The Planet Mall, Siliguri",
     icon: IconMapPin,
-    id: randomId(),
+    type: "text",
+    linkTo: "",
   },
   {
+    id: randomId(),
     title: "Email",
     description: "mi@manshainteriors.com",
     icon: IconMail,
-    id: randomId(),
+    type: "link",
+    linkTo: "mailto:mi@manshainteriors.com",
   },
   {
+    id: randomId(),
     title: "Phone",
     description: "+91-9609930991/9832049481",
     icon: IconPhone,
-    id: randomId(),
+    type: "link",
+    linkTo: "tel:919609930991",
   },
 ];
