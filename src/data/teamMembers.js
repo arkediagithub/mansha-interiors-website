@@ -14,7 +14,7 @@ import RiyaTibrewalImage from "../assets/teams/Riya_Tibrewal.jpg";
 
 export const founder = {
   name: "Gautam Agarwal",
-  designation: "Co-founder",
+  designation: "Founder",
   about: [
     "Gautam Agarwal is the Founder and Principle Designer at Mansha interiors. He is a B.Com graduate along with a diploma from INIFD in Interior Design. He started this firm 13 years ago with a zeal for designing spaces.",
     "Gautam's noble aim is create joy with his designs. He is stickler for details and is dedicated in making every project unique. His approach towards design is driven by an in- depth understanding of the users requirements, creative space planning and a careful study of volumes and forms.",
