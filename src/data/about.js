@@ -2,7 +2,7 @@ import { randomId } from "@mantine/hooks";
 
 export const aboutInfo = {
   title: "About Us",
-  subtitle: "Interior Design",
+  subtitle: "Best Way To Design Your Home, Office, Etc.",
   description: [
     "Welcome to Mansha Interiors, where every space tells a story. Our team of passionate designers specializes in crafting beautiful, functional interiors that reflect your unique style and personality. From residential to commercial projects, we bring creativity and expertise to transform your vision into reality.",
     "With years of experience, we offer services like space planning, interior styling, 3D visualization, and project management. Whether you're revamping your home or designing a stunning office, we're here to bring your dream spaces to life.",

@@ -44,7 +44,7 @@ const Reveal = ({
       </motion.div>
       {/* overlay slide animation */}
       <motion.div
-        className={twMerge("absolute inset-0 top-1 bottom-1 z-20", overlayClassName)}
+        className={twMerge("absolute inset-0 z-20", overlayClassName)}
         variants={{
           hidden: { left: 0 },
           visible: { left: "100%" },

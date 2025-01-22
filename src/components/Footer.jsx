@@ -22,7 +22,7 @@ const Footer = () => {
         </aside>
 
         <nav>
-          <h6 className="footer-title font-dm-serif-display opacity-80 text-white tracking-widest">
+          <h6 className="footer-title opacity-80 text-white tracking-widest">
             Services
           </h6>
           <p className="text-base">Interior Design</p>
@@ -33,7 +33,7 @@ const Footer = () => {
         </nav>
 
         <nav>
-          <h6 className="footer-title font-dm-serif-display opacity-80 text-white tracking-widest">
+          <h6 className="footer-title opacity-80 text-white tracking-widest">
             Quick Links
           </h6>
           <Link to={"/"} className="link link-hover text-base">
@@ -54,7 +54,7 @@ const Footer = () => {
         </nav>
 
         <nav>
-          <h6 className="footer-title font-dm-serif-display opacity-80 text-white tracking-widest">
+          <h6 className="footer-title opacity-80 text-white tracking-widest">
             Follow Us
           </h6>
 

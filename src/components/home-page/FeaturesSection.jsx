@@ -12,7 +12,7 @@ const FeaturesSection = () => {
           </p>
         </Reveal>
         <Reveal className="my-2">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-dm-serif-display tracking-wider my-6">
+          <h2 className="text-2xl sm:text-4xl tracking-wider my-6">
             Designing Future Rooms <br />
             One at a Time
           </h2>

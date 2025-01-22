@@ -10,9 +10,7 @@ const ContactPageSection = () => {
         <div className="py-6 md:py-0 md:px-6 flex flex-col justify-center md:items-center">
           <div>
             <Reveal>
-              <h1 className="text-2xl sm:text-4xl font-dm-serif-display">
-                Get in touch
-              </h1>
+              <h1 className="text-2xl sm:text-4xl">Get in touch</h1>
             </Reveal>
             <Reveal>
               <p className="pt-2 pb-4 md:text-lg">

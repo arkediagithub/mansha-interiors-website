@@ -1,4 +1,5 @@
 import daisyui from "daisyui";
+import typography from "@tailwindcss/typography";
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -14,11 +15,12 @@ export default {
       },
       fontFamily: {
         "dm-serif-display": ["DM Serif Display"],
-        inter: ["Inter"],
+        "unbounded-variable": ["Unbounded Variable"],
+        inter: ["Inter Variable"],
       },
     },
   },
-  plugins: [daisyui],
+  plugins: [typography, daisyui],
   daisyui: {
     themes: ["light", "dark"],
   },

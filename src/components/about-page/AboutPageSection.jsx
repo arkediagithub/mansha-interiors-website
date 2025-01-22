@@ -37,7 +37,7 @@ const AboutPageSection = ({
               </div>
 
               <Reveal>
-                <h2 className="text-3xl sm:text-4xl md:text-5xl font-dm-serif-display tracking-wider">
+                <h2 className="text-2xl sm:text-4xl tracking-wider">
                   {section.heading}
                 </h2>
               </Reveal>

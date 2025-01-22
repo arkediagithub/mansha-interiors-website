@@ -47,7 +47,7 @@ const Header = () => {
 
   return (
     <header
-      className="shadow-md"
+      className="shadow-lg"
       style={{
         position: "fixed",
         top: 0,
@@ -69,8 +69,13 @@ const Header = () => {
         <div className="navbar-center hidden md:flex">
           <ul className="menu menu-horizontal px-1 gap-2">
             {menuLinks.map((link) => (
-              <li key={link.id} className="rounded-full overflow-hidden">
-                <NavLink to={link.to}>{link.label}</NavLink>
+              <li
+                key={link.id}
+                className="rounded-full overflow-hidden font-medium"
+              >
+                <NavLink to={link.to}>
+                  <h6 className="">{link.label}</h6>
+                </NavLink>
               </li>
             ))}
           </ul>
