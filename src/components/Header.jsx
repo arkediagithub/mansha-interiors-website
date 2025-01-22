@@ -66,12 +66,12 @@ const Header = () => {
         </div>
 
         {/* desktop links */}
-        <div className="navbar-center hidden md:flex">
+        <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 gap-2">
             {menuLinks.map((link) => (
               <li
                 key={link.id}
-                className="rounded-full overflow-hidden font-medium"
+                className="rounded-full overflow-hidden"
               >
                 <NavLink to={link.to}>
                   <h6 className="">{link.label}</h6>
@@ -83,16 +83,16 @@ const Header = () => {
 
         <div className="navbar-end">
           <button
-            className="btn btn-outline rounded-full max-md:mr-2 max-md:hidden"
+            className="btn btn-outline rounded-full max-md:mr-2 max-lg:hidden"
             onClick={() => navigate("/contact")}
           >
-            Get in Touch
+            <h6>Get in Touch</h6>
           </button>
 
           {/* drawer button */}
           <label
             htmlFor="my-drawer"
-            className="btn drawer-button btn-ghost md:hidden"
+            className="btn drawer-button btn-ghost lg:hidden"
           >
             <IconMenuDeep stroke={2} />
           </label>
@@ -113,7 +113,7 @@ const Header = () => {
           <ul className="menu bg-base-200 text-base-content min-h-full w-80 p-4">
             {menuLinks.map((link) => (
               <li key={link.id} className="rounded-full overflow-hidden">
-                <NavLink to={link.to}>{link.label}</NavLink>
+                <NavLink to={link.to}><h6>{link.label}</h6></NavLink>
               </li>
             ))}
             <li>
@@ -121,7 +121,7 @@ const Header = () => {
                 className="btn btn-outline mt-4"
                 onClick={() => navigate("/contact")}
               >
-                Get in Touch
+                <h6>Get in Touch</h6>
               </button>
             </li>
           </ul>

@@ -24,7 +24,7 @@ const AboutSection = () => {
             </Reveal>
 
             <Reveal>
-              <h2 className="text-2xl sm:text-4xl tracking-wider">
+              <h2 className="text-2xl lg:text-4xl tracking-wider">
                 {aboutInfo.subtitle}
               </h2>
             </Reveal>
