@@ -10,7 +10,7 @@ const ServiceSection = () => {
         {/* heading */}
         <div className="flex flex-col justify-center items-center gap-2 px-10">
           <Reveal>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-dm-serif-display tracking-wider md:max-w-xl text-center mx-auto">
+            <h1 className="text-2xl sm:text-4xl tracking-wider md:max-w-xl text-center mx-auto">
               We provide different types of Interior design
             </h1>
           </Reveal>
@@ -28,7 +28,7 @@ const ServiceSection = () => {
               </Reveal>
 
               <TextReveal>
-                <h2 className="font-dm-serif-display text-2xl sm:text-3xl mb-2">
+                <h2 className="text-xl sm:text-2xl mb-2">
                   {service?.heading}
                 </h2>
                 <p className="md:text-lg">{service?.description}</p>

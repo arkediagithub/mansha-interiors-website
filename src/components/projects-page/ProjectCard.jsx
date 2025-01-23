@@ -18,9 +18,9 @@ const ProjectCard = ({ project }) => {
           {/* overlay */}
           <div className="absolute bg-black opacity-0 inset-0 transition-all group-hover:opacity-50 group-hover:z-10 pointer-events-none"></div>
           {/* project name */}
-          <p className="absolute top-5 left-5 opacity-0 transition-all group-hover:opacity-100 group-hover:z-10 text-xl font-bold text-white sm:text-2xl pointer-events-none">
+          <h6 className="absolute bottom-5 left-5 opacity-0 transition-all group-hover:opacity-100 group-hover:z-10 text-xl text-white pointer-events-none">
             {project.name}
-          </p>
+          </h6>
         </div>
       </button>
       {/* <dialog id={project.id} className="modal modal-bottom sm:modal-middle">
