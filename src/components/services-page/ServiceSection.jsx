@@ -23,14 +23,12 @@ const ServiceSection = () => {
                 <img
                   src={service?.image}
                   alt="interior design service image"
-                  className="h-72 w-full mb-4 object-cover"
+                  className="h-72 w-full mb-4 object-cover image_hover_bw_to_color"
                 />
               </Reveal>
 
               <TextReveal>
-                <h2 className="text-xl sm:text-2xl mb-2">
-                  {service?.heading}
-                </h2>
+                <h2 className="text-xl sm:text-2xl mb-2">{service?.heading}</h2>
                 <p className="md:text-lg">{service?.description}</p>
               </TextReveal>
             </div>

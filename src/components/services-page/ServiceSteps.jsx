@@ -26,14 +26,18 @@ const ServiceSteps = () => {
               >
                 <h2 className="text-xl tracking-wide">{serviceStep.heading}</h2>
 
-                <p className="mt-1 text-sm">{serviceStep.description}</p>
+                <p className="mt-1">{serviceStep.description}</p>
               </div>
             </TextReveal>
           ))}
         </div>
 
         <div className="text-center my-4 sm:my-8">
-          <Link to="/contact" role="button" className="btn btn-neutral">
+          <Link
+            to="/contact"
+            role="button"
+            className="btn btn-neutral font-unbounded-variable"
+          >
             Contact Us Today
           </Link>
         </div>

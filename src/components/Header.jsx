@@ -69,10 +69,7 @@ const Header = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 gap-2">
             {menuLinks.map((link) => (
-              <li
-                key={link.id}
-                className="rounded-full overflow-hidden"
-              >
+              <li key={link.id} className="rounded-full overflow-hidden">
                 <NavLink to={link.to}>
                   <h6 className="">{link.label}</h6>
                 </NavLink>
@@ -83,10 +80,10 @@ const Header = () => {
 
         <div className="navbar-end">
           <button
-            className="btn btn-outline rounded-full max-md:mr-2 max-lg:hidden"
+            className="btn btn-outline rounded-full max-md:mr-2 max-lg:hidden font-unbounded-variable"
             onClick={() => navigate("/contact")}
           >
-            <h6>Get in Touch</h6>
+            Get in Touch
           </button>
 
           {/* drawer button */}
@@ -113,7 +110,9 @@ const Header = () => {
           <ul className="menu bg-base-200 text-base-content min-h-full w-80 p-4">
             {menuLinks.map((link) => (
               <li key={link.id} className="rounded-full overflow-hidden">
-                <NavLink to={link.to}><h6>{link.label}</h6></NavLink>
+                <NavLink to={link.to}>
+                  <h6>{link.label}</h6>
+                </NavLink>
               </li>
             ))}
             <li>
