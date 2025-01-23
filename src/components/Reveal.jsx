@@ -5,7 +5,7 @@ import { motion, useAnimation, useInView } from "motion/react";
 const Reveal = ({
   children,
   className = "",
-  overlayClassName = "bg-accent",
+  // overlayClassName = "bg-accent",
 }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -43,7 +43,7 @@ const Reveal = ({
         {children}
       </motion.div>
       {/* overlay slide animation */}
-      <motion.div
+      {/* <motion.div
         className={twMerge("absolute inset-0 z-20", overlayClassName)}
         variants={{
           hidden: { left: 0 },
@@ -55,7 +55,7 @@ const Reveal = ({
           duration: 0.5,
           ease: "easeIn",
         }}
-      ></motion.div>
+      ></motion.div> */}
     </div>
   );
 };

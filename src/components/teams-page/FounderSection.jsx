@@ -14,7 +14,7 @@ const FounderSection = () => {
               <img
                 src={founder.image}
                 alt="Goutam Agarwal Image"
-                className="absolute inset-0 h-full w-full object-cover md:object-cover object-top"
+                className="absolute inset-0 h-full w-full object-cover md:object-cover object-top image_hover_bw_to_color"
               />
             </div>
           </div>
@@ -24,21 +24,40 @@ const FounderSection = () => {
 
             <div className="p-8 md:p-12">
               <Reveal>
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-dm-serif-display tracking-wider">
-                  {founder.designation}
+                <h2 className="text-2xl sm:text-4xl tracking-wider">
+                  {founder.name}
                 </h2>
               </Reveal>
 
-              {founder.about.map((about, i) => (
-                <Reveal key={i} className="mt-4">
-                  <p className="md:text-lg text-gray-600">{about}</p>
-                </Reveal>
-              ))}
+              <Reveal>
+                <p className="tracking-wider text-lg my-2 md:my-4">
+                  {founder.designation}
+                </p>
+              </Reveal>
+
+              <Reveal>
+                <p className="md:text-lg text-gray-600">
+                  Gautam Agarwal is the Founder and Principle Designer at Mansha
+                  interiors. He is a B.Com graduate along with a diploma from
+                  INIFD in Interior Design. He started this firm 13 years ago
+                  with a zeal for designing spaces.
+                </p>
+              </Reveal>
+
+              <Reveal>
+                <p className="mt-2 md:mt-4 md:text-lg text-gray-600">
+                  Gautam&apos;s noble aim is create joy with his designs. He is
+                  stickler for details and is dedicated in making every project
+                  unique. His approach towards design is driven by an in- depth
+                  understanding of the users requirements, creative space
+                  planning and a careful study of volumes and forms.
+                </p>
+              </Reveal>
 
               <Link
                 to="/contact"
                 role="button"
-                className="mt-8 btn btn-neutral md:text-lg"
+                className="mt-8 btn btn-neutral md:text-lg font-unbounded-variable"
               >
                 Get in Touch
               </Link>

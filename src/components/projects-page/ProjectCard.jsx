@@ -8,7 +8,7 @@ const ProjectCard = ({ project }) => {
         {/* project cards */}
         <div className="relative group h-[300px] lg:h-[400px]">
           {/* image */}
-          <Reveal className="h-full w-full">
+          <Reveal noOverlay className="h-full w-full">
             <img
               src={project.image}
               alt={project.name}
@@ -16,11 +16,11 @@ const ProjectCard = ({ project }) => {
             />
           </Reveal>
           {/* overlay */}
-          <div className="absolute bg-black opacity-0 inset-0 transition-all group-hover:opacity-50 group-hover:z-10 pointer-events-none"></div>
+          <div className="absolute bg-black opacity-0 inset-0 transition-all group-hover:opacity-30 group-hover:z-10 pointer-events-none"></div>
           {/* project name */}
-          <h6 className="absolute bottom-5 left-5 opacity-0 transition-all group-hover:opacity-100 group-hover:z-10 text-xl text-white pointer-events-none">
+          <p className="absolute bottom-5 left-5 opacity-0 transition-all group-hover:opacity-100 group-hover:z-10 text-xl text-white pointer-events-none font-unbounded-variable">
             {project.name}
-          </h6>
+          </p>
         </div>
       </button>
       {/* <dialog id={project.id} className="modal modal-bottom sm:modal-middle">

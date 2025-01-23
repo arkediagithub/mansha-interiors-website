@@ -9,17 +9,17 @@ import {
 export const contactInfo = [
   {
     id: randomId(),
-    title: "Timing",
-    description: "Monday-Friday: 10AM-7PM",
-    icon: IconClockHour4,
+    title: "Location",
+    description: "Shop 33, 2nd Floor, The Planet Mall, Siliguri",
+    icon: IconMapPin,
     type: "text",
     linkTo: "",
   },
   {
     id: randomId(),
-    title: "Location",
-    description: "Shop 33, 2nd Floor, The Planet Mall, Siliguri",
-    icon: IconMapPin,
+    title: "Timing",
+    description: "Monday-Friday: 10AM-7PM",
+    icon: IconClockHour4,
     type: "text",
     linkTo: "",
   },

@@ -4,15 +4,15 @@ import Reveal from "../Reveal";
 
 const FeaturesSection = () => {
   return (
-    <SectionWrapper id="home_page_feature_section">
+    <SectionWrapper id="home_page_feature_section" className="md:my-32">
       <div id="features_headings">
         <Reveal>
           <p className="text-accent text-xl font-semibold md:font-bold">
             BEST SERVICE
           </p>
         </Reveal>
-        <Reveal className="my-2">
-          <h2 className="text-2xl sm:text-4xl tracking-wider my-6">
+        <Reveal>
+          <h2 className="text-2xl sm:text-4xl tracking-wider my-3 md:my-6">
             Designing Future Rooms <br />
             One at a Time
           </h2>
@@ -28,7 +28,7 @@ const FeaturesSection = () => {
                 <h2 className="text-xl md:text-2xl tracking-wide">
                   {feature.heading}
                 </h2>
-                <p className="md:text-lg text-gray-500 my-2 md:my-4">
+                <p className="md:text-lg text-gray-500 my-2">
                   {feature.description}
                 </p>
               </div>

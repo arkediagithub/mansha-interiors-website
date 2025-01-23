@@ -36,7 +36,7 @@ const AchievementSection = () => {
           <p className="text-accent text-xl font-semibold md:font-bold">
             TRUSTED EXPERIENCE
           </p>
-          <h2 className="text-2xl sm:text-4xl tracking-wider mt-4 mb-8">
+          <h2 className="text-2xl sm:text-4xl tracking-wider my-3 md:my-6">
             Modern Design Solutions
           </h2>
         </div>

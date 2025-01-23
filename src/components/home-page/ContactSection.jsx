@@ -7,7 +7,7 @@ const ContactSection = () => {
     <SectionWrapper id="home_page_contact_section">
       <div className="flex flex-col justify-center items-center">
         <Reveal>
-          <h2 className="text-2xl sm:text-4xl tracking-wider mt-4 mb-4 md:mb-8 text-balance text-center">
+          <h2 className="text-2xl sm:text-4xl tracking-wider text-balance text-center my-2 md:my-6">
             Have Any Questions Contact Us
           </h2>
         </Reveal>
