@@ -11,7 +11,7 @@ export default {
         "pulse-fast": "pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite",
       },
       colors: {
-        accent: "#F9A12C",
+        accent: "#D4B055",
       },
       fontFamily: {
         "dm-serif-display": ["DM Serif Display"],

@@ -25,7 +25,7 @@ const FeaturesSection = () => {
           <Reveal key={feature?.id}>
             <div className="card bg-base-100 shadow-xl rounded-none border border-b-4 border-l-4 border-b-accent border-l-accent h-full">
               <div className="card-body py-4">
-                <h2 className="text-xl md:text-2xl tracking-wide font-bold">
+                <h2 className="text-xl md:text-2xl tracking-wide">
                   {feature.heading}
                 </h2>
                 <p className="md:text-lg text-gray-500 my-2 md:my-4">
