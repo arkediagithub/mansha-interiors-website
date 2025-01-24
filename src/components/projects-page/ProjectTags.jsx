@@ -12,7 +12,8 @@ const ProjectTags = ({ tags, tagClick, selectedTags }) => {
             }`}
             onClick={() => tagClick(tag)}
           >
-            {tag.charAt(0).toUpperCase() + tag.slice(1)}
+            {/* {tag.charAt(0).toUpperCase() + tag.slice(1)} */}
+            {tag.toUpperCase()}
           </div>
         ))}
       </div>

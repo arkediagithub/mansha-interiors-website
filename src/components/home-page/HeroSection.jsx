@@ -3,6 +3,7 @@ import {
   homepage_hero_slide_banner_2,
   homepage_hero_slide_banner_3,
   homepage_hero_slide_banner_4,
+  homepage_hero_slide_banner_5,
 } from "../../images.js";
 import HeadingAnimation from "../HeadingAnimation";
 import ImageSlideshow from "../ImageSlideshow";
@@ -14,6 +15,7 @@ const HeroSection = () => {
     homepage_hero_slide_banner_2,
     homepage_hero_slide_banner_3,
     homepage_hero_slide_banner_4,
+    homepage_hero_slide_banner_5,
   ];
 
   return (

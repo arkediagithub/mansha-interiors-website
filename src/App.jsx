@@ -12,6 +12,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 import ProjectsPage from "./pages/ProjectsPage";
 import AboutUsPage from "./pages/AboutUsPage";
 import FaqsPage from "./pages/FaqsPage";
+import GalleryPage from "./pages/GalleryPage";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "projects",
         element: <ProjectsPage />,
+      },
+      {
+        path: "gallery",
+        element: <GalleryPage />,
       },
       {
         path: "services",

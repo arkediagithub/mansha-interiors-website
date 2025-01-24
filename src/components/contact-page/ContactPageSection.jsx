@@ -1,9 +1,36 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import TextReveal from "../TextReveal";
 import { contactInfo } from "../../data/contact";
-import { Link } from "react-router-dom";
 import Reveal from "../Reveal";
 
 const ContactPageSection = () => {
+  const [result, setResult] = useState("");
+  const accessKey = "8036b690-2d80-4c79-83d6-bb72e6cca4c2";
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", accessKey);
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
+
   return (
     <section
       id="contact_form_section"
@@ -40,11 +67,12 @@ const ContactPageSection = () => {
 
         <TextReveal>
           <form
+            onSubmit={onSubmit}
             noValidate=""
-            className="flex flex-col py-6 space-y-6 md:py-0 md:px-6"
+            className="flex flex-col text-black py-6 space-y-6 md:py-0 md:px-6"
           >
             <label className="block">
-              <span className="mb-1">Full Name</span>
+              <span className="mb-1 text-black">Full Name</span>
               <input
                 type="text"
                 placeholder="Type name here"
@@ -52,7 +80,7 @@ const ContactPageSection = () => {
               />
             </label>
             <label className="block">
-              <span className="mb-1">Email Address</span>
+              <span className="mb-1 text-black">Email Address</span>
               <input
                 type="email"
                 placeholder="Type email here"
@@ -60,7 +88,7 @@ const ContactPageSection = () => {
               />
             </label>
             <label className="block">
-              <span className="mb-1">Phone Number</span>
+              <span className="mb-1 text-black">Phone Number</span>
               <input
                 type="number"
                 placeholder="+911234567890"
@@ -68,18 +96,19 @@ const ContactPageSection = () => {
               />
             </label>
             <label className="block">
-              <span className="mb-1">Message</span>
+              <span className="mb-1 text-black">Message</span>
               <textarea
                 className="block w-full textarea textarea-bordered"
                 placeholder="Your Message"
               ></textarea>
             </label>
             <button
-              type="button"
-              className="btn btn-neutral md:text-lg font-unbounded-variable"
+              type="submit"
+              className="btn btn-neutral md:text-lg font-normal font-unbounded-variable"
             >
               Submit
             </button>
+            <span className="text-center">{result}</span>
           </form>
         </TextReveal>
       </div>
