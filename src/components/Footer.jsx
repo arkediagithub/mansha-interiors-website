@@ -13,12 +13,37 @@ const Footer = () => {
           <div className="w-[70px] h-[70px]">
             <img src={logo} alt="logo" className="h-full w-full" />
           </div>
-          <p className="text-base">
-            We have an exceptional range of services to help you. Keeping in
-            view various necessities of our honoured clients, we provide
-            creative designing services. We give our best efforts to design your
-            dreams.
-          </p>
+          <ul className="text-base">
+            <li>
+              <strong className="font-unbounded-variable">Email: </strong>
+              <Link
+                to={"mailto:mi@manshainteriors.com"}
+                className="hover:text-accent"
+              >
+                mi@manshainteriors.com
+              </Link>
+            </li>
+            <li>
+              <strong className="font-unbounded-variable">
+                Phone Number:{" "}
+              </strong>
+              <Link to={"tel:+919609930991"} className="hover:text-accent">
+                9609930991
+              </Link>
+              /
+              <Link to={"tel:+919832049481"} className="hover:text-accent">
+                9832049481
+              </Link>
+            </li>
+            <li>
+              <strong className="font-unbounded-variable">Timing: </strong>
+              <span>Monday-Friday: 10AM-7PM</span>
+            </li>
+            <li>
+              <strong className="font-unbounded-variable">Location: </strong>
+              <span>Shop 33, 2nd Floor, The Planet Mall, Siliguri</span>
+            </li>
+          </ul>
         </aside>
 
         <nav>

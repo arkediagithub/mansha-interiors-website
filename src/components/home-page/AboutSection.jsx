@@ -1,5 +1,5 @@
 import { aboutInfo } from "../../data/about";
-import { homepage_about_section_img } from "../../images";
+import { homepage_hero_slide_banner_1 } from "../../images";
 import Reveal from "../Reveal";
 import SectionWrapper from "../SectionWrapper";
 
@@ -10,7 +10,7 @@ const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16">
           <Reveal className="w-full max-md:order-2">
             <img
-              src={homepage_about_section_img}
+              src={homepage_hero_slide_banner_1}
               alt="interior design service image"
               className="h-64 sm:h-96 md:h-full w-full max-md:order-last object-cover"
             />

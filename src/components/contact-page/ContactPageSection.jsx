@@ -5,7 +5,10 @@ import Reveal from "../Reveal";
 
 const ContactPageSection = () => {
   return (
-    <section className="px-4 py-6 sm:px-6 sm:py-8 lg:px-8 lg:py-12 bg-gray-100 text-gray-900">
+    <section
+      id="contact_form_section"
+      className="px-4 py-6 sm:px-6 sm:py-8 lg:px-8 lg:py-12 bg-gray-100 text-gray-900 scroll-mt-28"
+    >
       <div className="grid grid-cols-1 lg:px-8 md:grid-cols-2 md:divide-x">
         <div className="py-6 md:py-0 md:px-6 flex flex-col justify-center md:items-center">
           <div>

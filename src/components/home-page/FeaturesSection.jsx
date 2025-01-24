@@ -8,7 +8,7 @@ const FeaturesSection = () => {
       <div id="features_headings">
         <Reveal>
           <p className="text-accent text-xl font-semibold md:font-bold">
-            BEST SERVICE
+            OUR SERVICES
           </p>
         </Reveal>
         <Reveal>
@@ -28,7 +28,7 @@ const FeaturesSection = () => {
                 <h2 className="text-xl md:text-2xl tracking-wide">
                   {feature.heading}
                 </h2>
-                <p className="md:text-lg text-gray-500 my-2">
+                <p className="md:text-lg text-gray-500 my-2 text-justify">
                   {feature.description}
                 </p>
               </div>
