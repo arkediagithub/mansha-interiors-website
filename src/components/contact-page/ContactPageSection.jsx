@@ -76,6 +76,7 @@ const ContactPageSection = () => {
               <span className="mb-1 text-black">Full Name</span>
               <input
                 type="text"
+                name="Full_Name"
                 placeholder="Type name here"
                 className="block input input-bordered w-full"
               />
@@ -84,6 +85,7 @@ const ContactPageSection = () => {
               <span className="mb-1 text-black">Email Address</span>
               <input
                 type="email"
+                name="Email_Address"
                 placeholder="Type email here"
                 className="block input input-bordered w-full"
               />
@@ -92,6 +94,7 @@ const ContactPageSection = () => {
               <span className="mb-1 text-black">Phone Number</span>
               <input
                 type="number"
+                name="Phone_Number"
                 placeholder="+911234567890"
                 className="block input input-bordered w-full"
               />
@@ -99,6 +102,7 @@ const ContactPageSection = () => {
             <label className="block">
               <span className="mb-1 text-black">Message</span>
               <textarea
+                name="Message"
                 className="block w-full textarea textarea-bordered"
                 placeholder="Your Message"
               ></textarea>
