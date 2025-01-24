@@ -5,6 +5,7 @@ import ContactSection from "../components/home-page/ContactSection";
 import FeaturesSection from "../components/home-page/FeaturesSection";
 import HeroSection from "../components/home-page/HeroSection";
 import MetaTags from "../components/MetaTags";
+import CTASection from "../components/CTASection";
 
 export const HomePage = () => {
   useEffect(() => {
@@ -18,10 +19,11 @@ export const HomePage = () => {
     <>
       <MetaTags />
       <HeroSection />
-      <AboutSection />
-      <FeaturesSection />
-      <AchievementSection />
-      <ContactSection />
+      {/* <AboutSection /> */}
+      {/* <FeaturesSection /> */}
+      {/* <AchievementSection /> */}
+      {/* <ContactSection /> */}
+      <CTASection />
     </>
   );
 };

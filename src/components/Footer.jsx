@@ -25,9 +25,9 @@ const Footer = () => {
           <h6 className="footer-title opacity-80 text-white tracking-widest">
             Services
           </h6>
+          <p className="text-base">Space Planning</p>
           <p className="text-base">Interior Design</p>
           <p className="text-base">Architecture Design</p>
-          <p className="text-base">Space Planning</p>
           <p className="text-base">Design Consultation</p>
           <p className="text-base">Renovation and Remodeling</p>
         </nav>
@@ -36,9 +36,9 @@ const Footer = () => {
           <h6 className="footer-title opacity-80 text-white tracking-widest">
             Quick Links
           </h6>
-          <Link to={"/"} className="link link-hover text-base">
+          {/* <Link to={"/"} className="link link-hover text-base">
             Home
-          </Link>
+          </Link> */}
           <Link to={"/about"} className="link link-hover text-base">
             About Us
           </Link>

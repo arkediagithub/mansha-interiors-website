@@ -4,7 +4,7 @@ import Reveal from "../Reveal";
 
 const FeaturesSection = () => {
   return (
-    <SectionWrapper id="home_page_feature_section" className="md:my-32">
+    <SectionWrapper id="home_page_feature_section" className="md:mt-32">
       <div id="features_headings">
         <Reveal>
           <p className="text-accent text-xl font-semibold md:font-bold">
