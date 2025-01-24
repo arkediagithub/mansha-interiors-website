@@ -57,13 +57,24 @@ const ContactPageSection = () => {
               />
             </label>
             <label className="block">
+              <span className="mb-1">Phone Number</span>
+              <input
+                type="number"
+                placeholder="+911234567890"
+                className="block input input-bordered w-full"
+              />
+            </label>
+            <label className="block">
               <span className="mb-1">Message</span>
               <textarea
                 className="block w-full textarea textarea-bordered"
                 placeholder="Your Message"
               ></textarea>
             </label>
-            <button type="button" className="btn btn-neutral md:text-lg">
+            <button
+              type="button"
+              className="btn btn-neutral md:text-lg font-unbounded-variable"
+            >
               Submit
             </button>
           </form>

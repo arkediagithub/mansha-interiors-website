@@ -12,7 +12,7 @@ const ServiceSteps = () => {
         <div className="flex flex-col justify-center items-center gap-2 px-10">
           <Reveal>
             <h2 className="text-2xl sm:text-4xl tracking-wider md:max-w-xl text-center mx-auto">
-              How We work?
+              How We Work?
             </h2>
           </Reveal>
         </div>
