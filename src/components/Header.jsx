@@ -1,13 +1,44 @@
 import { IconMenuDeep } from "@tabler/icons-react";
-import { Link, NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { randomId, useHeadroom } from "@mantine/hooks";
 import logo from "../assets/logo.png";
 
 const Header = () => {
   const pinned = useHeadroom({ fixedAt: 120 });
-  const navigate = useNavigate();
 
   const menuLinks = [
+    {
+      id: randomId(),
+      to: "/",
+      label: "Home",
+    },
+    {
+      id: randomId(),
+      to: "/about",
+      label: "About Us",
+      subMenu: [
+        { id: randomId(), to: "/team", label: "Our Team" },
+        { id: randomId(), to: "/faqs", label: "FAQs" },
+      ],
+    },
+    {
+      id: randomId(),
+      to: "/services",
+      label: "Services",
+    },
+    {
+      id: randomId(),
+      to: "/design-gallery",
+      label: "Design Gallery",
+    },
+    {
+      id: randomId(),
+      to: "/contact",
+      label: "Contact",
+    },
+  ];
+
+  const mobileMenuLinks = [
     {
       id: randomId(),
       to: "/",
@@ -20,8 +51,8 @@ const Header = () => {
     },
     {
       id: randomId(),
-      to: "/projects",
-      label: "Projects",
+      to: "/team",
+      label: "Our Team",
     },
     {
       id: randomId(),
@@ -30,18 +61,13 @@ const Header = () => {
     },
     {
       id: randomId(),
-      to: "/team",
-      label: "Our Team",
+      to: "/design-gallery",
+      label: "Design Gallery",
     },
     {
       id: randomId(),
       to: "/contact",
       label: "Contact",
-    },
-    {
-      id: randomId(),
-      to: "/faqs",
-      label: "FAQs",
     },
   ];
 
@@ -59,34 +85,55 @@ const Header = () => {
       }}
     >
       <div className="navbar bg-base-100 px-4">
-        <div className="navbar-start">
+        {/* logo */}
+        <div className="flex-1">
           <Link to="/">
-            <img src={logo} alt="logo" className="w-16 aspect-square" />
+            <img src={logo} alt="logo" className="w-16 lg:w-20 aspect-square" />
           </Link>
         </div>
 
-        {/* desktop links */}
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 gap-2">
-            {menuLinks.map((link) => (
-              <li key={link.id} className="rounded-full overflow-hidden">
-                <NavLink to={link.to}>
-                  <h6 className="">{link.label}</h6>
-                </NavLink>
-              </li>
-            ))}
+        {/* desktop menu links */}
+        <div className="navbar-center flex-none">
+          <ul className="menu menu-horizontal px-1 gap-2 max-lg:hidden">
+            {menuLinks.map((link) =>
+              link.subMenu ? (
+                <li key={link.id}>
+                  <div className="dropdown dropdown-hover dropdown-end rounded-full">
+                    <NavLink
+                      to={link.to}
+                      tabIndex={0}
+                      className="font-unbounded-variable"
+                    >
+                      {link.label}
+                    </NavLink>
+                    <ul
+                      tabIndex={0}
+                      className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow-md top-full"
+                    >
+                      {link.subMenu.map((subLink) => (
+                        <li key={subLink.id}>
+                          <NavLink
+                            to={subLink.to}
+                            className="font-unbounded-variable"
+                          >
+                            {subLink.label}
+                          </NavLink>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </li>
+              ) : (
+                <li key={link.id} className="rounded-full overflow-hidden">
+                  <NavLink to={link.to}>
+                    <h6>{link.label}</h6>
+                  </NavLink>
+                </li>
+              )
+            )}
           </ul>
-        </div>
 
-        <div className="navbar-end">
-          <button
-            className="btn btn-outline rounded-full max-md:mr-2 max-lg:hidden font-unbounded-variable"
-            onClick={() => navigate("/contact")}
-          >
-            Get in Touch
-          </button>
-
-          {/* drawer button */}
+          {/* mobile menu button */}
           <label
             htmlFor="my-drawer"
             className="btn drawer-button btn-ghost lg:hidden"
@@ -95,7 +142,8 @@ const Header = () => {
           </label>
         </div>
       </div>
-      {/* drawer */}
+
+      {/* mobile menu links */}
       <div className="drawer z-50">
         <input id="my-drawer" type="checkbox" className="drawer-toggle" />
         <div className="drawer-side">
@@ -105,24 +153,14 @@ const Header = () => {
             className="drawer-overlay"
           ></label>
 
-          {/* mobile navigation */}
-          {/* drawer sidebar content*/}
           <ul className="menu bg-base-200 text-base-content min-h-full w-80 p-4">
-            {menuLinks.map((link) => (
+            {mobileMenuLinks.map((link) => (
               <li key={link.id} className="rounded-full overflow-hidden">
-                <NavLink to={link.to}>
-                  <h6>{link.label}</h6>
+                <NavLink to={link.to} className="font-unbounded-variable">
+                  {link.label}
                 </NavLink>
               </li>
             ))}
-            <li>
-              <button
-                className="btn btn-outline mt-4"
-                onClick={() => navigate("/contact")}
-              >
-                <h6>Get in Touch</h6>
-              </button>
-            </li>
           </ul>
         </div>
       </div>

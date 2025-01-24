@@ -23,7 +23,7 @@ const HeroSection = () => {
           {/* hero image slideshow*/}
           <ImageSlideshow images={images} className="w-full h-full" />
           {/* background overlay */}
-          <div className="absolute inset-0 bg-black opacity-30" />
+          <div className="absolute inset-0 bg-black opacity-20" />
           {/*  */}
           <div className="absolute inset-0 flex flex-col justify-center items-center gap-4">
             <HeadingAnimation
