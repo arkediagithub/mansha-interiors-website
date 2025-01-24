@@ -24,6 +24,7 @@ const ContactPageSection = () => {
 
     if (data.success) {
       setResult("Form Submitted Successfully");
+      console.log("Success", data);
       event.target.reset();
     } else {
       console.log("Error", data);
