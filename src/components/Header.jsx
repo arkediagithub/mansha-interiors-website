@@ -71,6 +71,12 @@ const Header = () => {
     },
   ];
 
+  // Function to close the mobile drawer
+  const closeDrawer = () => {
+    const drawerCheckbox = document.getElementById("my-drawer");
+    if (drawerCheckbox) drawerCheckbox.checked = false;
+  };
+
   return (
     <header
       className="shadow-lg"
@@ -156,7 +162,11 @@ const Header = () => {
           <ul className="menu bg-base-200 text-base-content min-h-full w-80 p-4">
             {mobileMenuLinks.map((link) => (
               <li key={link.id} className="rounded-full overflow-hidden">
-                <NavLink to={link.to} className="font-unbounded-variable">
+                <NavLink
+                  to={link.to}
+                  className="font-unbounded-variable"
+                  onClick={closeDrawer}
+                >
                   {link.label}
                 </NavLink>
               </li>
