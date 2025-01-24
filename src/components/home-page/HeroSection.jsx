@@ -10,7 +10,6 @@ import ImageSlideshow from "../ImageSlideshow";
 const HeroSection = () => {
   // hero slideshow images
   const images = [
-    "https://images.unsplash.com/photo-1499955085172-a104c9463ece?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     homepage_hero_slide_banner_1,
     homepage_hero_slide_banner_2,
     homepage_hero_slide_banner_3,
