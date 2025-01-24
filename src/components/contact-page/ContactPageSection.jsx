@@ -70,10 +70,10 @@ const ContactPageSection = () => {
           <form
             onSubmit={onSubmit}
             noValidate=""
-            className="flex flex-col text-black py-6 space-y-6 md:py-0 md:px-6"
+            className="flex flex-col text-black py-6 space-y-4 md:py-0 md:px-6"
           >
             <label className="block">
-              <span className="mb-1 text-black">Full Name</span>
+              <span className="mb-2 text-black">Full Name</span>
               <input
                 type="text"
                 name="Full_Name"
@@ -82,7 +82,7 @@ const ContactPageSection = () => {
               />
             </label>
             <label className="block">
-              <span className="mb-1 text-black">Email Address</span>
+              <span className="mb-2 text-black">Email Address</span>
               <input
                 type="email"
                 name="Email_Address"
@@ -91,7 +91,7 @@ const ContactPageSection = () => {
               />
             </label>
             <label className="block">
-              <span className="mb-1 text-black">Phone Number</span>
+              <span className="mb-2 text-black">Phone Number</span>
               <input
                 type="number"
                 name="Phone_Number"
@@ -100,7 +100,7 @@ const ContactPageSection = () => {
               />
             </label>
             <label className="block">
-              <span className="mb-1 text-black">Message</span>
+              <span className="mb-2 text-black">Message</span>
               <textarea
                 name="Message"
                 className="block w-full textarea textarea-bordered"
