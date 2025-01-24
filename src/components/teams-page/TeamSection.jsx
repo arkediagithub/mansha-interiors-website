@@ -20,38 +20,27 @@ const TeamSection = () => {
           </p>
         </Reveal>
       </div>
+
       {/* team list */}
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 md:gap-6 lg:gap-8">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
         {teamMembers.map((member) => (
-          <div
-            key={member.id}
-            className="relative group h-full max-h-[300px] lg:max-h-[450px] overflow-hidden"
-          >
-            {/* image */}
-            <Reveal className="w-full">
+          <div key={member.id} className="image_hover_bw_to_color">
+            <Reveal>
               <img
                 src={member.image}
                 alt={member.name}
-                className="w-full h-full object-cover image_hover_bw_to_color"
-                style={{ objectPosition: "50% 50%" }}
+                className="mask mask-squircle w-full h-full object-cover object-center"
               />
-            </Reveal>
-            {/* overlay */}
-            <div className="absolute bg-black opacity-0 inset-0 transition-all group-hover:opacity-20 group-hover:z-10 pointer-events-none"></div>
-            {/* member info */}
-            <div className="absolute bottom-5 left-5 right-5 opacity-0 transition-all group-hover:opacity-100 group-hover:z-10 pointer-events-none">
-              <div className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
-                <p className="text-xl text-white font-unbounded-variable">
-                  {member.name}
-                </p>
-                <p className="text-sm font-medium uppercase tracking-widest text-white">
+              <div className="text-center mt-2 lg:mt-4">
+                <p className="text-lg font-unbounded-variable">{member.name}</p>
+                <p className="text-sm font-medium uppercase tracking-widest">
                   {member.designation}
                 </p>
-                <p className="text-sm font-medium tracking-widest text-white">
+                {/* <p className="text-sm font-medium tracking-widest">
                   {member.details}
-                </p>
+                </p> */}
               </div>
-            </div>
+            </Reveal>
           </div>
         ))}
       </div>

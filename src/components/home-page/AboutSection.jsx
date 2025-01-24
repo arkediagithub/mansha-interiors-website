@@ -12,7 +12,7 @@ const AboutSection = () => {
             <img
               src={homepage_hero_slide_banner_1}
               alt="interior design service image"
-              className="h-64 sm:h-96 md:h-full w-full max-md:order-last object-cover"
+              className="h-64 sm:h-96 md:h-[500px] w-full max-md:order-last object-cover"
             />
           </Reveal>
 
@@ -29,7 +29,7 @@ const AboutSection = () => {
               </h2>
             </Reveal>
 
-            <Reveal>
+            {/* <Reveal>
               <p className=" text-gray-600 lg:text-lg text-justify">
                 Welcome to Mansha Interiors, where every space tells a story.
                 Our team of passionate designers specializes in crafting
@@ -53,6 +53,18 @@ const AboutSection = () => {
               <p className=" mt-2 md:mt-4 text-gray-600 lg:text-lg text-justify">
                 Let us help you create a space that tells your story. Contact us
                 today to start your design journey with Mansha Interiors.
+              </p>
+            </Reveal> */}
+
+            <Reveal>
+              <p className="text-gray-600 lg:text-lg text-justify">
+                Mansha Interiors is a design firm focused on creating bespoke
+                interiors that blend functionality with aesthetics. Their
+                experienced team specializes in transforming both residential
+                and commercial spaces, ensuring each project reflects the
+                client&apos;s unique style. Committed to quality, creativity,
+                and client satisfaction, Mansha Interiors delivers innovative,
+                elegant, and modern design solutions that exceed expectations.
               </p>
             </Reveal>
           </div>
