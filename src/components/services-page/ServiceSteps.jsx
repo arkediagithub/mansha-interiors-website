@@ -22,7 +22,7 @@ const ServiceSteps = () => {
             <TextReveal key={idx}>
               <div
                 key={idx}
-                className="block p-6 md:p-8 shadow-md hover:shadow-xl transition border border-b-4 border-l-4 border-b-accent border-l-accent"
+                className="block p-6 md:p-8 shadow-md hover:shadow-xl transition border border-b-4 border-l-4 border-b-accent border-l-accent text-black"
               >
                 <h2 className="text-xl tracking-wide">{serviceStep.heading}</h2>
 
@@ -36,7 +36,7 @@ const ServiceSteps = () => {
           <Link
             to="/contact"
             role="button"
-            className="btn btn-neutral font-unbounded-variable"
+            className="btn btn-neutral font-unbounded-variable bg-accent text-black border-accent hover:text-white font-normal"
           >
             Contact Us Today
           </Link>

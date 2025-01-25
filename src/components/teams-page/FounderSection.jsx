@@ -51,7 +51,7 @@ export default function FounderSection() {
             <Link
               to="/contact"
               role="button"
-              className="mt-8 btn btn-outline md:text-lg font-unbounded-variable w-fit font-normal"
+              className="mt-8 btn btn-outline md:text-lg font-unbounded-variable w-fit font-normal bg-accent text-black border-accent hover:text-white"
             >
               Get in Touch
             </Link>
