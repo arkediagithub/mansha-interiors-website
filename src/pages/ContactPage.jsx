@@ -1,8 +1,16 @@
 import ContactPageSection from "../components/contact-page/ContactPageSection";
 import PageHeader from "../components/PageHeader";
 import MetaTags from "../components/MetaTags";
+import { useEffect } from "react";
 
 const ContactPage = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
   return (
     <>
       <MetaTags title="Contact Us | Mansha Interior" />

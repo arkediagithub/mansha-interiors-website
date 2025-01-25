@@ -23,7 +23,7 @@ const FeaturesSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
         {features.map((feature) => (
           <Reveal key={feature?.id}>
-            <div className="card bg-base-100 shadow-xl rounded-none border border-b-4 border-l-4 border-b-accent border-l-accent h-full">
+            <div className="card bg-base-100 rounded-none rounded-tr-3xl rounded-bl-3xl border border-b-4 border-l-4 border-b-accent border-l-accent h-full">
               <div className="card-body py-4">
                 <h2 className="text-xl md:text-2xl tracking-wide">
                   {feature.heading}

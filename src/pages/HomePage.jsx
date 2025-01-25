@@ -6,6 +6,7 @@ import FeaturesSection from "../components/home-page/FeaturesSection";
 import HeroSection from "../components/home-page/HeroSection";
 import MetaTags from "../components/MetaTags";
 import CTASection from "../components/CTASection";
+import WhyChooseUsSection from "../components/home-page/WhyChooseUsSection";
 
 export const HomePage = () => {
   useEffect(() => {
@@ -22,8 +23,10 @@ export const HomePage = () => {
       <AboutSection />
       <FeaturesSection />
       <AchievementSection />
+      <WhyChooseUsSection />
       {/* <ContactSection /> */}
-      <CTASection />
+      <CTASection title = "levate Your Living Experience"
+      subtitle = "From concept to completion, we craft spaces you'll love to live in."/>
     </>
   );
 };
