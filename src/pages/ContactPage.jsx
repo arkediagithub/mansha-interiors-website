@@ -2,6 +2,7 @@ import ContactPageSection from "../components/contact-page/ContactPageSection";
 import PageHeader from "../components/PageHeader";
 import MetaTags from "../components/MetaTags";
 import { useEffect } from "react";
+import MapSection from "../components/contact-page/MapSection";
 
 const ContactPage = () => {
   useEffect(() => {
@@ -19,6 +20,7 @@ const ContactPage = () => {
         subtitle="Let's Start a Conversation About Your Space"
       />
       <ContactPageSection />
+      <MapSection/>
     </>
   );
 };
