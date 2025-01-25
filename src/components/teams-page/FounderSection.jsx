@@ -12,7 +12,7 @@ export default function FounderSection() {
             <img
               src={founder.image}
               alt="interior design service image"
-              className="w-full md:h-full max-md:aspect-square max-md:order-last object-cover image_hover_bw_to_color"
+              className="w-full md:h-full max-md:aspect-square max-md:order-last object-cover"
             />
           </Reveal>
 

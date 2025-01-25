@@ -114,7 +114,7 @@ const Header = () => {
                     </NavLink>
                     <ul
                       tabIndex={0}
-                      className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow-md top-full"
+                      className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow-md top-[110%]"
                     >
                       {link.subMenu.map((subLink) => (
                         <li key={subLink.id}>
