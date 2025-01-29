@@ -1,5 +1,4 @@
 import {
-  homepage_hero_slide_banner_1,
   homepage_hero_slide_banner_2,
   homepage_hero_slide_banner_3,
   homepage_hero_slide_banner_4,
@@ -11,7 +10,6 @@ import ImageSlideshow from "../ImageSlideshow";
 const HeroSection = () => {
   // hero slideshow images
   const images = [
-    homepage_hero_slide_banner_1,
     homepage_hero_slide_banner_2,
     homepage_hero_slide_banner_3,
     homepage_hero_slide_banner_4,
@@ -25,14 +23,14 @@ const HeroSection = () => {
           {/* hero image slideshow*/}
           <ImageSlideshow images={images} className="w-full h-full" />
           {/* background overlay */}
-          <div className="absolute inset-0 bg-black opacity-20" />
+          <div className="absolute inset-0 bg-black opacity-30" />
           {/*  */}
           <div className="absolute inset-0 flex flex-col justify-center items-center gap-4">
             <HeadingAnimation
               text="Create Spaces That Inspire"
-              className="text-2xl sm:text-4xl lg:text-5xl text-center tracking-wider text-white text-balance"
+              className="text-3xl sm:text-5xl lg:text-7xl text-center tracking-wider text-white text-balance"
             />
-            <div className="lg:h-20"></div>
+            {/* <div className="lg:h-20"></div> */}
           </div>
         </div>
       </section>

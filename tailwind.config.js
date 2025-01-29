@@ -14,9 +14,8 @@ export default {
         accent: "#D4B055",
       },
       fontFamily: {
-        "dm-serif-display": ["DM Serif Display"],
-        "unbounded-variable": ["Unbounded Variable"],
-        inter: ["Inter Variable"],
+        "league-spartan-variable": ["League Spartan Variable"],
+        "inter-variable": ["Inter Variable"],
       },
     },
   },

@@ -24,9 +24,10 @@ export const HomePage = () => {
       <FeaturesSection />
       <AchievementSection />
       <WhyChooseUsSection />
-      {/* <ContactSection /> */}
-      <CTASection title = "Elevate Your Living Experience"
-      subtitle = "From concept to completion, we craft spaces you'll love to live in."/>
+      <CTASection
+        title="Elevate Your Living Experience"
+        subtitle="From concept to completion, we craft spaces you'll love to live in."
+      />
     </>
   );
 };

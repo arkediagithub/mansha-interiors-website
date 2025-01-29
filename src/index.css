@@ -1,18 +1,12 @@
-@import "@fontsource/dm-serif-display";
 @import "@fontsource-variable/inter";
-@import "@fontsource-variable/unbounded";
+@import "@fontsource-variable/league-spartan";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* @theme {
-  --font-unbounded: Unbounded, sans-serif;
-} */
-
 body {
   font-family: "Inter Variable", sans-serif;
-  color: #a7a7a7;
 }
 
 h1,
@@ -21,7 +15,16 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Unbounded Variable", sans-serif;
+  font-family: "League Spartan Variable", sans-serif;
+}
+
+p {
+  font-family: "Inter Variable", sans-serif;
+  color: #6b7280;
+}
+
+button {
+  font-family: "League Spartan Variable", sans-serif;
 }
 
 @layer utilities {

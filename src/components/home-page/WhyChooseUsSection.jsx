@@ -1,5 +1,6 @@
 import { whyChooseUs } from "../../data/whyChooseUs";
 import Reveal from "../Reveal";
+import SectionHeading from "../SectionHeading";
 import SectionWrapper from "../SectionWrapper";
 
 export default function WhyChooseUsSection() {
@@ -7,10 +8,11 @@ export default function WhyChooseUsSection() {
     <>
       <SectionWrapper>
         <Reveal className="w-full">
-          <h2 className="font-unbounded-variable text-2xl md:text-4xl text-center my-2 md:my-4">
+          <SectionHeading className="text-center">
             Why Choose Us?
-          </h2>
+          </SectionHeading>
         </Reveal>
+
         <Reveal>
           <p className="lg:text-lg text-center lg:w-3/4 mx-auto">
             At Mansha Interiors, we believe that a home or office is more than
@@ -27,10 +29,10 @@ export default function WhyChooseUsSection() {
                 <h6 className="text-white text-lg md:text-xl">{idx + 1}</h6>
               </div>
               <div className="rounded-3xl rounded-br-none overflow-hidden px-4 md:px-6 md:py-2 border-4 border-accent">
-                <h3 className="text-lg md:text-xl my-4 max-md:pl-10">
+                <h3 className="text-xl md:text-2xl font-medium my-4 max-md:pl-10">
                   {item.title}
                 </h3>
-                <p className="text-base md:text-lg my-4 text-justify">
+                <p className="text-base md:text-lg -mt-2 mb-2 text-justify">
                   {item.description}
                 </p>
               </div>

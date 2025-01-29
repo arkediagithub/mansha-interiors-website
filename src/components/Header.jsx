@@ -16,10 +16,20 @@ const Header = () => {
       id: randomId(),
       to: "/about",
       label: "About Us",
-      subMenu: [
-        { id: randomId(), to: "/team", label: "Our Team" },
-        { id: randomId(), to: "/faqs", label: "FAQs" },
-      ],
+      // subMenu: [
+      //   { id: randomId(), to: "/team", label: "Our Team" },
+      //   { id: randomId(), to: "/faqs", label: "FAQs" },
+      // ],
+    },
+    // {
+    //   id: randomId(),
+    //   to: "/team",
+    //   label: "Our Team",
+    // },
+    {
+      id: randomId(),
+      to: "/studio",
+      label: "Studio",
     },
     {
       id: randomId(),
@@ -30,6 +40,11 @@ const Header = () => {
       id: randomId(),
       to: "/gallery",
       label: "Design Gallery",
+    },
+    {
+      id: randomId(),
+      to: "/careers",
+      label: "Careers",
     },
     {
       id: randomId(),
@@ -100,7 +115,7 @@ const Header = () => {
 
         {/* desktop menu links */}
         <div className="navbar-center flex-none">
-          <ul className="menu menu-horizontal px-1 gap-2 max-lg:hidden">
+          <ul className="menu menu-horizontal px-1 gap-2 max-lg:hidden text-lg">
             {menuLinks.map((link) =>
               link.subMenu ? (
                 <li key={link.id}>
@@ -108,7 +123,7 @@ const Header = () => {
                     <NavLink
                       to={link.to}
                       tabIndex={0}
-                      className="font-unbounded-variable"
+                      className="font-league-spartan-variable"
                     >
                       {link.label}
                     </NavLink>
@@ -120,7 +135,7 @@ const Header = () => {
                         <li key={subLink.id}>
                           <NavLink
                             to={subLink.to}
-                            className="font-unbounded-variable"
+                            className="font-league-spartan-variable"
                           >
                             {subLink.label}
                           </NavLink>

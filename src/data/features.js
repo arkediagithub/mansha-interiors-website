@@ -5,24 +5,24 @@ export const features = [
     id: randomId(),
     heading: "Interior Design Consultation",
     description:
-      "Our consultation service is the first step to creating the perfect space. We listen to your ideas, understand your needs, and provide expert guidance on design concepts, layouts, and material selections. Whether you have a clear vision or need inspiration, our designers help refine your ideas, ensuring your space reflects your lifestyle, personality, and preferences.",
+      "Our consultation is the first step to your perfect space. We listen to your ideas, understand your needs, and offer expert guidance on design, layouts, and materials. Whether you have a vision or need inspiration, we help refine your ideas to reflect your personality and lifestyle.",
   },
   {
     id: randomId(),
     heading: "Space Planning",
     description:
-      "An ideal space is not just about aesthetics — it’s about functionality and flow. At Mansha Interiors, we analyze your area and design layouts that make the best use of the available space while ensuring comfort and efficiency. Our space planning services are tailored for both small and large areas, transforming even the most challenging spaces into functional and stylish environments.",
+      "Great spaces balance aesthetics, functionality, and flow. At Mansha Interiors, we design layouts that maximize comfort and efficiency. From small rooms to large areas, our tailored plans transform challenging spaces into stylish, functional environments.",
   },
   {
     id: randomId(),
     heading: "Residential & commercial",
     description:
-      "Every space tells a story, and we ensure yours speaks volumes. For residential interiors, we focus on creating warm, inviting homes that align with your family’s lifestyle. For commercial projects, we design interiors that reflect your brand, attract clients, and enhance employee productivity. Whether it’s a contemporary apartment, a luxurious villa, a corporate office, or a retail outlet, we cater to all scales of projects.",
+      "Every space tells a story. We design warm, inviting homes that suit your lifestyle and commercial interiors that enhance your brand and productivity. From luxurious villas to corporate offices, we cater to projects of all scales.",
   },
   {
     id: randomId(),
     heading: "Customised Furniture",
     description:
-      "Furniture is the heart of any interior, and we believe it should be as unique as you. Our custom furniture design services allow you to bring your vision to life, whether it’s a statement piece or a practical solution for your space. We combine premium materials, skilled craftsmanship, and your design preferences to deliver furniture that enhances your interiors.",
+      "Furniture defines interiors, and we make it uniquely yours. Our custom designs combine premium materials, expert craftsmanship, and your vision to create statement pieces or practical solutions that elevate your space.",
   },
 ];

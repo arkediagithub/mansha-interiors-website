@@ -10,7 +10,7 @@ export const contactInfo = [
   {
     id: randomId(),
     title: "Location",
-    description: "Shop 33, 2nd Floor, The Planet Mall, Siliguri",
+    description: "Shop No.9, 2nd Floor, Time Square Building, Siliguri",
     icon: IconMapPin,
     type: "text",
     linkTo: "",
@@ -26,10 +26,10 @@ export const contactInfo = [
   {
     id: randomId(),
     title: "Email",
-    description: "mi@manshainteriors.com",
+    description: "work@manshainteriors.com",
     icon: IconMail,
     type: "link",
-    linkTo: "mailto:mi@manshainteriors.com",
+    linkTo: "mailto:work@manshainteriors.com",
   },
   {
     id: randomId(),

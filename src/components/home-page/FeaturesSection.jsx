@@ -1,6 +1,7 @@
 import { features } from "../../data/features";
 import SectionWrapper from "../SectionWrapper";
 import Reveal from "../Reveal";
+import SectionHeading from "../SectionHeading";
 
 const FeaturesSection = () => {
   return (
@@ -12,10 +13,10 @@ const FeaturesSection = () => {
           </p>
         </Reveal>
         <Reveal>
-          <h2 className="text-2xl sm:text-4xl tracking-wider my-3 md:my-6">
+          <SectionHeading>
             Designing Future Rooms <br />
             One at a Time
-          </h2>
+          </SectionHeading>
         </Reveal>
       </div>
 

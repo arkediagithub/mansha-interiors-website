@@ -13,6 +13,8 @@ import ProjectsPage from "./pages/ProjectsPage";
 import AboutUsPage from "./pages/AboutUsPage";
 import FaqsPage from "./pages/FaqsPage";
 import GalleryPage from "./pages/GalleryPage";
+import CareersPage from "./pages/CareersPage";
+import StudioPage from "./pages/StudioPage";
 
 const router = createBrowserRouter([
   {
@@ -24,28 +26,37 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: "projects",
-        element: <ProjectsPage />,
-      },
-      {
-        path: "gallery",
-        element: <GalleryPage />,
-      },
-      {
-        path: "services",
-        element: <ServicesPage />,
+        path: "about",
+        element: <AboutUsPage />,
       },
       {
         path: "team",
         element: <TeamPage />,
       },
       {
-        path: "contact",
-        element: <ContactPage />,
+        path: "studio",
+        element: <StudioPage />,
       },
       {
-        path: "about",
-        element: <AboutUsPage />,
+        path: "services",
+        element: <ServicesPage />,
+      },
+      {
+        path: "gallery",
+        element: <GalleryPage />,
+      },
+      {
+        path: "projects",
+        element: <ProjectsPage />,
+      },
+      {
+        path: "careers",
+        element: <CareersPage />,
+      },
+
+      {
+        path: "contact",
+        element: <ContactPage />,
       },
       {
         path: "faqs",

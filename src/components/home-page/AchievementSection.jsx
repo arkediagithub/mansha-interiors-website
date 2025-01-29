@@ -2,6 +2,7 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
 import gsap from "gsap";
 import StatsCounter from "../StatsCounter";
+import SectionHeading from "../SectionHeading";
 
 const AchievementSection = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -36,9 +37,7 @@ const AchievementSection = () => {
           <p className="text-accent text-xl font-semibold md:font-bold">
             TRUSTED EXPERIENCE
           </p>
-          <h2 className="text-2xl sm:text-4xl tracking-wider my-3 md:my-6">
-            Modern Design Solutions
-          </h2>
+          <SectionHeading>Modern Design Solutions</SectionHeading>
         </div>
 
         <div
