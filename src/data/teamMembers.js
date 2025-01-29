@@ -11,6 +11,9 @@ import ArtiBansalImage from "../assets/teams/Arti_Bansal.jpg";
 import MoumitaDharBhowmikImage from "../assets/teams/Moumita_dhar_bhowmik .jpg";
 import RitikshaGuptaImage from "../assets/teams/Ritiksha_Gupta.jpg";
 import RiyaTibrewalImage from "../assets/teams/Riya_Tibrewal.jpg";
+import AnikSarkarImage from "../assets/teams/Anik-Sarkar.png";
+import AmitPaulImage from "../assets/teams/Amit-Paul.png";
+import SujitSarkarImage from "../assets/teams/Sujit-Sarkar.png";
 
 export const founder = {
   name: "Gautam Agarwal",
@@ -26,14 +29,32 @@ export const teamMembers = [
   {
     id: randomId(),
     name: "Rahul Paul",
-    designation: "Site Supervisor, 7+ Years of Experience",
+    designation: "Site Supervisor",
+    experience: "7+ Years of Experience",
     image: RahulPaulImage,
     details: "",
   },
   {
     id: randomId(),
+    name: "Sujit Sarkar",
+    designation: "Site Supervisor",
+    experience: "7+ Years of Experience",
+    image: SujitSarkarImage,
+    details: "",
+  },
+  {
+    id: randomId(),
+    name: "Amit Paul",
+    designation: "Site Supervisor",
+    experience: "10+ Years of Experience",
+    image: AmitPaulImage,
+    details: "",
+  },
+  {
+    id: randomId(),
     name: "Arti Bansal",
-    designation: "Interior Designer, 1+ Years of Experience",
+    designation: "Interior Designer",
+    experience: "1+ Years of Experience",
     image: ArtiBansalImage,
     details:
       "Creativity, when truly desired, can be found within oneself. Many artists express themselves uniquely within their chosen fields. In the realm of interior design, I strive to express my own creative vision.",
@@ -41,7 +62,8 @@ export const teamMembers = [
   {
     id: randomId(),
     name: "Moumita Dhar",
-    designation: "Interior Designer, 1+ Years of Experience",
+    designation: "Interior Designer",
+    experience: "1+ Years of Experience",
     image: MoumitaDharBhowmikImage,
     details:
       "Hello! My name is Moumita Dhar, and I currently live in Siliguri. I am passionate about interior designing, which is both my profession and my creative outlet. In addition to my career, I absolutely love traveling. Exploring new places, experiencing different cultures and spending time with my loved ones and always look forward to what's next. Thank you for getting to know a little about me!",
@@ -49,7 +71,8 @@ export const teamMembers = [
   {
     id: randomId(),
     name: "Riya Tibrewal",
-    designation: "Interior Designer, 2.5+ Years of Experience",
+    designation: "Interior Designer",
+    experience: "2.5+ Years of Experience",
     image: RiyaTibrewalImage,
     details:
       "I am a professional interior designer with two years of experience dedicated to designing spaces that are both functional and visually appealing tailored to individual needs and lifestyles.",
@@ -57,10 +80,19 @@ export const teamMembers = [
   {
     id: randomId(),
     name: "Ritiksha Gupta",
-    designation: "Interior Designer, 1+ Years of Experience",
+    designation: "Interior Designer",
+    experience: "1+ Years of Experience",
     image: RitikshaGuptaImage,
     details:
       "Hi ! my name is Ritiksha Gupta. As a passionate and creative individual , I am enthusiastic about translating my love for design into a fulfilling career as an Interior designer.",
+  },
+  {
+    id: randomId(),
+    name: "Anik Sarkar",
+    designation: "Receptionist",
+    experience: "1+ Years of Experience",
+    image: AnikSarkarImage,
+    details: "",
   },
   // {
   //   id: randomId(),

@@ -1,4 +1,5 @@
 import { teamMembers } from "../../data/teamMembers";
+import FlipCard from "../FlipCard";
 import Reveal from "../Reveal";
 import SectionWrapper from "../SectionWrapper";
 
@@ -22,26 +23,34 @@ const TeamSection = () => {
       </div>
 
       {/* team list */}
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
-        {teamMembers.map((member) => (
-          <div key={member.id} className="image_hover_bw_to_color">
-            <Reveal>
-              <img
-                src={member.image}
-                alt={member.name}
-                className="mask mask-squircle w-full h-full object-cover object-center"
-              />
-              <div className="text-center mt-2 lg:mt-4">
-                <p className="text-lg font-unbounded-variable">{member.name}</p>
-                <p className="text-sm font-medium uppercase tracking-widest">
-                  {member.designation}
-                </p>
-                {/* <p className="text-sm font-medium tracking-widest">
-                  {member.details}
-                </p> */}
-              </div>
-            </Reveal>
-          </div>
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+        {teamMembers.map((teamMember, index) => (
+          <>
+            {/* <div key={teamMember.id} className="image_hover_bw_to_color">
+              <Reveal>
+                <img
+                  src={teamMember.image}
+                  alt={teamMember.name}
+                  className="mask mask-squircle w-full h-full object-cover object-center"
+                />
+                <div className="text-center mt-2 lg:mt-4">
+                  <p className="text-lg font-unbounded-variable">
+                    {teamMember.name}
+                  </p>
+                  <p className="text-sm font-medium uppercase tracking-widest">
+                    {teamMember.designation}
+                  </p>
+                </div>
+              </Reveal>
+            </div> */}
+            <FlipCard
+              key={teamMember.id}
+              imageSrc={teamMember.image}
+              imageAlt={`Gallery Image ${index + 1}`}
+              title={teamMember.name}
+              description={teamMember.designation}
+            />
+          </>
         ))}
       </div>
     </SectionWrapper>
