@@ -130,7 +130,7 @@ const CareerPageForm = () => {
               Resume or Portfolio file input
             </span>
             <span className="text-xs text-gray-600">
-              It is a Pro feature, isn&apos;t available for free.
+              It is a Pro feature, isn&apos;t available in free plan.
             </span>
             <input
               type="file"

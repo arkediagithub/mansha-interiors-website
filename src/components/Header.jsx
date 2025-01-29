@@ -66,8 +66,8 @@ const Header = () => {
     },
     {
       id: randomId(),
-      to: "/team",
-      label: "Our Team",
+      to: "/studio",
+      label: "Studio",
     },
     {
       id: randomId(),
@@ -78,6 +78,11 @@ const Header = () => {
       id: randomId(),
       to: "/gallery",
       label: "Design Gallery",
+    },
+    {
+      id: randomId(),
+      to: "/careers",
+      label: "Careers",
     },
     {
       id: randomId(),
