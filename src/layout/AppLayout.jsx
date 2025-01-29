@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ScrollToTop from "../components/ScrollToTop";
+import FloatingSocialIcons from "../components/FloatingSocialIcons";
 
 const AppLayout = () => {
   return (
@@ -10,6 +11,7 @@ const AppLayout = () => {
       <main className="flex-1 overflow-hidden">
         <Outlet />
         <ScrollToTop />
+        <FloatingSocialIcons />
       </main>
       <Footer />
     </div>
