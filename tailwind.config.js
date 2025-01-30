@@ -16,6 +16,7 @@ export default {
       fontFamily: {
         "league-spartan-variable": ["League Spartan Variable"],
         "inter-variable": ["Inter Variable"],
+        "alegreya-sans": ["Alegreya Sans"],
       },
     },
   },
