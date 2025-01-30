@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import MetaTags from "../components/MetaTags";
 import PageHeader from "../components/PageHeader";
 import StudioGallery from "../components/studio-page/StudioGallery";
@@ -11,6 +12,13 @@ import {
 } from "../images";
 
 const StudioPage = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
   // studio gallery images
   const images = [
     homepage_hero_slide_banner_1,
@@ -24,7 +32,7 @@ const StudioPage = () => {
     homepage_hero_slide_banner_4,
     homepage_hero_slide_banner_5,
   ];
-  
+
   return (
     <>
       <MetaTags title="About Us | Mansha Interior" />

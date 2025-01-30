@@ -1,10 +1,17 @@
+import { useEffect } from "react";
 import { IconArrowUpRight } from "@tabler/icons-react";
 import CareerPageSection from "../components/career-page/CareerPageSection";
 import MetaTags from "../components/MetaTags";
 import PageHeader from "../components/PageHeader";
-// import SectionWrapper from "../components/SectionWrapper";
 
 const CareersPage = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
   const careerSectionContent = {
     heading: "Join the Mansha Interiors Team!",
     content:
