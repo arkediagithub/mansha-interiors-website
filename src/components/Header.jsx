@@ -110,7 +110,7 @@ const Header = () => {
         transition: "transform 400ms ease",
       }}
     >
-      <div className="navbar bg-base-100 px-4">
+      <div className="navbar bg-base-100 px-5">
         {/* logo */}
         <div className="flex-1">
           <Link to="/">

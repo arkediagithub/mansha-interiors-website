@@ -18,6 +18,7 @@ const AboutUsPage = () => {
     <>
       <MetaTags title="About Us | Mansha Interior" />
       <PageHeader title={aboutUsContent.title} />
+      
       <AboutPageIntro />
 
       <FounderSection />

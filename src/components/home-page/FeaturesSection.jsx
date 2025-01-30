@@ -8,8 +8,11 @@ const FeaturesSection = () => {
     <SectionWrapper id="home_page_feature_section" className="md:mt-32">
       <div id="features_headings">
         <Reveal>
-          <p className="text-accent text-xl font-semibold md:font-bold">
+          {/* <p className="text-accent text-xl font-semibold md:font-bold">
             OUR SERVICES
+          </p> */}
+          <p className="text-accent text-xl font-semibold md:font-bold">
+            What We Do
           </p>
         </Reveal>
         <Reveal>

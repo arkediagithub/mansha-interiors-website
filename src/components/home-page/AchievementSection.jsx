@@ -10,8 +10,11 @@ const AchievementSection = () => {
     >
       <div className="container mx-auto flex flex-col lg:flex-row gap-4 md:gap-8">
         <div id="achievementHeading" className="lg:max-w-lg">
-          <p className="text-accent text-xl font-semibold md:font-bold">
+          {/* <p className="text-accent text-xl font-semibold md:font-bold">
             TRUSTED EXPERIENCE
+          </p> */}
+          <p className="text-accent text-xl font-semibold md:font-bold">
+            Trusted Experience
           </p>
           <SectionHeading>Modern Design Solutions</SectionHeading>
         </div>
@@ -25,15 +28,14 @@ const AchievementSection = () => {
               <div className="stat-value text-accent">
                 <StatsCounter
                   minimum={0}
-                  maximum={4}
+                  maximum={13}
                   delay={100}
-                  suffix="M"
                   className="lg:text-5xl"
                 />
               </div>
-              <div className="stat-desc whitespace-normal">
-                SQUARE FEET BUILT
-              </div>
+              <p className="stat-desc whitespace-normal text-base text-gray-300">
+                Years of Experience
+              </p>
             </div>
           </div>
 
@@ -42,13 +44,16 @@ const AchievementSection = () => {
               <div className="stat-value text-accent">
                 <StatsCounter
                   minimum={0}
-                  maximum={100}
-                  delay={20}
+                  maximum={1000}
+                  incrementBy={10}
+                  delay={10}
                   suffix="+"
                   className="lg:text-5xl"
                 />
               </div>
-              <div className="stat-desc whitespace-normal">HAPPY CLIENTS</div>
+              <p className="stat-desc whitespace-normal text-base text-gray-300">
+                Happy Clients
+              </p>
             </div>
           </div>
 
@@ -57,12 +62,14 @@ const AchievementSection = () => {
               <div className="stat-value text-accent">
                 <StatsCounter
                   minimum={0}
-                  maximum={98}
-                  delay={20}
+                  maximum={20}
+                  delay={100}
                   className="lg:text-5xl"
                 />
               </div>
-              <div className="stat-desc whitespace-normal">AWARDS RECEIVED</div>
+              <p className="stat-desc whitespace-normal text-base text-gray-300">
+                Sq Ft Worked (Lakh)
+              </p>
             </div>
           </div>
 
@@ -71,14 +78,14 @@ const AchievementSection = () => {
               <div className="stat-value text-accent">
                 <StatsCounter
                   minimum={0}
-                  maximum={105}
-                  delay={20}
+                  maximum={50}
+                  delay={30}
                   className="lg:text-5xl"
                 />
               </div>
-              <div className="stat-desc whitespace-normal">
-                WORK IN PROGRESS
-              </div>
+              <p className="stat-desc whitespace-normal text-base text-gray-300">
+                Work in Progress
+              </p>
             </div>
           </div>
         </div>

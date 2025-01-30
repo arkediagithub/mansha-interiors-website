@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ScrollToTop from "../components/ScrollToTop";
 import FloatingSocialIcons from "../components/FloatingSocialIcons";
+import RandomQuote from "../components/RandomQuote";
 
 const AppLayout = () => {
   return (
@@ -13,6 +14,7 @@ const AppLayout = () => {
         <ScrollToTop />
         <FloatingSocialIcons />
       </main>
+      <RandomQuote />
       <Footer />
     </div>
   );

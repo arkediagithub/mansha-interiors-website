@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "motion/react";
+import { twMerge } from "tailwind-merge";
 
 const StatsCounter = ({
   minimum = 0,
@@ -38,7 +39,7 @@ const StatsCounter = ({
   return (
     <motion.div
       ref={ref}
-      className={className}
+      className={twMerge("font-league-spartan-variable", className)}
       initial="hidden"
       animate={controls}
       variants={{
