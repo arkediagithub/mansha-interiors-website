@@ -27,10 +27,10 @@ const HeroSection = () => {
           {/* hero heading */}
           <div className="absolute inset-0 flex flex-col justify-center items-center gap-4">
             <TextAnimation
-              by="word"
-              text={`Create Spaces That Inspire`}
+              by="character"
+              text={`Welcome to Mansha`}
               className="text-3xl sm:text-5xl lg:text-7xl text-center tracking-wider text-white text-balance"
-              staggerChildren={0.05}
+              staggerChildren={0.03}
             />
           </div>
         </div>
