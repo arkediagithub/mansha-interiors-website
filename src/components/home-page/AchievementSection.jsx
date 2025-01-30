@@ -1,31 +1,7 @@
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/all";
-import gsap from "gsap";
 import StatsCounter from "../StatsCounter";
 import SectionHeading from "../SectionHeading";
 
 const AchievementSection = () => {
-  gsap.registerPlugin(ScrollTrigger);
-
-  useGSAP(() => {
-    const tl = gsap.timeline();
-    tl.from(".achievement", {
-      innerText: 0,
-      duration: 5,
-      stagger: 0.3,
-      snap: {
-        innerText: 1,
-      },
-      scrollTrigger: {
-        trigger: "#achievementSection",
-        start: "top 90%",
-        end: "top 50%",
-        scrub: true,
-        once: true,
-      },
-    });
-  }, []);
-
   return (
     <section
       data-theme="dark"

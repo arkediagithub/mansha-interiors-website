@@ -4,8 +4,8 @@ import {
   homepage_hero_slide_banner_4,
   homepage_hero_slide_banner_5,
 } from "../../images.js";
-import HeadingAnimation from "../HeadingAnimation";
 import ImageSlideshow from "../ImageSlideshow";
+import TextAnimation from "../TextAnimation.jsx";
 
 const HeroSection = () => {
   // hero slideshow images
@@ -26,11 +26,12 @@ const HeroSection = () => {
           <div className="absolute inset-0 bg-black opacity-30" />
           {/*  */}
           <div className="absolute inset-0 flex flex-col justify-center items-center gap-4">
-            <HeadingAnimation
-              text="Create Spaces That Inspire"
+            <TextAnimation
+              by="word"
+              text={`Create Spaces That Inspire`}
               className="text-3xl sm:text-5xl lg:text-7xl text-center tracking-wider text-white text-balance"
+              staggerChildren={0.05}
             />
-            {/* <div className="lg:h-20"></div> */}
           </div>
         </div>
       </section>
