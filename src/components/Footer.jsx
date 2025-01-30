@@ -15,16 +15,18 @@ const Footer = () => {
           </div>
           <ul className="text-base">
             <li>
-              <strong className="font-unbounded-variable">Email: </strong>
+              <strong className="font-league-spartan-variable text-lg">
+                Email:{" "}
+              </strong>
               <Link
-                to={"mailto:mi@manshainteriors.com"}
+                to={"mailto:work@manshainteriors.com"}
                 className="hover:text-accent"
               >
-                mi@manshainteriors.com
+                work@manshainteriors.com
               </Link>
             </li>
             <li>
-              <strong className="font-unbounded-variable">
+              <strong className="font-league-spartan-variable text-lg">
                 Phone Number:{" "}
               </strong>
               <Link to={"tel:+919609930991"} className="hover:text-accent">
@@ -36,12 +38,16 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <strong className="font-unbounded-variable">Timing: </strong>
+              <strong className="font-league-spartan-variable text-lg">
+                Timing:{" "}
+              </strong>
               <span>Monday-Friday: 10AM-7PM</span>
             </li>
             <li>
-              <strong className="font-unbounded-variable">Location: </strong>
-              <span>Shop 33, 2nd Floor, The Planet Mall, Siliguri</span>
+              <strong className="font-league-spartan-variable text-lg">
+                Location:{" "}
+              </strong>
+              <span>Shop No.9, 2nd Floor, Time Square Building, Siliguri</span>
             </li>
           </ul>
         </aside>
