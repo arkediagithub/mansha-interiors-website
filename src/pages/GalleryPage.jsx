@@ -36,7 +36,7 @@ export default function GalleryPage() {
   return (
     <>
       <MetaTags title="Gallery | Mansha Interior" />
-      <PageHeader title="Our Gallery" />
+      <PageHeader title="Designed by Us" />
       <ProjectTags
         tags={tagOptions}
         selectedTags={selectedTags}
