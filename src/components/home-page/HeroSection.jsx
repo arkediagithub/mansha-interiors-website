@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   homepage_hero_slide_banner_2,
   homepage_hero_slide_banner_3,
@@ -24,6 +24,16 @@ const HeroSection = () => {
   const [headingText, setHeadingText] = useState(
     heroHeadingText[Math.floor(Math.random() * heroHeadingText.length)]
   );
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setHeadingText(
+        heroHeadingText[Math.floor(Math.random() * heroHeadingText.length)]
+      );
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   // hero slideshow images
   const images = [

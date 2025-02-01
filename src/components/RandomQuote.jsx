@@ -1,5 +1,5 @@
+import { useEffect, useState } from "react";
 import { IconQuote } from "@tabler/icons-react";
-import { useState } from "react";
 import { twMerge } from "tailwind-merge";
 
 const quotes = [
@@ -50,10 +50,13 @@ export default function RandomQuote() {
     quotes[Math.floor(Math.random() * quotes.length)]
   );
 
-  //   const getNewQuote = () => {
-  //     const randomIndex = Math.floor(Math.random() * quotes.length);
-  //     setQuote(quotes[randomIndex]);
-  //   };
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setQuote(quotes[Math.floor(Math.random() * quotes.length)]);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div
@@ -66,12 +69,6 @@ export default function RandomQuote() {
         <IconQuote stroke={2} />
       </p>
       <p className="text-sm text-gray-400 mt-2">- {quote.author}</p>
-      {/* <button
-        onClick={getNewQuote}
-        className="mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all"
-      >
-        New Quote
-      </button> */}
     </div>
   );
 }
