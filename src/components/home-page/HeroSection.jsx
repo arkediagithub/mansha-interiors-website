@@ -30,7 +30,7 @@ const HeroSection = () => {
       setHeadingText(
         heroHeadingText[Math.floor(Math.random() * heroHeadingText.length)]
       );
-    }, 5000);
+    }, 10000);
 
     return () => clearInterval(interval);
   }, []);

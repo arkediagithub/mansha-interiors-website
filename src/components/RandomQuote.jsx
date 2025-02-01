@@ -53,7 +53,7 @@ export default function RandomQuote() {
   useEffect(() => {
     const interval = setInterval(() => {
       setQuote(quotes[Math.floor(Math.random() * quotes.length)]);
-    }, 5000);
+    }, 10000);
 
     return () => clearInterval(interval);
   }, []);

@@ -1,5 +1,6 @@
 import TextReveal from "./TextReveal";
 import { homepage_hero_slide_banner_5 } from "../images";
+import TextAnimation from "./TextAnimation";
 
 const PageHeader = ({ title, subtitle }) => {
   return (
@@ -15,9 +16,15 @@ const PageHeader = ({ title, subtitle }) => {
         </div>
         <div className="absolute inset-0 bg-black opacity-40"></div>
         <TextReveal>
-          <h1 className="text-4xl sm:text-5xl lg:text-7xl text-center text-balance text-white">
+          {/* <h1 className="text-4xl sm:text-5xl lg:text-7xl text-center text-balance text-white">
             {title}
-          </h1>
+          </h1> */}
+          <TextAnimation
+            by="word"
+            text={title}
+            className="text-3xl sm:text-5xl lg:text-7xl text-center tracking-wider text-white text-balance"
+            staggerChildren={0.05}
+          />
           {subtitle && (
             <p className="text-xl lg:text-2xl text-center text-balance text-white mt-4">
               {subtitle}
