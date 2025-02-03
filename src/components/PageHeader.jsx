@@ -5,7 +5,7 @@ import TextAnimation from "./TextAnimation";
 const PageHeader = ({ title, subtitle }) => {
   return (
     <>
-      <section className="mt-14 w-full h-[40vh] sm:h-[60vh] lg:h-[80vh] flex items-center justify-center relative">
+      <section className="mt-20 w-full h-[30vh] sm:h-[50vh] lg:h-[70vh] flex items-center justify-center relative">
         {/* background images */}
         <div className="absolute inset-0">
           <img

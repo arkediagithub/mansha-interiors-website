@@ -15,6 +15,7 @@ import FaqsPage from "./pages/FaqsPage";
 import GalleryPage from "./pages/GalleryPage";
 import CareersPage from "./pages/CareersPage";
 import StudioPage from "./pages/StudioPage";
+import TestimonialsPage from "./pages/TestimonialsPage";
 
 const router = createBrowserRouter([
   {
@@ -50,10 +51,13 @@ const router = createBrowserRouter([
         element: <ProjectsPage />,
       },
       {
+        path: "testimonials",
+        element: <TestimonialsPage />,
+      },
+      {
         path: "careers",
         element: <CareersPage />,
       },
-
       {
         path: "contact",
         element: <ContactPage />,

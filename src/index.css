@@ -1,6 +1,7 @@
 @import "@fontsource-variable/inter";
 @import "@fontsource-variable/league-spartan";
 @import "@fontsource/alegreya-sans";
+@import '@fontsource/marck-script';
 
 @tailwind base;
 @tailwind components;

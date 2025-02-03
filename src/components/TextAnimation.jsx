@@ -41,7 +41,7 @@ const TextAnimation = ({
       break;
   }
 
-  console.log("segments", segments);
+  // console.log("segments", segments);
 
   return (
     <>

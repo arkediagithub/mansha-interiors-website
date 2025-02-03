@@ -43,6 +43,11 @@ const Header = () => {
     },
     {
       id: randomId(),
+      to: "/testimonials",
+      label: "Testimonials",
+    },
+    {
+      id: randomId(),
       to: "/careers",
       label: "Careers",
     },

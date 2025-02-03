@@ -17,6 +17,7 @@ export default {
         "league-spartan-variable": ["League Spartan Variable"],
         "inter-variable": ["Inter Variable"],
         "alegreya-sans": ["Alegreya Sans"],
+        "marck-script": ["Marck Script"],
       },
     },
   },
