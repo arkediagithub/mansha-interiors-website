@@ -63,7 +63,7 @@ export default function RandomQuote() {
       data-theme="dark"
       className={twMerge("flex flex-col items-center justify-center h-36 px-4")}
     >
-      <p className="text-lg font-medium text-center text-gray-300 flex gap-1">
+      <p className="text-lg font-medium text-center text-roti-400 flex gap-1">
         <IconQuote stroke={2} className="-rotate-180" />
         {quote.text}
         <IconQuote stroke={2} />
