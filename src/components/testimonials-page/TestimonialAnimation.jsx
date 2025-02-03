@@ -9,17 +9,22 @@ const TestimonialAnimation = ({ paragraph }) => {
     offset: ["start 0.9", "start 0.25"],
   });
 
+  // Split the paragraph into individual words
   const words = paragraph.split(" ");
+
+  // Split the paragraph into individual characters
+  const characters = paragraph.split("");
 
   return (
     <>
       <motion.p
         ref={element}
-        className="text-2xl md:text-4xl lg:text-4xl font-marck-script flex flex-wrap gap-x-2 gap-y-1 relative"
+        className="text-2xl md:text-4xl lg:text-4xl font-marck-script relative text-gray-600"
       >
-        {words.map((word, i) => {
-          const start = i / words.length;
-          const end = start + 1 / words.length;
+        <span className="text-5xl mr-2">&quot;</span>
+        {/* {words.map((word, i) => {
+          const start = i / words.length; // Calculate start position for animation
+          const end = start + 1 / words.length; // Calculate end position for animation
 
           return (
             <>
@@ -28,7 +33,19 @@ const TestimonialAnimation = ({ paragraph }) => {
               </Word>
             </>
           );
+        })} */}
+
+        {characters.map((char, i) => {
+          const start = i / characters.length; // Calculate start position for animation
+          const end = start + 1 / characters.length; // Calculate end position for animation
+
+          return (
+            <Character key={i} range={[start, end]} progress={scrollYProgress}>
+              {char}
+            </Character>
+          );
         })}
+        <span className="text-5xl ml-2">&quot;</span>
       </motion.p>
     </>
   );
@@ -38,5 +55,10 @@ export default TestimonialAnimation;
 
 const Word = ({ children, range, progress }) => {
   const opacity = useTransform(progress, range, [0.3, 1]);
+  return <motion.span style={{ opacity }}>{children}</motion.span>;
+};
+
+const Character = ({ children, range, progress }) => {
+  const opacity = useTransform(progress, range, [0.3, 1]); // Animate opacity based on scroll progress
   return <motion.span style={{ opacity }}>{children}</motion.span>;
 };
