@@ -1,6 +1,5 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
-import { IconQuote } from "@tabler/icons-react";
 
 const TestimonialAnimation = ({ paragraph }) => {
   const element = useRef(null);
@@ -16,7 +15,7 @@ const TestimonialAnimation = ({ paragraph }) => {
     <>
       <motion.p
         ref={element}
-        className="text-2xl md:text-4xl lg:text-5xl font-marck-script flex flex-wrap gap-x-2 gap-y-1 relative"
+        className="text-2xl md:text-4xl lg:text-4xl font-marck-script flex flex-wrap gap-x-2 gap-y-1 relative"
       >
         {words.map((word, i) => {
           const start = i / words.length;
@@ -30,10 +29,6 @@ const TestimonialAnimation = ({ paragraph }) => {
             </>
           );
         })}
-        <IconQuote
-          // style={{ transform: "rotateY(180deg)" }}
-          className="absolute w-20 md:w-28 h-20 md:h-28 -top-8 -left-8 opacity-30 text-accent"
-        />
       </motion.p>
     </>
   );

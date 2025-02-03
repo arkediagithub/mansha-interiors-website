@@ -30,6 +30,7 @@ const AchievementSection = () => {
                   minimum={0}
                   maximum={13}
                   delay={100}
+                  suffix="+"
                   className="lg:text-5xl"
                 />
               </div>
@@ -62,8 +63,9 @@ const AchievementSection = () => {
               <div className="stat-value text-accent">
                 <StatsCounter
                   minimum={0}
-                  maximum={20}
-                  delay={100}
+                  maximum={5}
+                  delay={200}
+                  prefix="~"
                   className="lg:text-5xl"
                 />
               </div>
@@ -80,6 +82,7 @@ const AchievementSection = () => {
                   minimum={0}
                   maximum={50}
                   delay={30}
+                  suffix="+"
                   className="lg:text-5xl"
                 />
               </div>
