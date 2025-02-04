@@ -191,7 +191,7 @@ const Header = () => {
 
           <ul className="menu bg-base-200 text-base-content min-h-full w-80 p-4">
             <li className="pointer-events-none">
-              <Link to="/" className="hover:bg-transparent">
+              <Link to="/" className="hover:bg-transparent pt-0">
                 <img src={logo} alt="logo" className="w-16 aspect-square" />
               </Link>
             </li>
