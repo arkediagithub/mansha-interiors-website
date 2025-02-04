@@ -52,15 +52,15 @@ const Footer = () => {
           </ul>
         </aside>
 
-        <nav>
+        <nav className="text-white">
           <h6 className="footer-title opacity-80 text-white tracking-widest">
             Services
           </h6>
-          <p className="text-base">Space Planning</p>
-          <p className="text-base">Interior Design</p>
-          <p className="text-base">Architecture Design</p>
-          <p className="text-base">Design Consultation</p>
-          <p className="text-base">Renovation and Remodeling</p>
+          <p className="text-base text-gray-400">Space Planning</p>
+          <p className="text-base text-gray-400">Interior Design</p>
+          <p className="text-base text-gray-400">Architecture Design</p>
+          <p className="text-base text-gray-400">Design Consultation</p>
+          <p className="text-base text-gray-400">Renovation and Remodeling</p>
         </nav>
 
         <nav>
