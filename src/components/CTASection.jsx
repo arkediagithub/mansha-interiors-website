@@ -16,7 +16,7 @@ const CTASection = ({
           <Link
             to="/contact"
             role="button"
-            className="mt-8 btn btn-neutral md:text-lg font-normal font-unbounded-variable bg-accent text-black border-accent hover:text-white"
+            className="mt-8 btn btn-neutral md:text-lg font-normal font-unbounded-variable bg-accent text-black border-accent hover:text-white text-base lg:text-lg"
           >
             {buttonText}
           </Link>

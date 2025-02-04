@@ -1,11 +1,19 @@
+import { useEffect } from "react";
+import { testimonials } from "../data/testimonials";
 import MetaTags from "../components/MetaTags";
 import PageHeader from "../components/PageHeader";
 import SectionParagraph from "../components/SectionParagraph";
 import SectionWrapper from "../components/SectionWrapper";
 import Testimonial from "../components/testimonials-page/Testimonial";
-import { testimonials } from "../data/testimonials";
 
 export default function TestimonialsPage() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
   return (
     <>
       <MetaTags title="Testimonials | Mansha Interior" />

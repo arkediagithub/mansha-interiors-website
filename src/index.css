@@ -1,7 +1,7 @@
 @import "@fontsource-variable/inter";
 @import "@fontsource-variable/league-spartan";
 @import "@fontsource/alegreya-sans";
-@import '@fontsource/marck-script';
+@import "@fontsource/marck-script";
 
 @tailwind base;
 @tailwind components;
@@ -27,6 +27,15 @@ p {
 
 button {
   font-family: "League Spartan Variable", sans-serif;
+  font-size: 1rem; 
+  line-height: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  button {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
 }
 
 @layer utilities {
