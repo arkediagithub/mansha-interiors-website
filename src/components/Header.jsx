@@ -1,7 +1,7 @@
 import { IconMenuDeep } from "@tabler/icons-react";
 import { Link, NavLink } from "react-router-dom";
 import { randomId, useHeadroom } from "@mantine/hooks";
-import logo from "../assets/logo.png";
+import logo from "../assets/mansha-logo-w-no-bg.png";
 
 const Header = () => {
   const pinned = useHeadroom({ fixedAt: 120 });

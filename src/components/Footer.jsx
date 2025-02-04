@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.png";
 import { socialMedia } from "../data/socialMedia";
+import logo from "../assets/mansha-logo-w-white-bg.png";
 
 const Footer = () => {
   return (
@@ -10,7 +10,7 @@ const Footer = () => {
         className="footer bg-base-200 text-base-content p-4 sm:p-6 md:p-8 lg:p-12"
       >
         <aside className="max-w-md">
-          <div className="w-[70px] h-[70px]">
+          <div className="w-16 lg:w-20 aspect-square rounded-full overflow-hidden">
             <img src={logo} alt="logo" className="h-full w-full" />
           </div>
           <ul className="text-base">
