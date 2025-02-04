@@ -5,7 +5,7 @@ import TextAnimation from "./TextAnimation";
 const PageHeader = ({ title, subtitle }) => {
   return (
     <>
-      <section className="mt-20 w-full h-[30vh] sm:h-[50vh] lg:h-[70vh] flex items-center justify-center relative">
+      <section className="mt-20 w-full h-[30vh] sm:h-[50vh] lg:h-[70vh] flex items-center justify-center relative p-4">
         {/* background images */}
         <div className="absolute inset-0">
           <img
@@ -16,9 +16,6 @@ const PageHeader = ({ title, subtitle }) => {
         </div>
         <div className="absolute inset-0 bg-black opacity-40"></div>
         <TextReveal>
-          {/* <h1 className="text-4xl sm:text-5xl lg:text-7xl text-center text-balance text-white">
-            {title}
-          </h1> */}
           <TextAnimation
             by="word"
             text={title}

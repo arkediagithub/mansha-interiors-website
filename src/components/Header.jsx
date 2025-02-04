@@ -190,11 +190,16 @@ const Header = () => {
           ></label>
 
           <ul className="menu bg-base-200 text-base-content min-h-full w-80 p-4">
+            <li className="pointer-events-none">
+              <Link to="/" className="hover:bg-transparent">
+                <img src={logo} alt="logo" className="w-16 aspect-square" />
+              </Link>
+            </li>
             {mobileMenuLinks.map((link) => (
-              <li key={link.id} className="rounded-full overflow-hidden">
+              <li key={link.id} className="rounded-full overflow-hidden mb-1">
                 <NavLink
                   to={link.to}
-                  className="font-unbounded-variable"
+                  className="font-league-spartan-variable text-lg"
                   onClick={closeDrawer}
                 >
                   {link.label}
