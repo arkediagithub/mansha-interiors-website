@@ -64,7 +64,7 @@ const FlipCard = ({
           </div>
           <h1 className="text-xl font-bold text-white">{title}</h1>
           <h2 className="text-lg font-medium text-white">{subtitle}</h2>
-          <p className="mt-1 border-t border-t-gray-200 py-4 text-base lg:text-lg font-medium leading-normal text-gray-100 text-center">
+          <p className="mt-1 border-t border-t-gray-200 py-4 lg:text-lg font-medium leading-normal text-gray-100 text-center">
             {description}
           </p>
         </div>
