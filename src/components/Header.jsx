@@ -26,11 +26,11 @@ const Header = () => {
     //   to: "/team",
     //   label: "Our Team",
     // },
-    {
-      id: randomId(),
-      to: "/studio",
-      label: "Studio",
-    },
+    // {
+    //   id: randomId(),
+    //   to: "/studio",
+    //   label: "Studio",
+    // },
     {
       id: randomId(),
       to: "/services",
@@ -69,11 +69,11 @@ const Header = () => {
       to: "/about",
       label: "About Us",
     },
-    {
-      id: randomId(),
-      to: "/studio",
-      label: "Studio",
-    },
+    // {
+    //   id: randomId(),
+    //   to: "/studio",
+    //   label: "Studio",
+    // },
     {
       id: randomId(),
       to: "/services",
@@ -83,6 +83,11 @@ const Header = () => {
       id: randomId(),
       to: "/gallery",
       label: "Design Gallery",
+    },
+    {
+      id: randomId(),
+      to: "/testimonials",
+      label: "Testimonials",
     },
     {
       id: randomId(),
