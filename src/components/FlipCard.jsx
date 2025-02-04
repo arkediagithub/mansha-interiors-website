@@ -26,7 +26,7 @@ const FlipCard = ({
   return (
     <div
       className={twMerge(
-        "group w-full h-72 lg:h-96 [perspective:1000px]",
+        "group w-full h-72 lg:h-80 xl:h-[400px] [perspective:1000px]",
         className
       )}
     >
@@ -55,7 +55,7 @@ const FlipCard = ({
             self[1]
           )}
         >
-          <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-white mb-4 max-md:hidden">
+          <div className="w-24 aspect-square rounded-full overflow-hidden border-4 border-white mb-4 max-md:hidden">
             <img
               src={imageSrc}
               alt={imageAlt}

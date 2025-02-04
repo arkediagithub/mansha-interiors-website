@@ -9,11 +9,11 @@ export default function FounderSection() {
     <>
       <SectionWrapper id="home_page_about_section" className="md:my-32">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16">
-          <Reveal className="w-full md:order-2 rounded-2xl overflow-hidden">
+          <Reveal className="w-full md:order-2">
             <img
               src={founder.image}
               alt="interior design service image"
-              className="w-full md:h-full max-md:aspect-square max-md:order-last object-cover"
+              className="w-full md:h-full max-md:aspect-square max-md:order-last object-cover rounded-2xl hover:rounded-none transition-all duration-300"
             />
           </Reveal>
 
