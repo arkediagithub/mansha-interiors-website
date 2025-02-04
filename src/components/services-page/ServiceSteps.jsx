@@ -17,7 +17,7 @@ const ServiceSteps = () => {
           {serviceSteps.map((serviceStep, i) => (
             <TextReveal key={i} classNames="relative">
               <div className="relative">
-                <div className="block px-6 py-4 lg:p-8 border border-b-4 border-l-4 border-b-roti-400 border-l-roti-400 text-black rounded-bl-3xl rounded-tr-3xl relative">
+                <div className="block px-6 py-4 border border-b-4 border-l-4 border-b-roti-400 border-l-roti-400 text-black rounded-bl-3xl rounded-tr-3xl relative">
                   <h2 className="text-xl md:text-2xl font-medium my-4">{serviceStep.heading}</h2>
                   <p className="text-base md:text-lg -mt-2 mb-2 text-justify">{serviceStep.description}</p>
                 </div>

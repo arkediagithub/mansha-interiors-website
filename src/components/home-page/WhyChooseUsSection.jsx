@@ -25,7 +25,7 @@ export default function WhyChooseUsSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8 my-6 md:my-10 lg:my-16">
           {whyChooseUs.map((item, i) => (
             <div key={item.id} className="relative w-full">
-              <div className="rounded-bl-3xl rounded-tr-3xl overflow-hidden px-6 py-4 lg:p-8 border border-b-4 border-l-4 border-b-roti-400 border-l-roti-400 h-full">
+              <div className="rounded-bl-3xl rounded-tr-3xl overflow-hidden px-6 py-4 border border-b-4 border-l-4 border-b-roti-400 border-l-roti-400 h-full">
                 <h3 className="text-xl md:text-2xl font-medium my-4">
                   {item.title}
                 </h3>
