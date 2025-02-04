@@ -23,7 +23,7 @@ const ServiceSection = () => {
           </SectionHeading>
         </Reveal>
 
-        {/* new service section tabs */}
+        {/* tab list */}
         <div className="image-navigation mt-8 flex w-full justify-center">
           <div className="mb-6 lg:mb-10 flex flex-col md:flex-row gap-4 md:gap-6">
             {servicesTabs.map((tab, index) => (
@@ -37,7 +37,7 @@ const ServiceSection = () => {
               >
                 {/* <div>{tab.icon}</div> */}
                 <h2 className="text-xl sm:text-2xl mb-2 text-black">
-                  {tab.heading}
+                  {tab.title}
                 </h2>
                 <p className="md:text-lg text-black">{tab.description}</p>
               </button>
@@ -45,21 +45,31 @@ const ServiceSection = () => {
           </div>
         </div>
 
-        <div className="rounded-lg border">
-          {servicesDetails.map(
-            (image) =>
-              activeImage === image.imageNumber && (
+        {/* tab list content */}
+        {servicesDetails.map(
+          (service) =>
+            activeImage === service.imageNumber && (
+              <motion.div
+                key={service.id}
+                className="p-6 rounded-2xl border"
+                initial={{ opacity: 0, y: 100 }}
+                animate={{ opacity: 1, y: 0 }}
+              >
+                <h2 className="text-xl lg:text-3xl mb-4">{service.title}</h2>
+                <p className="text-base lg:text-lg mb-6">
+                  {service.description}
+                </p>
                 <motion.img
-                  key={image.imageNumber}
-                  src={image.imageSource}
-                  alt={`Image ${image.imageNumber}`}
-                  initial={{ opacity: 0, y: 100 }}
-                  animate={{ opacity: 1, y: 0 }}
+                  key={service.id}
+                  src={service.imageSource}
+                  alt={`Image ${service.imageNumber}`}
+                  // initial={{ opacity: 0, y: 100 }}
+                  // animate={{ opacity: 1, y: 0 }}
                   className="w-full aspect-[16/9] rounded-lg object-cover"
                 />
-              )
-          )}
-        </div>
+              </motion.div>
+            )
+        )}
       </SectionWrapper>
     </>
   );
