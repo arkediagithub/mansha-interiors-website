@@ -25,6 +25,107 @@ export const founder = {
   image: FounderImage,
 };
 
+// export const teamMembers = [
+//   {
+//     id: randomId(),
+//     name: "Rahul Paul",
+//     designation: "Site Supervisor",
+//     experience: "7+ Years of Experience",
+//     image: RahulPaulImage,
+//     description: "",
+//   },
+//   {
+//     id: randomId(),
+//     name: "Sujit Sarkar",
+//     designation: "Site Supervisor",
+//     experience: "7+ Years of Experience",
+//     image: SujitSarkarImage,
+//     description: "",
+//   },
+//   {
+//     id: randomId(),
+//     name: "Amit Paul",
+//     designation: "Site Supervisor",
+//     experience: "10+ Years of Experience",
+//     image: AmitPaulImage,
+//     description: "",
+//   },
+//   {
+//     id: randomId(),
+//     name: "Arti Bansal",
+//     designation: "Interior Designer",
+//     experience: "1+ Years of Experience",
+//     image: ArtiBansalImage,
+//     description:
+//       "Creativity, when truly desired, can be found within oneself. Many artists express themselves uniquely within their chosen fields. In the realm of interior design, I strive to express my own creative vision.",
+//   },
+//   {
+//     id: randomId(),
+//     name: "Moumita Dhar",
+//     designation: "Interior Designer",
+//     experience: "1+ Years of Experience",
+//     image: MoumitaDharBhowmikImage,
+//     description:
+//       "Hello! My name is Moumita Dhar, and I currently live in Siliguri. I am passionate about interior designing, which is both my profession and my creative outlet. In addition to my career, I absolutely love traveling. Exploring new places, experiencing different cultures and spending time with my loved ones and always look forward to what's next. Thank you for getting to know a little about me!",
+//   },
+//   {
+//     id: randomId(),
+//     name: "Riya Tibrewal",
+//     designation: "Interior Designer",
+//     experience: "2.5+ Years of Experience",
+//     image: RiyaTibrewalImage,
+//     description:
+//       "I am a professional interior designer with two years of experience dedicated to designing spaces that are both functional and visually appealing tailored to individual needs and lifestyles.",
+//   },
+//   {
+//     id: randomId(),
+//     name: "Ritiksha Gupta",
+//     designation: "Interior Designer",
+//     experience: "1+ Years of Experience",
+//     image: RitikshaGuptaImage,
+//     description:
+//       "Hi ! my name is Ritiksha Gupta. As a passionate and creative individual , I am enthusiastic about translating my love for design into a fulfilling career as an Interior designer.",
+//   },
+//   {
+//     id: randomId(),
+//     name: "Anik Sarkar",
+//     designation: "Receptionist",
+//     experience: "1+ Years of Experience",
+//     image: AnikSarkarImage,
+//     description: "",
+//   },
+//   // {
+//   //   id: randomId(),
+//   //   name: "Pragya Giya",
+//   //   designation: "",
+//   //   image: PragyaGiyaImage,
+//   // },
+//   // {
+//   //   id: randomId(),
+//   //   name: "Mayuri Agarwal",
+//   //   designation: "",
+//   //   image: MayuriAgarwalImage,
+//   // },
+//   // {
+//   //   id: randomId(),
+//   //   name: "Nikita",
+//   //   designation: "",
+//   //   image: NikitaImage,
+//   // },
+//   // {
+//   //   id: randomId(),
+//   //   name: "Ravin Yadav",
+//   //   designation: "",
+//   //   image: RavinYadavImage,
+//   // },
+//   // {
+//   //   id: randomId(),
+//   //   name: "Ruchika Agarwal",
+//   //   designation: "",
+//   //   image: RuchikaAgarwalImage,
+//   // },
+// ];
+
 export const teamMembers = [
   {
     id: randomId(),
@@ -32,7 +133,8 @@ export const teamMembers = [
     designation: "Site Supervisor",
     experience: "7+ Years of Experience",
     image: RahulPaulImage,
-    details: "",
+    description:
+      "Dedicated and experienced site supervisor ensuring smooth operations and project success with strong leadership skills.",
   },
   {
     id: randomId(),
@@ -40,7 +142,8 @@ export const teamMembers = [
     designation: "Site Supervisor",
     experience: "7+ Years of Experience",
     image: SujitSarkarImage,
-    details: "",
+    description:
+      "Passionate about construction management, focused on quality control and timely project completion with efficiency.",
   },
   {
     id: randomId(),
@@ -48,7 +151,8 @@ export const teamMembers = [
     designation: "Site Supervisor",
     experience: "10+ Years of Experience",
     image: AmitPaulImage,
-    details: "",
+    description:
+      "Ensuring site safety, efficiency, and high-quality work standards while managing teams and overseeing projects.",
   },
   {
     id: randomId(),
@@ -56,8 +160,8 @@ export const teamMembers = [
     designation: "Interior Designer",
     experience: "1+ Years of Experience",
     image: ArtiBansalImage,
-    details:
-      "Creativity, when truly desired, can be found within oneself. Many artists express themselves uniquely within their chosen fields. In the realm of interior design, I strive to express my own creative vision.",
+    description:
+      "I find inspiration in creativity and design spaces that reflect individuality, style, and functionality seamlessly.",
   },
   {
     id: randomId(),
@@ -65,8 +169,8 @@ export const teamMembers = [
     designation: "Interior Designer",
     experience: "1+ Years of Experience",
     image: MoumitaDharBhowmikImage,
-    details:
-      "Hello! My name is Moumita Dhar, and I currently live in Siliguri. I am passionate about interior designing, which is both my profession and my creative outlet. In addition to my career, I absolutely love traveling. Exploring new places, experiencing different cultures and spending time with my loved ones and always look forward to what's next. Thank you for getting to know a little about me!",
+    description:
+      "A passionate designer from Siliguri who loves traveling and crafting unique spaces that inspire and comfort.",
   },
   {
     id: randomId(),
@@ -74,8 +178,8 @@ export const teamMembers = [
     designation: "Interior Designer",
     experience: "2.5+ Years of Experience",
     image: RiyaTibrewalImage,
-    details:
-      "I am a professional interior designer with two years of experience dedicated to designing spaces that are both functional and visually appealing tailored to individual needs and lifestyles.",
+    description:
+      "With experience in creating aesthetic, functional spaces, I focus on personalized interior solutions for clients.",
   },
   {
     id: randomId(),
@@ -83,8 +187,8 @@ export const teamMembers = [
     designation: "Interior Designer",
     experience: "1+ Years of Experience",
     image: RitikshaGuptaImage,
-    details:
-      "Hi ! my name is Ritiksha Gupta. As a passionate and creative individual , I am enthusiastic about translating my love for design into a fulfilling career as an Interior designer.",
+    description:
+      "Creative and passionate about interiors, I aim to bring imaginative designs to life with a unique perspective.",
   },
   {
     id: randomId(),
@@ -92,36 +196,7 @@ export const teamMembers = [
     designation: "Receptionist",
     experience: "1+ Years of Experience",
     image: AnikSarkarImage,
-    details: "",
+    description:
+      "Friendly and professional receptionist, ensuring smooth communication, client interaction, and efficient front-desk management.",
   },
-  // {
-  //   id: randomId(),
-  //   name: "Pragya Giya",
-  //   designation: "",
-  //   image: PragyaGiyaImage,
-  // },
-  // {
-  //   id: randomId(),
-  //   name: "Mayuri Agarwal",
-  //   designation: "",
-  //   image: MayuriAgarwalImage,
-  // },
-  // {
-  //   id: randomId(),
-  //   name: "Nikita",
-  //   designation: "",
-  //   image: NikitaImage,
-  // },
-  // {
-  //   id: randomId(),
-  //   name: "Ravin Yadav",
-  //   designation: "",
-  //   image: RavinYadavImage,
-  // },
-  // {
-  //   id: randomId(),
-  //   name: "Ruchika Agarwal",
-  //   designation: "",
-  //   image: RuchikaAgarwalImage,
-  // },
 ];
