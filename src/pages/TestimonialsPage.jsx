@@ -9,7 +9,7 @@ export default function TestimonialsPage() {
   return (
     <>
       <MetaTags title="Testimonials | Mansha Interior" />
-      <PageHeader title="What Our Clients Say" />
+      <PageHeader title="Voices of Satisfaction & Trust" />
 
       <SectionWrapper className="md:-mt-6">
         <SectionParagraph className="text-center lg:w-3/4 lg:mx-auto lg:text-xl">

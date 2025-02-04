@@ -18,7 +18,7 @@ const CareerPageSection = ({
               rowReverse ? "md:flex-row-reverse" : "md:flex-row"
             } gap-8 lg:gap-16`}
           >
-            <Reveal className="w-full md:w-1/2">
+            <Reveal className="w-full md:w-1/2 rounded-2xl hover:rounded-none duration-300">
               <img
                 src={section.image}
                 alt="interior design service image"
@@ -53,7 +53,7 @@ const CareerPageSection = ({
               </Reveal>
 
               <button
-                className="btn btn-outline w-fit text-base md:text-lg"
+                className="btn btn-outline w-full md:w-fit text-base md:text-lg"
                 onClick={() =>
                   document.getElementById("career_page_form_modal").showModal()
                 }

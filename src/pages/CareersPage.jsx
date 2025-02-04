@@ -24,7 +24,7 @@ const CareersPage = () => {
   return (
     <>
       <MetaTags title="Contact Us | Mansha Interior" />
-      <PageHeader title="Want to Work with Us!" />
+      <PageHeader title="Grow with Us, Shape the Future" />
       <CareerPageSection section={careerSectionContent} />
     </>
   );

@@ -15,7 +15,7 @@ const ContactPage = () => {
   return (
     <>
       <MetaTags title="Contact Us | Mansha Interior" />
-      <PageHeader title="Contact Us" />
+      <PageHeader title="Reach Out & Let’s Create Something Amazing" />
       <ContactPageSection />
       <MapSection />
     </>
