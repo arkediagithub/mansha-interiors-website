@@ -25,17 +25,17 @@ const StudioGallery = () => {
   ];
 
   return (
-    <SectionWrapper>
+    <SectionWrapper className="mt-10 lg:my-20">
       <SectionHeading className="text-center">
         Inside Our Creative Hub
       </SectionHeading>
-      <SectionParagraph className="my-6 lg:my-10 text-center">
+      <SectionParagraph className="text-center mb-6 lg:mb-10">
         Step into our thoughtfully designed workspace, where innovation meets
         functionality. From vibrant design studios to collaborative meeting
         areas, every corner is crafted to inspire creativity and productivity.
         Experience the perfect blend of aesthetics and efficiency in our office!
       </SectionParagraph>
-      
+
       {/* photo gallery */}
       <div className="container grid grid-cols-2 gap-4 mx-auto md:grid-cols-4">
         {images.map((image, index) => {
