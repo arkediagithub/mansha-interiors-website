@@ -103,14 +103,12 @@ const Footer = () => {
 
       <div
         data-theme="dark"
-        className="footer footer-center bg-base-200 text-base-content p-4 border-t"
+        className="footer footer-center bg-base-200 p-4 border-t"
       >
-        <aside>
-          <p>
-            Copyright © {new Date().getFullYear()} - All right reserved by
-            Mansha Interiors
-          </p>
-        </aside>
+        <p className="text-gray-400 text-base lg:text-lg">
+          Copyright © {new Date().getFullYear()} - All right reserved by Mansha
+          Interiors
+        </p>
       </div>
     </footer>
   );
