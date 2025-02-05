@@ -47,15 +47,21 @@ const StudioGallery = () => {
               : "min-h-48";
 
           return (
-            <img
+            <div
               key={index}
-              src={image}
-              alt={`Gallery Image ${index + 1}`}
               className={twMerge(
-                "w-full h-full shadow-sm bg-gray-500 aspect-square object-cover rounded-2xl",
+                "w-full h-full rounded-2xl overflow-hidden group",
                 specialClasses
               )}
-            />
+            >
+              <img
+                src={image}
+                alt={`Gallery Image ${index + 1}`}
+                className={twMerge(
+                  "w-full h-full shadow-sm bg-gray-500 aspect-square group-hover:scale-105 object-cover duration-500"
+                )}
+              />
+            </div>
           );
         })}
       </div>
