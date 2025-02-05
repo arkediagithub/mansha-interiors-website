@@ -20,11 +20,11 @@ export default function FloatingSocialIcons() {
   const [isOpen, setIsOpen] = useState(true);
 
   return (
-    <div className="fixed top-1/2 -translate-y-1/2 left-0 z-50 flex flex-col items-end space-y-2">
+    <div className="fixed top-1/2 -translate-y-1/2 left-0 z-50 flex flex-col items-end space-y-0">
       {/* Toggle Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="bg-black text-white p-2 lg:p-3 rounded-r-lg shadow-lg hover:bg-gray-800 transition"
+        className="bg-black text-white p-2 lg:p-3 shadow-lg hover:bg-gray-800 transition"
       >
         {isOpen ? (
           <IconChevronLeft className="text-xl" />
@@ -36,7 +36,7 @@ export default function FloatingSocialIcons() {
       {/* Social Icons */}
       <div
         className={twMerge(
-          "flex flex-col space-y-1 transition-all duration-300",
+          "flex flex-col space-y-0 transition-all duration-300",
           isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
         )}
       >
@@ -44,7 +44,7 @@ export default function FloatingSocialIcons() {
           to={FloatingSocialLinks.whatsapp}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-green-500 p-2 lg:p-3 flex items-center justify-center rounded-r-lg shadow-lg hover:bg-green-600 transition"
+          className="bg-green-500 p-2 lg:p-3 flex items-center justify-center shadow-lg hover:bg-green-600 transition"
         >
           <IconBrandWhatsapp className="text-white text-xl" />
         </Link>
@@ -52,7 +52,7 @@ export default function FloatingSocialIcons() {
           to={FloatingSocialLinks.instagram}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-gradient-to-r from-pink-500 to-orange-400 p-2 lg:p-3 flex items-center justify-center rounded-r-lg shadow-lg hover:opacity-80 transition"
+          className="bg-gradient-to-r from-pink-500 to-orange-400 p-2 lg:p-3 flex items-center justify-center shadow-lg hover:opacity-80 transition"
         >
           <IconBrandInstagram className="text-white text-xl" />
         </Link>
@@ -60,13 +60,13 @@ export default function FloatingSocialIcons() {
           to={FloatingSocialLinks.facebook}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-blue-600 p-2 lg:p-3 flex items-center justify-center rounded-r-lg shadow-lg hover:bg-blue-700 transition"
+          className="bg-blue-600 p-2 lg:p-3 flex items-center justify-center shadow-lg hover:bg-blue-700 transition"
         >
           <IconBrandFacebook className="text-white text-xl" />
         </Link>
         <Link
           to={FloatingSocialLinks.phone}
-          className="bg-green-600 p-2 lg:p-3 flex items-center justify-center rounded-r-lg shadow-lg hover:bg-green-700 transition"
+          className="bg-green-600 p-2 lg:p-3 flex items-center justify-center shadow-lg hover:bg-green-700 transition"
         >
           <IconPhone className="text-white text-xl" />
         </Link>
