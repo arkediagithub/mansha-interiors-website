@@ -16,12 +16,18 @@ const ServiceSteps = () => {
         <div className="mt-8 grid grid-cols-1 gap-2 md:gap-6 md:grid-cols-2 lg:grid-cols-3">
           {serviceSteps.map((serviceStep, i) => (
             <TextReveal key={i} classNames="relative">
-              <div className="relative">
+              <div className="relative group">
+                {/* content */}
                 <div className="block px-6 py-4 border border-b-4 border-l-4 border-b-roti-400 border-l-roti-400 text-black rounded-bl-3xl rounded-tr-3xl relative">
-                  <h2 className="text-xl md:text-2xl font-medium my-4">{serviceStep.heading}</h2>
-                  <p className="text-base md:text-lg -mt-2 mb-2 text-justify">{serviceStep.description}</p>
+                  <h2 className="text-xl md:text-2xl font-medium my-4">
+                    {serviceStep.heading}
+                  </h2>
+                  <p className="text-base md:text-lg -mt-2 mb-2 text-justify">
+                    {serviceStep.description}
+                  </p>
                 </div>
-                <div className="absolute bottom-0 right-2 opacity-20">
+                {/* number */}
+                <div className="absolute bottom-0 right-2 opacity-20 group-hover:opacity-50 duration-500">
                   <span className="text-roti-500 text-7xl lg:text-[112px] font-semibold font-league-spartan-variable">
                     {i + 1}
                   </span>

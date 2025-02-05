@@ -35,7 +35,6 @@ const ServiceSection = () => {
                   activeImage === index + 1 ? "bg-roti-100" : "bg-transparent"
                 )}
               >
-                {/* <div>{tab.icon}</div> */}
                 <h2 className="text-xl sm:text-2xl mb-2 text-black">
                   {tab.title}
                 </h2>
@@ -59,14 +58,31 @@ const ServiceSection = () => {
                 <p className="text-base lg:text-lg mb-6">
                   {service.description}
                 </p>
-                <motion.img
-                  key={service.id}
+                {/* <img
                   src={service.imageSource}
                   alt={`Image ${service.imageNumber}`}
-                  // initial={{ opacity: 0, y: 100 }}
-                  // animate={{ opacity: 1, y: 0 }}
                   className="w-full aspect-[16/9] rounded-lg object-cover"
-                />
+                /> */}
+                {/* before after image */}
+                <div className="diff aspect-[16/9] lg:aspect-[18/9]">
+                  {/* after */}
+                  <div className="diff-item-1">
+                    <img
+                      src={service.imageAfter}
+                      alt={`Image ${service.imageNumber}`}
+                      className="rounded-lg object-cover"
+                    />
+                  </div>
+                  {/* before */}
+                  <div className="diff-item-2">
+                    <img
+                      src={service.imageBefore}
+                      alt={`Image ${service.imageNumber}`}
+                      className="rounded-lg object-cover"
+                    />
+                  </div>
+                  <div className="diff-resizer"></div>
+                </div>
               </motion.div>
             )
         )}
