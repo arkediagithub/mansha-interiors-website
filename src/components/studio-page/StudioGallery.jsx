@@ -41,9 +41,9 @@ const StudioGallery = () => {
         {images.map((image, index) => {
           const specialClasses =
             index === 0
-              ? "col-span-2 row-span-2 min-h-96 md:col-start-3 md:row-start-1"
+              ? "md:col-start-1 md:row-start-1 col-span-2 row-span-2 min-h-96"
               : index === images.length - 1
-              ? "col-span-2 row-span-2 min-h-96 md:col-start-1 md:row-start-3"
+              ? "md:col-start-3 md:row-start-3 col-span-2 row-span-2 min-h-96"
               : "min-h-48";
 
           return (
