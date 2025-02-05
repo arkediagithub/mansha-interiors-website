@@ -15,7 +15,7 @@ const AboutSection = () => {
             <img
               src={homepage_hero_slide_banner_1}
               alt="interior design service image"
-              className="h-64 sm:h-96 md:h-[450px] w-full max-md:order-last object-fill rounded-2xl hover:rounded-none transition-all duration-300"
+              className="h-64 sm:h-96 md:h-[450px] w-full max-md:order-last object-fill rounded-2xl"
             />
           </Reveal>
 

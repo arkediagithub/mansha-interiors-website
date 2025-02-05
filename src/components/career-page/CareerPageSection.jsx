@@ -18,7 +18,7 @@ const CareerPageSection = ({
               rowReverse ? "md:flex-row-reverse" : "md:flex-row"
             } gap-8 lg:gap-16`}
           >
-            <Reveal className="w-full md:w-1/2 rounded-2xl hover:rounded-none duration-300">
+            <Reveal className="w-full md:w-1/2 rounded-2xl">
               <img
                 src={section.image}
                 alt="interior design service image"

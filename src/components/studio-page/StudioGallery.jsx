@@ -52,7 +52,7 @@ const StudioGallery = () => {
               src={image}
               alt={`Gallery Image ${index + 1}`}
               className={twMerge(
-                "w-full h-full rounded shadow-sm bg-gray-500 aspect-square object-cover",
+                "w-full h-full shadow-sm bg-gray-500 aspect-square object-cover rounded-2xl",
                 specialClasses
               )}
             />
