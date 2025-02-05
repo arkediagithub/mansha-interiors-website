@@ -6,11 +6,11 @@ const TestimonialAnimation = ({ paragraph }) => {
 
   const { scrollYProgress } = useScroll({
     target: element,
-    offset: ["start 0.9", "start 0.25"],
+    offset: ["start 0.9", "start 0.3"],
   });
 
   // Split the paragraph into individual words
-  const words = paragraph.split(" ");
+  // const words = paragraph.split(" ");
 
   // Split the paragraph into individual characters
   const characters = paragraph.split("");
@@ -53,10 +53,10 @@ const TestimonialAnimation = ({ paragraph }) => {
 
 export default TestimonialAnimation;
 
-const Word = ({ children, range, progress }) => {
-  const opacity = useTransform(progress, range, [0.3, 1]);
-  return <motion.span style={{ opacity }}>{children}</motion.span>;
-};
+// const Word = ({ children, range, progress }) => {
+//   const opacity = useTransform(progress, range, [0.3, 1]);
+//   return <motion.span style={{ opacity }}>{children}</motion.span>;
+// };
 
 const Character = ({ children, range, progress }) => {
   const opacity = useTransform(progress, range, [0.3, 1]); // Animate opacity based on scroll progress
