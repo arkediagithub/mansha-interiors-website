@@ -1,33 +1,39 @@
 import { Link } from "react-router-dom";
 import MetaTags from "../components/MetaTags";
+import pageNotFoundImage from "../assets/404image.svg";
+import SectionWrapper from "../components/SectionWrapper";
 
 const NotFoundPage = () => {
   return (
     <>
-      <MetaTags title="Mansha Interior | 404 | Page Not Found" />
-      <div className="flex h-screen flex-col bg-white">
-        <img
-          src="https://plus.unsplash.com/premium_photo-1670360414483-64e6d9ba9038?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt=""
-          className="h-[40vh] w-full object-cover"
-        />
+      <MetaTags title="404 - Page Not Found | Mansha Interior" />
+      <SectionWrapper className="">
+        <div className="h-[85vh] grid grid-cols-1 lg:grid-cols-2 place-content-center gap-8 lg:gap-0">
+          <img
+            src={pageNotFoundImage}
+            alt="page not found image"
+            className="w-full object-cover lg:order-2 pointer-events-none"
+          />
 
-        <div className=" flex-1flex items-center justify-center">
-          <div className="mx-auto max-w-xl px-4 py-8 text-center">
-            <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              We can&apos;t find that page.
+          <div className="flex flex-col justify-center gap-4 lg:pr-20">
+            <h1 className="text-3xl md:text-5xl  font-semibold m-0 p-0 text-roti-300">
+              Something is not right...
             </h1>
-
-            <p className="my-4 text-gray-500">
-              Try searching again, or return home to start from the beginning.
+            <p className="text-xl text-gray-300">
+              Page you are trying to open does not exist. You may have mistyped
+              the address, or the page has been moved to another URL. If you
+              think this is an error contact support.
             </p>
-
-            <Link to="/" role="button" className="btn btn-primary">
+            <Link
+              to="/"
+              role="button"
+              className="btn btn-outline text-lg lg:w-fit"
+            >
               Go Back Home
             </Link>
           </div>
         </div>
-      </div>
+      </SectionWrapper>
     </>
   );
 };

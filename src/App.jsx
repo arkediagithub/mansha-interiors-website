@@ -16,6 +16,9 @@ import GalleryPage from "./pages/GalleryPage";
 import CareersPage from "./pages/CareersPage";
 import StudioPage from "./pages/StudioPage";
 import TestimonialsPage from "./pages/TestimonialsPage";
+import ArchitecturePage from "./pages/ArchitecturePage";
+import InteriorPage from "./pages/InteriorPage";
+import CommercialPage from "./pages/CommercialPage";
 
 const router = createBrowserRouter([
   {
@@ -41,6 +44,18 @@ const router = createBrowserRouter([
       {
         path: "services",
         element: <ServicesPage />,
+      },
+      {
+        path: "architecture",
+        element: <ArchitecturePage />,
+      },
+      {
+        path: "interior",
+        element: <InteriorPage />,
+      },
+      {
+        path: "commercial",
+        element: <CommercialPage />,
       },
       {
         path: "gallery",

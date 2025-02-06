@@ -16,10 +16,6 @@ const Header = () => {
       id: randomId(),
       to: "/about",
       label: "About Us",
-      // subMenu: [
-      //   { id: randomId(), to: "/team", label: "Our Team" },
-      //   { id: randomId(), to: "/faqs", label: "FAQs" },
-      // ],
     },
     // {
     //   id: randomId(),
@@ -35,6 +31,11 @@ const Header = () => {
       id: randomId(),
       to: "/services",
       label: "Services",
+      subMenu: [
+        { id: randomId(), to: "/architecture", label: "Architecture" },
+        { id: randomId(), to: "/interior", label: "Interior" },
+        { id: randomId(), to: "/commercial", label: "Commercial" },
+      ],
     },
     {
       id: randomId(),
@@ -135,22 +136,21 @@ const Header = () => {
               link.subMenu ? (
                 <li key={link.id}>
                   <div className="dropdown dropdown-hover dropdown-end rounded-full">
-                    <NavLink
-                      to={link.to}
+                    <div
                       tabIndex={0}
-                      className="font-league-spartan-variable"
+                      className="font-league-spartan-variable cursor-default"
                     >
                       {link.label}
-                    </NavLink>
+                    </div>
                     <ul
                       tabIndex={0}
-                      className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow-md top-[110%]"
+                      className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow-md top-[101%]"
                     >
                       {link.subMenu.map((subLink) => (
                         <li key={subLink.id}>
                           <NavLink
                             to={subLink.to}
-                            className="font-league-spartan-variable"
+                            className="font-league-spartan-variable text-lg"
                           >
                             {subLink.label}
                           </NavLink>
