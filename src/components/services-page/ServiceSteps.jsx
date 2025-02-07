@@ -27,7 +27,7 @@ const ServiceSteps = () => {
                   </p>
                 </div>
                 {/* number */}
-                <div className="absolute bottom-0 right-2 opacity-20 group-hover:opacity-50 duration-500">
+                <div className="absolute bottom-0 right-2 opacity-20 group-hover:opacity-40 duration-500">
                   <span className="text-roti-500 text-7xl lg:text-[112px] font-semibold font-league-spartan-variable">
                     {i + 1}
                   </span>

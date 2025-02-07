@@ -138,7 +138,7 @@ const Header = () => {
             {menuLinks.map((link) =>
               link.subMenu ? (
                 <li key={link.id}>
-                  <div className="dropdown dropdown-hover dropdown-end rounded-full">
+                  <div className="dropdown dropdown-hover dropdown-bottom rounded-full">
                     <div
                       tabIndex={0}
                       className="font-league-spartan-variable cursor-default"
@@ -147,13 +147,13 @@ const Header = () => {
                     </div>
                     <ul
                       tabIndex={0}
-                      className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow-md top-[101%]"
+                      className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow-md -left-[10%]"
                     >
                       {link.subMenu.map((subLink) => (
                         <li key={subLink.id}>
                           <NavLink
                             to={subLink.to}
-                            className="font-league-spartan-variable text-lg"
+                            className="font-league-spartan-variable text-lg rounded-full"
                           >
                             {subLink.label}
                           </NavLink>
