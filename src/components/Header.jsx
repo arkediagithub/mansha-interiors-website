@@ -75,11 +75,14 @@ const Header = () => {
     //   to: "/studio",
     //   label: "Studio",
     // },
-    {
-      id: randomId(),
-      to: "/services",
-      label: "Services",
-    },
+    // {
+    //   id: randomId(),
+    //   to: "/services",
+    //   label: "Services",
+    // },
+    { id: randomId(), to: "/architecture", label: "Architecture Services" },
+    { id: randomId(), to: "/interior", label: "Interior Services" },
+    { id: randomId(), to: "/commercial", label: "Commercial Services" },
     {
       id: randomId(),
       to: "/gallery",
