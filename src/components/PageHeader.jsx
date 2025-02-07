@@ -2,14 +2,14 @@ import TextReveal from "./TextReveal";
 import { homepage_hero_slide_banner_5 } from "../images";
 import TextAnimation from "./TextAnimation";
 
-const PageHeader = ({ title, subtitle }) => {
+const PageHeader = ({ image, title = "title", subtitle = "subtitle" }) => {
   return (
     <>
       <section className="mt-20 w-full h-[30vh] sm:h-[50vh] lg:h-[70vh] flex items-center justify-center relative p-4">
         {/* background images */}
         <div className="absolute inset-0">
           <img
-            src={homepage_hero_slide_banner_5}
+            src={image || homepage_hero_slide_banner_5}
             alt="background image"
             className="w-full h-full object-cover"
           />
