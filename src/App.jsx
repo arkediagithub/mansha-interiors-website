@@ -16,9 +16,9 @@ import GalleryPage from "./pages/GalleryPage";
 import CareersPage from "./pages/CareersPage";
 import StudioPage from "./pages/StudioPage";
 import TestimonialsPage from "./pages/TestimonialsPage";
-import ArchitecturePage from "./pages/ArchitecturePage";
-import InteriorPage from "./pages/InteriorPage";
+import ResidentialPage from "./pages/ResidentialPage";
 import CommercialPage from "./pages/CommercialPage";
+import ArchitecturePage from "./pages/ArchitecturePage";
 
 const router = createBrowserRouter([
   {
@@ -46,16 +46,16 @@ const router = createBrowserRouter([
         element: <ServicesPage />,
       },
       {
-        path: "architecture",
-        element: <ArchitecturePage />,
-      },
-      {
-        path: "interior",
-        element: <InteriorPage />,
+        path: "residential",
+        element: <ResidentialPage />,
       },
       {
         path: "commercial",
         element: <CommercialPage />,
+      },
+      {
+        path: "architecture",
+        element: <ArchitecturePage />,
       },
       {
         path: "gallery",

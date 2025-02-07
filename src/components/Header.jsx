@@ -32,9 +32,9 @@ const Header = () => {
       to: "/services",
       label: "Services",
       subMenu: [
-        { id: randomId(), to: "/architecture", label: "Architecture" },
-        { id: randomId(), to: "/interior", label: "Interior" },
+        { id: randomId(), to: "/residential", label: "Residential" },
         { id: randomId(), to: "/commercial", label: "Commercial" },
+        { id: randomId(), to: "/architecture", label: "Architecture" },
       ],
     },
     {
@@ -80,9 +80,9 @@ const Header = () => {
     //   to: "/services",
     //   label: "Services",
     // },
-    { id: randomId(), to: "/architecture", label: "Architecture Services" },
-    { id: randomId(), to: "/interior", label: "Interior Services" },
+    { id: randomId(), to: "/residential", label: "Residential Services" },
     { id: randomId(), to: "/commercial", label: "Commercial Services" },
+    { id: randomId(), to: "/architecture", label: "Architecture Services" },
     {
       id: randomId(),
       to: "/gallery",
