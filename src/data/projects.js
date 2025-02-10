@@ -1,6 +1,5 @@
 import { randomId } from "@mantine/hooks";
 
-import VastuOfficeImg from "../assets/projects/vastu-office.png";
 import ShivJiImg from "../assets/projects/shiv-ji.png";
 import UdayAgarwalImg from "../assets/projects/uday-agarwal.png";
 import DrAmitImg from "../assets/projects/dr-amit.png";
@@ -38,18 +37,36 @@ export const projects = [
   },
   {
     id: randomId(),
-    name: "Vastu Office",
-    image: VastuOfficeImg,
+    name: "Shanky Airen",
+    image:
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739186792/Master_op_V1_v9lcl5.jpg",
+    tags: ["residential"],
+    type: "Residential",
+    otherImages: [
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739186792/Master_op_V1_v9lcl5.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739186792/Master_op_V2_orahu0.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739186818/1_tswx3e.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739186817/5_ngaoaw.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739186812/3_viv7os.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739186796/6_ytwjvn.jpg",
+    ],
+  },
+  {
+    id: randomId(),
+    name: "Sanjay Agarwal",
+    image:
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739186906/Camera.001_jx6us2.jpg",
     tags: ["commercial"],
     type: "Residential",
     otherImages: [
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171842/Camera.005_10_qh0oa2.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171842/Camera.006_6_z3mprm.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739186909/Camera.002_vag1z5.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739186906/Camera.001_jx6us2.jpg",
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171842/Camera.003_14_sjnorc.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171843/Camera.008_3_nlayud.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171843/Camera.007_4_f35z7u.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171842/Camera.004_13_z5u3ak.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171841/Camera.001_18_zvdkum.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739186915/Camera.003_rjafea.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739186914/Camera.001_ehcbgg.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739186886/Camera.006_bmv6cd.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739186882/Camera.002_bnebqm.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739186907/Camera.005_bppodv.jpg",
     ],
   },
   {
@@ -62,10 +79,6 @@ export const projects = [
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171842/Camera.005_10_qh0oa2.jpg",
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171842/Camera.006_6_z3mprm.jpg",
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171842/Camera.003_14_sjnorc.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171843/Camera.008_3_nlayud.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171843/Camera.007_4_f35z7u.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171842/Camera.004_13_z5u3ak.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171841/Camera.001_18_zvdkum.jpg",
     ],
   },
   {
@@ -78,10 +91,6 @@ export const projects = [
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171842/Camera.005_10_qh0oa2.jpg",
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171842/Camera.006_6_z3mprm.jpg",
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171842/Camera.003_14_sjnorc.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171843/Camera.008_3_nlayud.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171843/Camera.007_4_f35z7u.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171842/Camera.004_13_z5u3ak.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171841/Camera.001_18_zvdkum.jpg",
     ],
   },
   {
@@ -94,10 +103,6 @@ export const projects = [
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171842/Camera.005_10_qh0oa2.jpg",
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171842/Camera.006_6_z3mprm.jpg",
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171842/Camera.003_14_sjnorc.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171843/Camera.008_3_nlayud.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171843/Camera.007_4_f35z7u.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171842/Camera.004_13_z5u3ak.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171841/Camera.001_18_zvdkum.jpg",
     ],
   },
   {
@@ -110,10 +115,6 @@ export const projects = [
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171842/Camera.005_10_qh0oa2.jpg",
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171842/Camera.006_6_z3mprm.jpg",
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171842/Camera.003_14_sjnorc.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171843/Camera.008_3_nlayud.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171843/Camera.007_4_f35z7u.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171842/Camera.004_13_z5u3ak.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171841/Camera.001_18_zvdkum.jpg",
     ],
   },
   {
@@ -126,10 +127,6 @@ export const projects = [
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171842/Camera.005_10_qh0oa2.jpg",
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171842/Camera.006_6_z3mprm.jpg",
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171842/Camera.003_14_sjnorc.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171843/Camera.008_3_nlayud.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171843/Camera.007_4_f35z7u.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171842/Camera.004_13_z5u3ak.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171841/Camera.001_18_zvdkum.jpg",
     ],
   },
   {
@@ -142,10 +139,6 @@ export const projects = [
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171842/Camera.005_10_qh0oa2.jpg",
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171842/Camera.006_6_z3mprm.jpg",
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171842/Camera.003_14_sjnorc.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171843/Camera.008_3_nlayud.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171843/Camera.007_4_f35z7u.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171842/Camera.004_13_z5u3ak.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171841/Camera.001_18_zvdkum.jpg",
     ],
   },
   {
@@ -158,10 +151,6 @@ export const projects = [
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171842/Camera.005_10_qh0oa2.jpg",
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171842/Camera.006_6_z3mprm.jpg",
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171842/Camera.003_14_sjnorc.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171843/Camera.008_3_nlayud.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171843/Camera.007_4_f35z7u.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171842/Camera.004_13_z5u3ak.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171841/Camera.001_18_zvdkum.jpg",
     ],
   },
   {
@@ -174,10 +163,6 @@ export const projects = [
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171842/Camera.005_10_qh0oa2.jpg",
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171842/Camera.006_6_z3mprm.jpg",
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171842/Camera.003_14_sjnorc.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171843/Camera.008_3_nlayud.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171843/Camera.007_4_f35z7u.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171842/Camera.004_13_z5u3ak.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171841/Camera.001_18_zvdkum.jpg",
     ],
   },
   {
@@ -190,10 +175,6 @@ export const projects = [
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171842/Camera.005_10_qh0oa2.jpg",
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171842/Camera.006_6_z3mprm.jpg",
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171842/Camera.003_14_sjnorc.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171843/Camera.008_3_nlayud.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171843/Camera.007_4_f35z7u.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171842/Camera.004_13_z5u3ak.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171841/Camera.001_18_zvdkum.jpg",
     ],
   },
 ];
