@@ -62,3 +62,147 @@ export const servicesDetails = [
       "https://assets.website-files.com/6333ddbf4600453f512ca9f6/6339756537b872aaabd34f00_2-1.jpg",
   },
 ];
+
+export const serviceSteps = [
+  {
+    id: randomId(),
+    title: "Initial Consultation",
+    description:
+      "We visit your place to understand your vision, style, and project needs.",
+  },
+  {
+    id: randomId(),
+    title: "Design Proposal",
+    description:
+      "We present a design proposal with sketches, mood boards, and layouts.",
+  },
+  {
+    id: randomId(),
+    title: "Design Development",
+    description:
+      "We refine the design, selecting materials and providing 3D renderings.",
+  },
+  {
+    id: randomId(),
+    title: "Start the Project",
+    description:
+      "We manage the build and installation to bring the design to life.",
+  },
+  {
+    id: randomId(),
+    title: "Final Walkthrough",
+    description:
+      "We review the project with you to ensure it meets your expectations.",
+  },
+  {
+    id: randomId(),
+    title: "Hand Over",
+    description:
+      "We officially hand over the project and offer post-project support.",
+  },
+];
+
+export const residentialServiceProcess = [
+  {
+    id: randomId(),
+    title: "Initial Consultation",
+    description:
+      "We visit your place to understand your vision, style, and project needs.",
+  },
+  {
+    id: randomId(),
+    title: "Design Proposal",
+    description:
+      "We present a design proposal with sketches, mood boards, and layouts.",
+  },
+  {
+    id: randomId(),
+    title: "Design Development",
+    description:
+      "We refine the design, selecting materials and providing 3D renderings.",
+  },
+  {
+    id: randomId(),
+    title: "Start the Project",
+    description:
+      "We manage the build and installation to bring the design to life.",
+  },
+  {
+    id: randomId(),
+    title: "Final Walkthrough",
+    description:
+      "We review the project with you to ensure it meets your expectations.",
+  },
+  {
+    id: randomId(),
+    title: "Hand Over",
+    description:
+      "We officially hand over the project and offer post-project support.",
+  },
+];
+
+export const commercialServiceProcess = [
+  {
+    id: randomId(),
+    title: "Initial Consultation",
+    description: "Understand business goals, branding, and spatial needs.",
+  },
+  {
+    id: randomId(),
+    title: "Concept & Design",
+    description: "Develop 3D renders and visual layouts.",
+  },
+  {
+    id: randomId(),
+    title: "Material & Finish Selection",
+    description: "Choose furniture, textures, and branding elements.",
+  },
+  {
+    id: randomId(),
+    title: "Project Execution",
+    description: "Oversee construction, installation, and quality checks.",
+  },
+  {
+    id: randomId(),
+    title: "Final Walkthrough",
+    description: "Ensure every element aligns with the client's expectations.",
+  },
+  {
+    id: randomId(),
+    title: "Post-Project Support",
+    description: "Assistance with maintenance, upgrades, and modifications.",
+  },
+];
+
+export const architecturalServiceProcess = [
+  {
+    id: randomId(),
+    title: "Initial Consultation",
+    description: "Understanding the client’s vision, needs, and budget.",
+  },
+  {
+    id: randomId(),
+    title: "Concept & Blueprinting",
+    description: "Crafting sketches, floor plans, and 3D models.",
+  },
+  {
+    id: randomId(),
+    title: "Structural Engineering",
+    description: "Ensuring safety, stability, and compliance with regulations.",
+  },
+  {
+    id: randomId(),
+    title: "Material & Design Finalization",
+    description: "Selecting sustainable, durable, and aesthetic materials.",
+  },
+  {
+    id: randomId(),
+    title: "Construction & Execution",
+    description: "Overseeing on-site implementation and project progress.",
+  },
+  {
+    id: randomId(),
+    title: "Final Inspection & Handover",
+    description: "Ensuring flawless execution and client satisfaction.",
+  },
+];
