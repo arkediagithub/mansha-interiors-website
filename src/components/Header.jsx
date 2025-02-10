@@ -6,7 +6,60 @@ import logo from "../assets/mansha-logo-w-no-bg.png";
 const Header = () => {
   const pinned = useHeadroom({ fixedAt: 120 });
 
-  const menuLinks = [
+  // const menuLinks = [
+  //   {
+  //     id: randomId(),
+  //     to: "/",
+  //     label: "Home",
+  //   },
+  //   {
+  //     id: randomId(),
+  //     to: "/about",
+  //     label: "About Us",
+  //   },
+  //   // {
+  //   //   id: randomId(),
+  //   //   to: "/team",
+  //   //   label: "Our Team",
+  //   // },
+  //   // {
+  //   //   id: randomId(),
+  //   //   to: "/studio",
+  //   //   label: "Studio",
+  //   // },
+  //   // {
+  //   //   id: randomId(),
+  //   //   to: "/services",
+  //   //   label: "Services",
+  //   //   subMenu: [
+  //   //     { id: randomId(), to: "/residential", label: "Residential" },
+  //   //     { id: randomId(), to: "/commercial", label: "Commercial" },
+  //   //     { id: randomId(), to: "/architecture", label: "Architecture" },
+  //   //   ],
+  //   // },
+  //   {
+  //     id: randomId(),
+  //     to: "/gallery",
+  //     label: "Design Gallery",
+  //   },
+  //   {
+  //     id: randomId(),
+  //     to: "/testimonials",
+  //     label: "Testimonials",
+  //   },
+  //   {
+  //     id: randomId(),
+  //     to: "/careers",
+  //     label: "Careers",
+  //   },
+  //   {
+  //     id: randomId(),
+  //     to: "/contact",
+  //     label: "Contact",
+  //   },
+  // ];
+
+  const menuLinksLeft = [
     {
       id: randomId(),
       to: "/",
@@ -17,31 +70,14 @@ const Header = () => {
       to: "/about",
       label: "About Us",
     },
-    // {
-    //   id: randomId(),
-    //   to: "/team",
-    //   label: "Our Team",
-    // },
-    // {
-    //   id: randomId(),
-    //   to: "/studio",
-    //   label: "Studio",
-    // },
-    {
-      id: randomId(),
-      to: "/services",
-      label: "Services",
-      subMenu: [
-        { id: randomId(), to: "/residential", label: "Residential" },
-        { id: randomId(), to: "/commercial", label: "Commercial" },
-        { id: randomId(), to: "/architecture", label: "Architecture" },
-      ],
-    },
     {
       id: randomId(),
       to: "/gallery",
       label: "Design Gallery",
     },
+  ];
+
+  const menuLinksRight = [
     {
       id: randomId(),
       to: "/testimonials",
@@ -80,9 +116,9 @@ const Header = () => {
     //   to: "/services",
     //   label: "Services",
     // },
-    { id: randomId(), to: "/residential", label: "Residential Services" },
-    { id: randomId(), to: "/commercial", label: "Commercial Services" },
-    { id: randomId(), to: "/architecture", label: "Architecture Services" },
+    // { id: randomId(), to: "/residential", label: "Residential Services" },
+    // { id: randomId(), to: "/commercial", label: "Commercial Services" },
+    // { id: randomId(), to: "/architecture", label: "Architecture Services" },
     {
       id: randomId(),
       to: "/gallery",
@@ -126,15 +162,15 @@ const Header = () => {
     >
       <div className="navbar bg-base-100 px-5">
         {/* logo */}
-        <div className="flex-1">
+        <div className="navbar-start flex-1 lg:hidden">
           <Link to="/">
             <img src={logo} alt="logo" className="w-16 lg:w-20 aspect-square" />
           </Link>
         </div>
 
         {/* desktop menu links */}
-        <div className="navbar-center flex-none">
-          <ul className="menu menu-horizontal px-1 gap-2 max-lg:hidden text-lg">
+        <div className="navbar-center hidden lg:flex flex-1 justify-center items-center gap-4">
+          {/* <ul className="menu menu-horizontal px-1 gap-2 text-lg">
             {menuLinks.map((link) =>
               link.subMenu ? (
                 <li key={link.id}>
@@ -170,9 +206,38 @@ const Header = () => {
                 </li>
               )
             )}
+          </ul> */}
+
+          {/* desktop menu links left */}
+          <ul className="menu menu-horizontal px-1 gap-2 text-lg">
+            {menuLinksLeft.map((link) => (
+              <li key={link.id} className="rounded-full overflow-hidden">
+                <NavLink to={link.to}>
+                  <h6>{link.label}</h6>
+                </NavLink>
+              </li>
+            ))}
           </ul>
 
-          {/* mobile menu button */}
+          {/* desktop logo */}
+          <Link to="/">
+            <img src={logo} alt="logo" className="w-16 lg:w-20 aspect-square" />
+          </Link>
+
+          {/* desktop menu links right */}
+          <ul className="menu menu-horizontal px-1 gap-2 text-lg">
+            {menuLinksRight.map((link) => (
+              <li key={link.id} className="rounded-full overflow-hidden">
+                <NavLink to={link.to}>
+                  <h6>{link.label}</h6>
+                </NavLink>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* mobile menu button */}
+        <div className="navbar-end lg:hidden">
           <label
             htmlFor="my-drawer"
             className="btn drawer-button btn-ghost lg:hidden"
