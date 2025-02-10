@@ -1,27 +1,20 @@
 import { twMerge } from "tailwind-merge";
 import SectionWrapper from "../SectionWrapper";
-import {
-  homepage_hero_slide_banner_1,
-  homepage_hero_slide_banner_2,
-  homepage_hero_slide_banner_3,
-  homepage_hero_slide_banner_4,
-  homepage_hero_slide_banner_5,
-} from "../../images";
 import SectionHeading from "../SectionHeading";
 import SectionParagraph from "../SectionParagraph";
 
 const StudioGallery = () => {
   const images = [
-    homepage_hero_slide_banner_1,
-    homepage_hero_slide_banner_2,
-    homepage_hero_slide_banner_3,
-    homepage_hero_slide_banner_4,
-    homepage_hero_slide_banner_5,
-    homepage_hero_slide_banner_1,
-    homepage_hero_slide_banner_2,
-    homepage_hero_slide_banner_3,
-    homepage_hero_slide_banner_4,
-    homepage_hero_slide_banner_5,
+    "https://placehold.co/600",
+    "https://placehold.co/600",
+    "https://placehold.co/600",
+    "https://placehold.co/600",
+    "https://placehold.co/600",
+    "https://placehold.co/600",
+    "https://placehold.co/600",
+    "https://placehold.co/600",
+    "https://placehold.co/600",
+    "https://placehold.co/600",
   ];
 
   return (

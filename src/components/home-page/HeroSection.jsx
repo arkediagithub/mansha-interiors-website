@@ -1,9 +1,9 @@
 import { useState } from "react";
 import {
   // homepage_hero_slide_banner_2,
-  // homepage_hero_slide_banner_3,
+  homepage_hero_slide_banner_3,
   // homepage_hero_slide_banner_4,
-  homepage_hero_slide_banner_5,
+  // homepage_hero_slide_banner_5,
 } from "../../images.js";
 // import ImageSlideshow from "../ImageSlideshow";
 import TextAnimation from "../TextAnimation.jsx";
@@ -51,7 +51,7 @@ const HeroSection = () => {
           {/* <ImageSlideshow images={images} className="w-full h-full" /> */}
           <div className="w-full h-full relative overflow-hidden">
             <img
-              src={homepage_hero_slide_banner_5}
+              src={homepage_hero_slide_banner_3}
               alt={`Homepage hero section image`}
               className="absolute top-0 left-0 w-full h-full object-cover"
             />
