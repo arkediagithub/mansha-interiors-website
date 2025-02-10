@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import { serviceSteps } from "../../data/serviceSteps";
-import TextReveal from "../TextReveal";
+import { serviceSteps } from "../../data/services";
 import Reveal from "../Reveal";
+import TextReveal from "../TextReveal";
 import SectionWrapper from "../SectionWrapper";
 import SectionHeading from "../SectionHeading";
 

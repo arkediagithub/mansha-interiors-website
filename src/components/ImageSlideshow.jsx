@@ -14,7 +14,7 @@ const ImageSlideshow = ({ images, duration = 5, className = "" }) => {
 
   return (
     <div
-      className={`slideshow-container relative overflow-hidden ${className}`}
+      className={`relative overflow-hidden ${className}`}
     >
       <AnimatePresence>
         {images.map((image, index) => {
