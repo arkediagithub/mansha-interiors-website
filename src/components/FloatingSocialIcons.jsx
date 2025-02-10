@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 import { twMerge } from "tailwind-merge";
 
 const FloatingSocialLinks = {
-  whatsapp: "https://wa.me/your-number",
+  whatsapp: "https://wa.me/+919749405567",
   instagram: "https://www.instagram.com/manshainteriors7/",
   facebook: "https://www.facebook.com/manshainteriors.siliguri",
   phone: "tel:+919609930991",
