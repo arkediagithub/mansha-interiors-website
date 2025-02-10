@@ -21,7 +21,7 @@ const ProjectShowcase = ({ project }) => {
             <div key={i} className="">
               <img
                 className={twMerge(
-                  "w-full h-36 sm:h-72 lg:h-96 rounded-lg object-cover"
+                  "w-full h-36 sm:h-72 lg:h-[400px] rounded-lg object-cover"
                 )}
                 src={image}
                 alt={`Gallery Image ${i + 1}`}

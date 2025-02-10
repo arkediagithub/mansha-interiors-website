@@ -4,7 +4,6 @@ import Reveal from "../Reveal";
 const ProjectCard = ({ project }) => {
   return (
     <>
-      {/* onClick={() => document.getElementById(project.id).showModal()} */}
       <Link to={`/gallery/${project.id}`}>
         {/* project cards */}
         <div className="relative group h-[300px] lg:h-[400px]">
@@ -22,7 +21,7 @@ const ProjectCard = ({ project }) => {
 
           {/* project name */}
           <p className="absolute bottom-5 left-5 opacity-0 transition-all group-hover:opacity-100 group-hover:z-10 text-xl text-white pointer-events-none font-unbounded-variable">
-            {project.name} | {project.id}
+            {project.name}
           </p>
         </div>
       </Link>
