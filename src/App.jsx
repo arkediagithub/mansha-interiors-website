@@ -19,6 +19,7 @@ import TestimonialsPage from "./pages/TestimonialsPage";
 import ResidentialPage from "./pages/ResidentialPage";
 import CommercialPage from "./pages/CommercialPage";
 import ArchitecturePage from "./pages/ArchitecturePage";
+import SingleGalleryPage from "./pages/SingleGalleryPage";
 
 const router = createBrowserRouter([
   {
@@ -60,6 +61,10 @@ const router = createBrowserRouter([
       {
         path: "gallery",
         element: <GalleryPage />,
+      },
+      {
+        path: "gallery/:id",
+        element: <SingleGalleryPage />,
       },
       {
         path: "projects",

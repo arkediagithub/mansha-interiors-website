@@ -2,7 +2,7 @@ import SectionWrapper from "../SectionWrapper";
 import ProjectCard from "./ProjectCard";
 
 const ProjectList = ({ projectList }) => {
-  console.log("projectList", projectList);
+  // console.log("projectList", projectList);
 
   return (
     <SectionWrapper>
