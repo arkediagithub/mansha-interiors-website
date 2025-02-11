@@ -250,7 +250,6 @@ export const projects = [
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739251746/cam1_View020000_ov1dli.jpg",
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739251744/cam1_View040000_fkuqjj.jpg",
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739251742/Ent_View20_lbuonb.jpg",
-      "hhttps://res.cloudinary.com/dmuqtk9yg/image/upload/v1739251748/Ent_View12_crysw0.jpg",
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739251752/MBD__View120000_agklyc.jpg",
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739251751/MBD__View090000_wugl81.jpg",
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739251750/MBD__View080000_xtg5ac.jpg",

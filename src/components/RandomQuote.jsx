@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { IconQuote } from "@tabler/icons-react";
 import { twMerge } from "tailwind-merge";
 
@@ -50,13 +50,13 @@ export default function RandomQuote() {
     quotes[Math.floor(Math.random() * quotes.length)]
   );
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setQuote(quotes[Math.floor(Math.random() * quotes.length)]);
-    }, 10000);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setQuote(quotes[Math.floor(Math.random() * quotes.length)]);
+  //   }, 10000);
 
-    return () => clearInterval(interval);
-  }, []);
+  //   return () => clearInterval(interval);
+  // }, []);
 
   return (
     <div

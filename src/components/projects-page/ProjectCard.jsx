@@ -1,20 +1,18 @@
 import { Link } from "react-router-dom";
-import Reveal from "../Reveal";
+
 
 const ProjectCard = ({ project }) => {
   return (
     <>
       <Link to={`/gallery/${project.id}`}>
         {/* project cards */}
-        <div className="relative group h-[300px] lg:h-[400px]">
+        <div className="relative group h-[300px] lg:h-[400px] aspect-square rounded-lg overflow-hidden">
           {/* image */}
-          <Reveal noOverlay className="h-full w-full">
-            <img
-              src={project.image}
-              alt={project.name}
-              className="w-full h-full object-fill"
-            />
-          </Reveal>
+          <img
+            src={project.image}
+            alt={project.name}
+            className="w-full h-full object-fill"
+          />
 
           {/* overlay */}
           <div className="absolute bg-black opacity-0 inset-0 transition-all group-hover:opacity-30 group-hover:z-10 pointer-events-none"></div>
