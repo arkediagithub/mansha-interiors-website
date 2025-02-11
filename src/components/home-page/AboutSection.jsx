@@ -21,10 +21,12 @@ const AboutSection = () => {
 
           <div id="about_details" className="flex flex-col justify-center">
             <Reveal>
-              <SectionHeading>Welcome to Mansha Interiors</SectionHeading>
+              <SectionHeading>
+                Welcome to Mansha Interiors – Where Spaces Become Stories
+              </SectionHeading>
             </Reveal>
 
-            <Reveal>
+            {/* <Reveal>
               <SectionParagraph>
                 Located in Siliguri, we’re all about creating spaces that are as
                 unique as you are. Whether it’s your home or office, we blend
@@ -44,6 +46,26 @@ const AboutSection = () => {
               <SectionParagraph>
                 Ready to transform your space? Let’s make it happen – with
                 Mansha Interiors, where design dreams come true!
+              </SectionParagraph>
+            </Reveal> */}
+
+            <Reveal>
+              <SectionParagraph>
+                Every space has a story waiting to be told. The soft glow of a
+                lamp in your reading nook, the timeless charm of a handcrafted
+                dining table, the way sunlight dances on your living room
+                walls—each detail we design is a reflection of you.
+              </SectionParagraph>
+            </Reveal>
+            <Reveal>
+              <SectionParagraph>
+                At Mansha Interiors, we don&apos;t just design spaces; we craft
+                experiences. Whether it&apos;s a cozy home that whispers comfort
+                or a bold workspace that fuels ambition, we blend creativity,
+                functionality, and modern aesthetics to bring your vision to
+                life. Based in Siliguri, we turn empty rooms into vibrant
+                expressions of style and purpose, ensuring every corner feels
+                like yours.
               </SectionParagraph>
             </Reveal>
           </div>
