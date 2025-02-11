@@ -1,10 +1,11 @@
 import AboutSection from "../components/home-page/AboutSection";
 import AchievementSection from "../components/home-page/AchievementSection";
-import FeaturesSection from "../components/home-page/FeaturesSection";
+// import FeaturesSection from "../components/home-page/FeaturesSection";
 import HeroSection from "../components/home-page/HeroSection";
 import MetaTags from "../components/MetaTags";
 import CTASection from "../components/CTASection";
 import WhyChooseUsSection from "../components/home-page/WhyChooseUsSection";
+import HomeServiceSection from "../components/home-page/HomeServiceSection";
 
 export const HomePage = () => {
   return (
@@ -12,7 +13,8 @@ export const HomePage = () => {
       <MetaTags />
       <HeroSection />
       <AboutSection />
-      <FeaturesSection />
+      {/* <FeaturesSection /> */}
+      <HomeServiceSection />
       <AchievementSection />
       <WhyChooseUsSection />
       <CTASection

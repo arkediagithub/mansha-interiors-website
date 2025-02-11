@@ -9,7 +9,7 @@ const AppLayout = () => {
   return (
     <div className="flex flex-col min-h-screen" data-theme="light">
       <Header />
-      <main className="flex-1 overflow-hidden">
+      <main className="flex-1 overflow-x-hidden overflow-y-auto">
         <Outlet />
         <ScrollToTop />
         <FloatingSocialIcons />

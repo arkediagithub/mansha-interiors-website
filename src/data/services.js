@@ -29,11 +29,7 @@ export const servicesDetails = [
       "Your home should be a reflection of your lifestyle and personality. We specialize in designing warm, inviting, and functional living spaces that perfectly balance aesthetics and comfort. From modern minimalism to classic elegance, our expert designers tailor every detail to your taste. Whether it's a cozy bedroom, a stylish living area, or a functional kitchen, we ensure every corner of your home feels truly yours.",
     imageNumber: 1,
     imageSource:
-      "https://assets.website-files.com/6333ddbf4600453f512ca9f6/6339756537b872aaabd34f00_2-1.jpg",
-    imageBefore:
-      "https://assets.website-files.com/6333ddbf4600453f512ca9f6/6339756537b872aaabd34f00_2-1.jpg",
-    imageAfter:
-      "https://images.unsplash.com/photo-1705909772719-8d3bf32552be?q=80&w=1718&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739262671/homepage_hero_slide_banner_1_u9rwjh.png",
   },
   {
     id: randomId(),
@@ -43,10 +39,6 @@ export const servicesDetails = [
     imageNumber: 2,
     imageSource:
       "https://images.unsplash.com/photo-1705909772719-8d3bf32552be?q=80&w=1718&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    imageBefore:
-      "https://images.unsplash.com/photo-1705909772719-8d3bf32552be?q=80&w=1718&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    imageAfter:
-      "https://images.unsplash.com/photo-1721294104781-4f00f6ffef99?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     id: randomId(),
@@ -56,10 +48,6 @@ export const servicesDetails = [
     imageNumber: 3,
     imageSource:
       "https://images.unsplash.com/photo-1721294104781-4f00f6ffef99?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    imageBefore:
-      "https://images.unsplash.com/photo-1721294104781-4f00f6ffef99?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    imageAfter:
-      "https://assets.website-files.com/6333ddbf4600453f512ca9f6/6339756537b872aaabd34f00_2-1.jpg",
   },
 ];
 

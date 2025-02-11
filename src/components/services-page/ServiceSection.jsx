@@ -58,31 +58,11 @@ const ServiceSection = () => {
                 <p className="text-base lg:text-lg mb-6">
                   {service.description}
                 </p>
-                {/* <img
+                <img
                   src={service.imageSource}
                   alt={`Image ${service.imageNumber}`}
-                  className="w-full aspect-[16/9] rounded-lg object-cover"
-                /> */}
-                {/* before after image */}
-                <div className="diff aspect-[16/9] lg:aspect-[18/9]">
-                  {/* after */}
-                  <div className="diff-item-1">
-                    <img
-                      src={service.imageAfter}
-                      alt={`Image ${service.imageNumber}`}
-                      className="rounded-lg object-cover"
-                    />
-                  </div>
-                  {/* before */}
-                  <div className="diff-item-2">
-                    <img
-                      src={service.imageBefore}
-                      alt={`Image ${service.imageNumber}`}
-                      className="rounded-lg object-cover"
-                    />
-                  </div>
-                  <div className="diff-resizer"></div>
-                </div>
+                  className="w-full aspect-[18/9] rounded-lg object-cover"
+                />
               </motion.div>
             )
         )}

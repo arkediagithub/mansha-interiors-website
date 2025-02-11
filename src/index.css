@@ -43,3 +43,4 @@ button {
     @apply grayscale hover:grayscale-0 transition-all duration-300;
   }
 }
+
