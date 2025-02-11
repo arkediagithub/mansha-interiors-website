@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 
-
 const ProjectCard = ({ project }) => {
   return (
     <>
@@ -12,6 +11,7 @@ const ProjectCard = ({ project }) => {
             src={project.image}
             alt={project.name}
             className="w-full h-full object-fill"
+            loading="lazy"
           />
 
           {/* overlay */}

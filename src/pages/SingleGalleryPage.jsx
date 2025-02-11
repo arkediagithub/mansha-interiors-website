@@ -16,12 +16,15 @@ const SingleGalleryPage = () => {
   }, []);
 
   const project = projects.find((project) => project.id === id);
-  //   console.log(project);
 
   return (
     <>
       <MetaTags title="Gallery Project | Mansha Interior" />
-      <PageHeader image={project?.image} overlay={false} />
+      <PageHeader
+        image={project?.image}
+        overlay={false}
+        className="h-[45vh] sm:h-[75vh] lg:h-[100vh]"
+      />
       <ProjectShowcase project={project} />
     </>
   );

@@ -42,6 +42,7 @@ const FlipCard = ({
             src={imageSrc}
             alt={imageAlt}
             className="h-full w-full rounded-2xl object-cover shadow-2xl shadow-black/40"
+            loading="lazy"
           />
           <div className="absolute bottom-4 left-4 text-xl font-bold text-white">
             {title}
@@ -60,6 +61,7 @@ const FlipCard = ({
               src={imageSrc}
               alt={imageAlt}
               className="w-full h-full object-cover"
+              loading="lazy"
             />
           </div>
           <h1 className="text-xl font-bold text-white">{title}</h1>

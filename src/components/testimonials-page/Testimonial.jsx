@@ -16,6 +16,7 @@ const Testimonial = ({ testimonial, index }) => {
             src={testimonial.image}
             alt={testimonial.name}
             className="w-36 lg:w-48 aspect-square object-cover rounded-full"
+            loading="lazy"
           />
           <p className="text-lg">{testimonial.name}</p>
         </div>

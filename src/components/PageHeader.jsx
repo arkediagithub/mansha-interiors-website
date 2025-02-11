@@ -1,11 +1,23 @@
+import { twMerge } from "tailwind-merge";
 import TextReveal from "./TextReveal";
 import { homepage_hero_slide_banner_5 } from "../images";
 import TextAnimation from "./TextAnimation";
 
-const PageHeader = ({ image, title, subtitle, overlay = true }) => {
+const PageHeader = ({
+  image,
+  title,
+  subtitle,
+  overlay = true,
+  className = "",
+}) => {
   return (
     <>
-      <section className="mt-20 w-full h-[30vh] sm:h-[50vh] lg:h-[70vh] flex items-center justify-center relative p-4">
+      <section
+        className={twMerge(
+          "mt-20 w-full h-[30vh] sm:h-[50vh] lg:h-[70vh] flex items-center justify-center relative p-4",
+          className
+        )}
+      >
         {/* background images */}
         <div className="absolute inset-0">
           <img
