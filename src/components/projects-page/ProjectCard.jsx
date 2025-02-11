@@ -6,7 +6,7 @@ const ProjectCard = ({ project }) => {
     <>
       <Link to={`/gallery/${project.id}`}>
         {/* project cards */}
-        <div className="relative group h-[300px] lg:h-[400px] aspect-square rounded-lg overflow-hidden">
+        <div className="relative group h-[300px] lg:h-[400px] rounded-lg overflow-hidden">
           {/* image */}
           <img
             src={project.image}
