@@ -27,6 +27,10 @@ export default function WhyChooseUsSection() {
             <div key={item.id} className="relative w-full group">
               {/* content */}
               <div className="rounded-bl-3xl rounded-tr-3xl overflow-hidden px-6 py-4 border border-b-4 border-l-4 border-b-roti-400 border-l-roti-400 h-full">
+                <item.icon
+                  stroke={1.5}
+                  className="w-12 h-12 p-2 text-roti-400 mb-4 border-2 border-roti-400 rounded-full"
+                />
                 <h3 className="text-xl md:text-2xl font-medium my-4">
                   {item.title}
                 </h3>
@@ -35,7 +39,7 @@ export default function WhyChooseUsSection() {
                 </p>
               </div>
               {/* number */}
-              <div className="absolute bottom-0 right-2 opacity-20 group-hover:opacity-40 duration-500">
+              <div className="absolute bottom-0 right-2 opacity-20">
                 <span className="text-roti-500 text-7xl lg:text-[112px] font-semibold font-league-spartan-variable">
                   {i + 1}
                 </span>

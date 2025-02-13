@@ -1,8 +1,10 @@
+import { IconArrowUpRight } from "@tabler/icons-react";
 import { homepage_hero_slide_banner_1 } from "../../images";
 import Reveal from "../Reveal";
 import SectionHeading from "../SectionHeading";
 import SectionParagraph from "../SectionParagraph";
 import SectionWrapper from "../SectionWrapper";
+import { Link } from "react-router-dom";
 
 const AboutSection = () => {
   // const aboutHeading = "Welcome to Mansha Interiors";
@@ -12,11 +14,20 @@ const AboutSection = () => {
       <SectionWrapper id="home_page_about_section" className="md:my-32">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10">
           <Reveal className="w-full max-md:order-2">
-            <img
-              src={homepage_hero_slide_banner_1}
-              alt="interior design service image"
-              className="h-64 sm:h-96 md:h-[450px] w-full max-md:order-last object-fill rounded-2xl md:rounded-br-[200px]"
-            />
+            <div className="relative">
+              <img
+                src={homepage_hero_slide_banner_1}
+                alt="interior design service image"
+                className="h-64 sm:h-96 md:h-[450px] w-full max-md:order-last object-fill rounded-2xl md:rounded-br-[200px]"
+              />
+              <Link to={"/about"} role="button" className="absolute btn-circle border-[3px] border-roti-400 bottom-0 right-0 grid place-items-center w-24 h-24 group">
+                <IconArrowUpRight
+                  stroke={2}
+                  size={"50%"}
+                  className="text-roti-400 group-hover:rotate-45 duration-500"
+                />
+              </Link>
+            </div>
           </Reveal>
 
           <div id="about_details" className="flex flex-col justify-center">
