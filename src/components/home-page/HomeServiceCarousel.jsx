@@ -22,7 +22,7 @@ const HomeServiceCarousel = ({ services }) => {
 
   return (
     <div className="relative w-full h-full max-w-4xl mx-auto">
-      <AnimatePresence mode="wait">
+      <AnimatePresence mode="popLayout">
         <motion.div
           key={currentIndex}
           initial={{ opacity: 0.3 }}
