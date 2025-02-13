@@ -2,6 +2,7 @@ import { useState } from "react";
 import TextAnimation from "../TextAnimation.jsx";
 
 const heroHeadingText = [
+  "Simplicity is the ultimate sophistication",
   "Transform Your Space, Elevate Your Life",
   "Where Elegance Meets Comfort",
   "Designing Interiors, Crafting Dreams",
@@ -11,6 +12,7 @@ const heroHeadingText = [
   "Create Spaces That Inspire",
   "Making Every Room a Masterpiece",
   "Designing Homes That Reflect You",
+  "We shape our homes and then our homes shape us",
 ];
 
 const HeroSection = () => {
