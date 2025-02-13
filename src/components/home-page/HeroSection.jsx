@@ -20,22 +20,6 @@ const HeroSection = () => {
     heroHeadingText[Math.floor(Math.random() * heroHeadingText.length)]
   );
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setHeadingText(
-  //       heroHeadingText[Math.floor(Math.random() * heroHeadingText.length)]
-  //     );
-  //   }, 10000);
-
-  //   return () => clearInterval(interval);
-  // }, []);
-
-  // const images = [
-  //   "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739262668/homepage_hero_slide_banner_3_d4le0m.png",
-  //   "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739262675/homepage_hero_slide_banner_4_vnoniz.png",
-  //   "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739262666/homepage_hero_slide_banner_2_uzgjdb.png",
-  // ];
-
   return (
     <>
       <section className="mt-20 max-sm:-mb-4">
@@ -45,7 +29,9 @@ const HeroSection = () => {
           <div className="w-full h-full relative overflow-hidden">
             <img
               // src={"https://placehold.co/1080x820?text=Office+Photo"}
-              src={"https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739262668/homepage_hero_slide_banner_3_d4le0m.png"}
+              src={
+                "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739262668/homepage_hero_slide_banner_3_d4le0m.png"
+              }
               alt={`Homepage hero section image`}
               className="absolute top-0 left-0 w-full h-full object-cover"
             />

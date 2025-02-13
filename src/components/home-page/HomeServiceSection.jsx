@@ -22,10 +22,11 @@ const HomeServiceSection = () => {
           </p>
         </Reveal>
         <Reveal>
-          <SectionHeading>
+          {/* <SectionHeading>
             Designing The Future <br className="max-sm:hidden" />
             One at a Time
-          </SectionHeading>
+          </SectionHeading> */}
+          <SectionHeading>Designing with Purpose and Passion</SectionHeading>
         </Reveal>
       </div>
 
