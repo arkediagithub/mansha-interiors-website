@@ -7,10 +7,10 @@ import Reveal from "../Reveal";
 import SectionHeading from "../SectionHeading";
 
 const HomeServiceSection = () => {
-  const [activeImage, setActiveImage] = useState(1);
+  const [activeTab, setActiveTab] = useState(1);
 
-  const handleImageChange = (index) => {
-    setActiveImage(index);
+  const handleTabChange = (index) => {
+    setActiveTab(index);
   };
 
   return (
@@ -23,22 +23,22 @@ const HomeServiceSection = () => {
         </Reveal>
         <Reveal>
           <SectionHeading>
-            Designing Future Rooms <br />
+            Designing The Future <br className="max-sm:hidden" />
             One at a Time
           </SectionHeading>
         </Reveal>
       </div>
 
       {/* tab list */}
-      <div className="image-navigation mt-8 flex w-full justify-center">
+      <div className="image-navigation mt-4 md:mt-8 flex w-full justify-center">
         <div className="mb-6 lg:mb-10 flex flex-col md:flex-row gap-4 md:gap-6">
           {servicesTabs.map((tab, index) => (
             <button
               key={index}
-              onClick={() => handleImageChange(index + 1)}
+              onClick={() => handleTabChange(index + 1)}
               className={twMerge(
                 "text-left border-2 border-roti-400 rounded-2xl p-4",
-                activeImage === index + 1 ? "bg-roti-100" : "bg-transparent"
+                activeTab === index + 1 ? "bg-roti-100" : "bg-transparent"
               )}
             >
               <h2 className="text-xl sm:text-2xl mb-2 text-black">
@@ -53,15 +53,17 @@ const HomeServiceSection = () => {
       {/* tab list content */}
       {servicesDetails.map(
         (service) =>
-          activeImage === service.imageNumber && (
+          activeTab === service.tabNumber && (
             <motion.div
               key={service.id}
-              className="p-6 rounded-2xl border"
+              className="p-4 lg:p-6 rounded-2xl border"
               initial={{ opacity: 0, y: 100 }}
               animate={{ opacity: 1, y: 0 }}
             >
               <h2 className="text-xl lg:text-3xl mb-4">{service.title}</h2>
-              <p className="text-base lg:text-lg mb-6">{service.description}</p>
+              <p className="text-base lg:text-lg mb-6 text-black">
+                {service.description}
+              </p>
               <img
                 src={service.imageSource}
                 alt={`Image ${service.imageNumber}`}

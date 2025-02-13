@@ -14,9 +14,10 @@ const AchievementSection = () => {
             TRUSTED EXPERIENCE
           </p> */}
           <p className="text-accent text-xl font-semibold md:font-bold">
-            Trusted Experience
+            Since 2012
           </p>
-          <SectionHeading>Modern Design Solutions</SectionHeading>
+          {/* <SectionHeading>Modern Design Solutions</SectionHeading> */}
+          <SectionHeading>Numbers You can Trust</SectionHeading>
         </div>
 
         <div

@@ -9,7 +9,7 @@ const ProjectShowcase = ({ project }) => {
     <SectionWrapper>
       <Reveal className="w-full">
         <SectionHeading className="text-center">{project?.name}</SectionHeading>
-        <SectionParagraph className="text-center -mt-4 mb-10">
+        <SectionParagraph className="text-center mb-6">
           {project?.type}
         </SectionParagraph>
       </Reveal>

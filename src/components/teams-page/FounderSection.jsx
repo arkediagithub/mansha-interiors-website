@@ -13,13 +13,13 @@ export default function FounderSection() {
             <img
               src={founder.image}
               alt="interior design service image"
-              className="w-full md:h-full max-md:aspect-square max-md:order-last object-cover rounded-2xl"
+              className="w-full md:h-full max-md:aspect-square max-md:order-last object-cover rounded-[50px]"
             />
           </Reveal>
 
           <div id="about_details" className="flex flex-col justify-center">
             <Reveal>
-              <SectionHeading className="mb-0 md:mb-0">
+              <SectionHeading className="mb-0 md:mb-0 max-md:mt-0">
                 {founder.name}
               </SectionHeading>
             </Reveal>

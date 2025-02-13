@@ -56,7 +56,7 @@ const HeroSection = () => {
             <TextAnimation
               by="word"
               text={headingText}
-              className="text-3xl sm:text-5xl lg:text-7xl xl:text-8xl text-center tracking-wider text-white text-balance max-w-5xl"
+              className="text-3xl sm:text-4xl lg:text-6xl xl:text-7xl text-center tracking-wider text-white text-balance max-w-5xl"
               staggerChildren={0.05}
             />
           </div>

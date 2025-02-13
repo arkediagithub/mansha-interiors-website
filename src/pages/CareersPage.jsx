@@ -16,8 +16,7 @@ const CareersPage = () => {
     heading: "Join the Mansha Interiors Team!",
     content:
       "Are you ready to shape the future of design? At Mansha Interiors, we're always on the lookout for talented individuals who are passionate, innovative, and ready to make an impact. Join us to create stunning spaces that inspire and bring ideas to life.",
-    image:
-      "https://placehold.co/600?text=Office+Photo",
+    image: "https://placehold.co/600?text=Office+Photo",
     icon: IconArrowUpRight,
   };
 

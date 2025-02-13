@@ -3,6 +3,16 @@
 @import "@fontsource/alegreya-sans";
 @import "@fontsource/marck-script";
 
+@font-face {
+  font-family: "Against";
+  src: url("./fonts/against-Regular.woff2") format("woff2"),
+    url("./fonts/against-Regular.woff") format("woff"),
+    url("./fonts/against-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,7 +27,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "League Spartan Variable", sans-serif;
+  /* font-family: "League Spartan Variable", sans-serif; */
+  font-family: "Against", sans-serif;
 }
 
 p {
@@ -27,7 +38,7 @@ p {
 
 button {
   font-family: "League Spartan Variable", sans-serif;
-  font-size: 1rem; 
+  font-size: 1rem;
   line-height: 1.5rem;
 }
 
@@ -66,4 +77,3 @@ button {
     }
   }
 }
-

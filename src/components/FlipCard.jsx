@@ -32,7 +32,7 @@ const FlipCard = ({
     >
       <div
         className={twMerge(
-          "relative h-full rounded-2xl transition-all duration-500 [transform-style:preserve-3d]",
+          "relative h-full rounded-tr-2xl rounded-bl-2xl transition-all duration-500 [transform-style:preserve-3d]",
           self[0]
         )}
       >
@@ -41,7 +41,7 @@ const FlipCard = ({
           <img
             src={imageSrc}
             alt={imageAlt}
-            className="h-full w-full rounded-2xl object-cover shadow-2xl shadow-black/40"
+            className="h-full w-full rounded-tr-3xl rounded-bl-3xl object-cover shadow-2xl shadow-black/40"
             loading="lazy"
           />
           <div className="absolute bottom-4 left-4 text-xl font-bold text-white">
@@ -52,7 +52,7 @@ const FlipCard = ({
         {/* Back */}
         <div
           className={twMerge(
-            "absolute h-full w-full rounded-2xl bg-roti-400 p-4 text-slate-200 [backface-visibility:hidden] flex flex-col justify-center items-center",
+            "absolute h-full w-full rounded-tr-3xl rounded-bl-3xl bg-roti-400 p-4 text-slate-200 [backface-visibility:hidden] flex flex-col justify-center items-center",
             self[1]
           )}
         >

@@ -50,7 +50,10 @@ const TextAnimation = ({
         whileInView={startOnView ? "show" : undefined}
         animate={startOnView ? undefined : "show"}
         viewport={{ once }}
-        className={twMerge("whitespace-pre-wrap", className)}
+        className={twMerge(
+          "whitespace-pre-wrap font-against text-roti-400",
+          className
+        )}
         transition={{ staggerChildren }}
       >
         {segments.map((segment, i) => (
@@ -58,6 +61,7 @@ const TextAnimation = ({
             key={i}
             variants={blurInUpVariants}
             className={twMerge(
+              "text-roti-300",
               by === "line" ? "block" : "inline-block whitespace-pre",
               segmentClassName
             )}
