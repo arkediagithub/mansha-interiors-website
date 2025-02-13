@@ -22,7 +22,7 @@ const CareerPageSection = ({
               <img
                 src={section.image}
                 alt="interior design service image"
-                className="h-64 sm:h-96 w-full"
+                className="w-full max-md:aspect-[16/9] object-cover"
               />
             </Reveal>
 

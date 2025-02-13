@@ -3,7 +3,7 @@ import { randomId } from "@mantine/hooks";
 export const projects = [
   {
     id: randomId(),
-    name: "Sunil Gupta",
+    name: "Sunil Gupta, Lumina",
     image:
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171842/Camera.005_10_qh0oa2.jpg",
     tags: ["residential"],
@@ -27,7 +27,7 @@ export const projects = [
   },
   {
     id: randomId(),
-    name: "Shanky Airen",
+    name: "Shanky Airen, Darpan",
     image:
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739186792/Master_op_V1_v9lcl5.jpg",
     tags: ["residential"],
@@ -43,7 +43,7 @@ export const projects = [
   },
   {
     id: randomId(),
-    name: "Sanjay Agarwal",
+    name: "Sanjay Agarwal, Palacio",
     image:
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739186906/Camera.001_jx6us2.jpg",
     tags: ["commercial"],
@@ -61,7 +61,7 @@ export const projects = [
   },
   {
     id: randomId(),
-    name: "Sandeep Agarwal",
+    name: "Sandeep Agarwal, Palacio",
     image:
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739186968/ROUGH_RENDER_MOTHER_S_BEDROM_V2_e64nz3.jpg",
     tags: ["residential"],
@@ -80,7 +80,7 @@ export const projects = [
   },
   {
     id: randomId(),
-    name: "Saksham Garg",
+    name: "Saksham Garg, Darpan",
     image:
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739187018/Camera.005_cn7fmz.jpg",
     tags: ["residential"],
@@ -97,7 +97,7 @@ export const projects = [
   },
   {
     id: randomId(),
-    name: "Ramesh Kabra",
+    name: "Ramesh Kabra, Nepal",
     image:
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739190010/Camera.004_maz9rp.jpg",
     tags: ["residential"],
@@ -116,7 +116,7 @@ export const projects = [
   },
   {
     id: randomId(),
-    name: "Rajesh Poddar",
+    name: "Rajesh Poddar, Guwahati",
     image:
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739189787/M2_cp7o8c.jpg",
     tags: ["residential"],
@@ -129,7 +129,7 @@ export const projects = [
   },
   {
     id: randomId(),
-    name: "Rajesh Agarwal (Guwahati)",
+    name: "Rajesh Agarwal, Guwahati",
     image:
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739189864/V1_pwwndm.jpg",
     tags: ["commercial", "architectural"],
@@ -144,7 +144,37 @@ export const projects = [
   },
   {
     id: randomId(),
-    name: "Nesh Agarwal",
+    name: "Rajesh Agarwal, Ambience",
+    image:
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739432317/Camera.003_o1l9dg.jpg",
+    tags: ["commercial", "architectural"],
+    type: "Residential",
+    otherImages: [
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739432317/Camera.003_o1l9dg.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739432278/Camera.001_ftlcua.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739432278/Camera.004_ueh5xr.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739432305/Camera_efmm9q.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739432302/Camera.003_voqu0n.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739432323/Camera.002_cjdmow.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739432285/Camera.001_xglyha.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739432332/Camera.004_ovmffi.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739432253/Camera_dk8mnr.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739432250/Camera_wiclmi.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739432307/Camera.001_vqxkiz.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739432265/CAM_1.1_jqvagi.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739432292/cam_1_1_jfju2j.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739432299/V1_so0x2q.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739432287/V1_yblctz.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739432285/V3_1_momtqs.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739432281/V2_zcekdb.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739432280/V1_qyec1p.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739432287/FOYER_V1_jnrvry.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739432262/Kitchen_V2_hqbcn0.jpg",
+    ],
+  },
+  {
+    id: randomId(),
+    name: "Nesh Agarwal, Ambience",
     image:
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739190121/LIV01_stz6qt.jpg",
     tags: ["residential"],
@@ -164,7 +194,7 @@ export const projects = [
   },
   {
     id: randomId(),
-    name: "Neha Goyel",
+    name: "Neha Goyel, Windsor Park",
     image:
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739190307/Camera.001_loc8kt.jpg",
     tags: ["residential"],
@@ -182,7 +212,7 @@ export const projects = [
   },
   {
     id: randomId(),
-    name: "Neeraj Poddar",
+    name: "Neeraj Poddar, Balaram Hut",
     image:
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739190270/Camera.016_xaeiwe.jpg",
     tags: ["commmercial"],
@@ -202,7 +232,7 @@ export const projects = [
   },
   {
     id: randomId(),
-    name: "Narendra Patel",
+    name: "Narendra Patel, Queens Park",
     image:
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739190334/cam_v1_kvbp2r.jpg",
     tags: ["residential"],
@@ -224,7 +254,7 @@ export const projects = [
   },
   {
     id: randomId(),
-    name: "Mayank Agarwal (Punjabi Para)",
+    name: "Mayank Agarwal, Punjabi Para",
     image:
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739189898/v2_nl5peb.jpg",
     tags: ["residential"],
@@ -240,7 +270,7 @@ export const projects = [
   },
   {
     id: randomId(),
-    name: "Manoj Minda (Guwahati)",
+    name: "Manoj Minda, Guwahati",
     image:
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739251748/cam1_View010000_hypz13.jpg",
     tags: ["residential"],
@@ -260,7 +290,7 @@ export const projects = [
   },
   {
     id: randomId(),
-    name: "Manoj Kedia (Upwan)",
+    name: "Manoj Kedia, Upwan",
     image:
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739251636/Camera.001_x2civx.jpg",
     tags: ["residential"],
@@ -285,7 +315,7 @@ export const projects = [
   },
   {
     id: randomId(),
-    name: "Manoj Agarwal (Model Town)",
+    name: "Manoj Agarwal, Model Town",
     image:
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739252035/REV5_MANOJ_JI__MASTER_BEDROOM_V11_ebxfd7.jpg",
     tags: ["residential"],
@@ -305,7 +335,7 @@ export const projects = [
   },
   {
     id: randomId(),
-    name: "Ankur Bansal (Shaktigar)",
+    name: "Ankur Bansal, Shaktigar",
     image:
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739252297/V1_rev_2_lv0tut.jpg",
     tags: ["residential"],
@@ -323,7 +353,7 @@ export const projects = [
   },
   {
     id: randomId(),
-    name: "Aman Agarwal (Ambience)",
+    name: "Aman Agarwal, Ambience",
     image:
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739193942/V2_1_odkfz1.jpg",
     tags: ["residential"],
@@ -346,7 +376,7 @@ export const projects = [
   },
   {
     id: randomId(),
-    name: "Ankur Agarwal (Uttorayan)",
+    name: "Ankur Agarwal, Uttorayan",
     image:
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739193720/Camera.004_nzwmxf.jpg",
     tags: ["residential"],

@@ -17,14 +17,17 @@ const CareersPage = () => {
     content:
       "Are you ready to shape the future of design? At Mansha Interiors, we're always on the lookout for talented individuals who are passionate, innovative, and ready to make an impact. Join us to create stunning spaces that inspire and bring ideas to life.",
     image:
-      "https://images.pexels.com/photos/447592/pexels-photo-447592.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://placehold.co/600?text=Office+Photo",
     icon: IconArrowUpRight,
   };
 
   return (
     <>
       <MetaTags title="Contact Us | Mansha Interior" />
-      <PageHeader title="Grow with Us, Shape the Future" />
+      <PageHeader
+        title="Grow with Us, Shape the Future"
+        image={"https://placehold.co/1080x720?text=Team+Photo"}
+      />
       <CareerPageSection section={careerSectionContent} />
     </>
   );

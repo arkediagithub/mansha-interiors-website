@@ -1,11 +1,4 @@
 import { useState } from "react";
-import {
-  // homepage_hero_slide_banner_2,
-  homepage_hero_slide_banner_3,
-  // homepage_hero_slide_banner_4,
-  // homepage_hero_slide_banner_5,
-} from "../../images.js";
-// import ImageSlideshow from "../ImageSlideshow";
 import TextAnimation from "../TextAnimation.jsx";
 
 const heroHeadingText = [
@@ -35,12 +28,10 @@ const HeroSection = () => {
   //   return () => clearInterval(interval);
   // }, []);
 
-  // hero slideshow images
   // const images = [
-  //   homepage_hero_slide_banner_2,
-  //   homepage_hero_slide_banner_3,
-  //   homepage_hero_slide_banner_4,
-  //   homepage_hero_slide_banner_5,
+  //   "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739262668/homepage_hero_slide_banner_3_d4le0m.png",
+  //   "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739262675/homepage_hero_slide_banner_4_vnoniz.png",
+  //   "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739262666/homepage_hero_slide_banner_2_uzgjdb.png",
   // ];
 
   return (
@@ -51,7 +42,7 @@ const HeroSection = () => {
           {/* <ImageSlideshow images={images} className="w-full h-full" /> */}
           <div className="w-full h-full relative overflow-hidden">
             <img
-              src={homepage_hero_slide_banner_3}
+              src={"https://placehold.co/1080x820?text=Office+Photo"}
               alt={`Homepage hero section image`}
               className="absolute top-0 left-0 w-full h-full object-cover"
             />

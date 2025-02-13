@@ -17,7 +17,10 @@ const AboutUsPage = () => {
   return (
     <>
       <MetaTags title="About Us | Mansha Interior" />
-      <PageHeader title="Who We Are" />
+      <PageHeader
+        title="Who We Are"
+        image={"https://placehold.co/1080x720?text=Office+Photo"}
+      />
 
       <AboutPageIntro />
 
