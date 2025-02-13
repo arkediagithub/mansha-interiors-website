@@ -15,14 +15,17 @@ const AboutSection = () => {
             <img
               src={homepage_hero_slide_banner_1}
               alt="interior design service image"
-              className="h-64 sm:h-96 md:h-[450px] w-full max-md:order-last object-fill rounded-2xl"
+              className="h-64 sm:h-96 md:h-[450px] w-full max-md:order-last object-fill rounded-2xl rounded-br-[200px]"
             />
           </Reveal>
 
           <div id="about_details" className="flex flex-col justify-center">
             <Reveal>
-              <SectionHeading>
+              {/* <SectionHeading>
                 Welcome to Mansha Interiors – Where Spaces Become Stories
+              </SectionHeading> */}
+              <SectionHeading>
+                Live in Style, Designed with Intention
               </SectionHeading>
             </Reveal>
 

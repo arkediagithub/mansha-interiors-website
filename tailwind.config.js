@@ -32,6 +32,8 @@ export default {
         "alegreya-sans": ["Alegreya Sans"],
         "marck-script": ["Marck Script"],
         against: ["Against"],
+        "cs-carline": ["CS Carline"],
+        "rollgates-luxury": ["Rollgates Luxury"],
       },
     },
   },

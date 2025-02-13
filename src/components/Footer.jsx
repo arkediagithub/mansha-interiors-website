@@ -73,11 +73,11 @@ const Footer = () => {
           <Link to={"/about"} className="link link-hover text-base">
             About Us
           </Link>
-          <Link to={"/projects"} className="link link-hover text-base">
-            Projects
+          <Link to={"/gallery"} className="link link-hover text-base">
+            Gallery
           </Link>
-          <Link to={"/services"} className="link link-hover text-base">
-            Services
+          <Link to={"/careers"} className="link link-hover text-base">
+            Careers
           </Link>
           <Link to={"/faqs"} className="link link-hover text-base">
             FAQs

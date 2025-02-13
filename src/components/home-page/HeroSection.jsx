@@ -44,7 +44,8 @@ const HeroSection = () => {
           {/* <ImageSlideshow images={images} className="w-full h-full" /> */}
           <div className="w-full h-full relative overflow-hidden">
             <img
-              src={"https://placehold.co/1080x820?text=Office+Photo"}
+              // src={"https://placehold.co/1080x820?text=Office+Photo"}
+              src={"https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739262668/homepage_hero_slide_banner_3_d4le0m.png"}
               alt={`Homepage hero section image`}
               className="absolute top-0 left-0 w-full h-full object-cover"
             />
@@ -55,7 +56,7 @@ const HeroSection = () => {
           <div className="absolute inset-0 flex flex-col justify-center items-center gap-4 px-4">
             <TextAnimation
               by="word"
-              text={headingText}
+              text={"Welcome to Mansha Interiors"}
               className="text-3xl sm:text-4xl lg:text-6xl xl:text-7xl text-center tracking-wider text-white text-balance max-w-5xl"
               staggerChildren={0.05}
             />

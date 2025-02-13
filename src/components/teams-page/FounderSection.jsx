@@ -9,11 +9,11 @@ export default function FounderSection() {
     <>
       <SectionWrapper id="home_page_about_section" className="md:my-32">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16">
-          <Reveal className="w-full">
+          <Reveal className="w-full md:order-2">
             <img
               src={founder.image}
               alt="interior design service image"
-              className="w-full md:h-full max-md:aspect-square max-md:order-last object-cover rounded-[50px]"
+              className="w-full md:h-full max-md:aspect-[12/10] max-md:order-last object-cover rounded-3xl md:rounded-bl-[256px]"
             />
           </Reveal>
 
@@ -30,28 +30,30 @@ export default function FounderSection() {
 
             <Reveal>
               <SectionParagraph>
-                Meet Gautam Agarwal, the creative force and founder of Mansha
-                Interiors. With a B.Com degree and a prestigious diploma in
-                Interior Design from INIFD, Gautam embarked on his design
-                journey 13 years ago with one clear goal: to create spaces that
-                don&apos;t just look stunning but make you feel truly at home.
+                Meet Gautam Agarwal, the visionary founder of Mansha Interiors.
+                With a B.Com degree and a prestigious diploma in Interior Design
+                from INIFD, he embarked on his design journey 13 years ago with
+                a passion for crafting spaces that are both visually stunning
+                and deeply inviting. A perfectionist with an eye for detail,
+                Gautam believes that great design is an experience—one that
+                seamlessly blends form, function, and emotion. His approach
+                begins with understanding each client’s unique needs, ensuring
+                every project flows effortlessly and resonates on a personal
+                level.
               </SectionParagraph>
             </Reveal>
 
             <Reveal>
               <SectionParagraph>
-                A perfectionist with an eye for the smallest details,
-                Gautam&apos;s approach to design is centered on the belief that
-                every space should be an experience—one that blends form,
-                function, and emotion. His process begins by understanding the
-                unique needs of each client, ensuring every project is tailored
-                to create a seamless flow that resonates with both the eye and
-                the soul. The result? Spaces that inspire awe and spark joy at
-                every turn.
+                Under his leadership, Mansha Interiors has become synonymous
+                with innovation, modern aesthetics, and highly personalized
+                design. Gautam’s mission is simple: to create spaces that not
+                only impress but also evoke warmth, comfort, and a true sense of
+                belonging.
               </SectionParagraph>
             </Reveal>
 
-            <Reveal>
+            {/* <Reveal>
               <SectionParagraph>
                 Under Gautam&apos;s leadership, Mansha Interiors has become a
                 hallmark of innovative, modern, and highly personalized design.
@@ -59,7 +61,7 @@ export default function FounderSection() {
                 only wow but also create a sense of comfort, warmth, and
                 belonging, making each space feel alive and full of possibility.
               </SectionParagraph>
-            </Reveal>
+            </Reveal> */}
           </div>
         </div>
       </SectionWrapper>

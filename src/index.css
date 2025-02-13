@@ -13,6 +13,24 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "CS Carline";
+  src: url("./fonts/CSCarline-Regular.woff2") format("woff2"),
+    url("./fonts/CSCarline-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rollgates Luxury";
+  src: url("./fonts/RollgatesLuxury.woff2") format("woff2"),
+    url("./fonts/RollgatesLuxury.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -28,7 +46,7 @@ h4,
 h5,
 h6 {
   /* font-family: "League Spartan Variable", sans-serif; */
-  font-family: "Against", sans-serif;
+  font-family: "CS Carline", sans-serif;
 }
 
 p {

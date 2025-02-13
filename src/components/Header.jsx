@@ -209,7 +209,7 @@ const Header = () => {
           </ul> */}
 
           {/* desktop menu links left */}
-          <ul className="menu menu-horizontal px-1 gap-2 text-lg">
+          <ul className="menu menu-horizontal px-1 gap-2 text-base">
             {menuLinksLeft.map((link) => (
               <li key={link.id} className="rounded-full overflow-hidden">
                 <NavLink to={link.to}>
@@ -225,7 +225,7 @@ const Header = () => {
           </Link>
 
           {/* desktop menu links right */}
-          <ul className="menu menu-horizontal px-1 gap-2 text-lg">
+          <ul className="menu menu-horizontal px-1 gap-2 text-base">
             {menuLinksRight.map((link) => (
               <li key={link.id} className="rounded-full overflow-hidden">
                 <NavLink to={link.to}>

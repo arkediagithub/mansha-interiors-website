@@ -41,8 +41,6 @@ const TextAnimation = ({
       break;
   }
 
-  // console.log("segments", segments);
-
   return (
     <>
       <motion.div
@@ -50,10 +48,7 @@ const TextAnimation = ({
         whileInView={startOnView ? "show" : undefined}
         animate={startOnView ? undefined : "show"}
         viewport={{ once }}
-        className={twMerge(
-          "whitespace-pre-wrap font-against text-roti-400",
-          className
-        )}
+        className={twMerge("whitespace-pre-wrap font-cs-carline", className)}
         transition={{ staggerChildren }}
       >
         {segments.map((segment, i) => (
@@ -61,7 +56,7 @@ const TextAnimation = ({
             key={i}
             variants={blurInUpVariants}
             className={twMerge(
-              "text-roti-300",
+              "",
               by === "line" ? "block" : "inline-block whitespace-pre",
               segmentClassName
             )}
