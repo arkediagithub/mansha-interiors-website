@@ -63,7 +63,6 @@ const router = createBrowserRouter([
           },
         ],
       },
-
       {
         path: "gallery",
         element: <GalleryPage />,

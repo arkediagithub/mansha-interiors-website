@@ -19,7 +19,7 @@ export default function FounderSection() {
 
           <div id="about_details" className="flex flex-col justify-center">
             <Reveal>
-              <SectionHeading className="mb-0 md:mb-0 max-md:mt-0">
+              <SectionHeading className="mb-0 md:mb-0 max-md:mt-0 font-against">
                 {founder.name}
               </SectionHeading>
             </Reveal>

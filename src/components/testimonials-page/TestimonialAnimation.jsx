@@ -19,7 +19,7 @@ const TestimonialAnimation = ({ paragraph }) => {
     <>
       <motion.p
         ref={element}
-        className="text-2xl md:text-4xl lg:text-4xl font-marck-script relative text-gray-600"
+        className="text-2xl md:text-3xl lg:text-3xl font-marck-script relative text-gray-600"
       >
         <span className="text-5xl mr-2">&quot;</span>
         {/* {words.map((word, i) => {

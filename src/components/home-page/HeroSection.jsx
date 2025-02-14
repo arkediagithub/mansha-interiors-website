@@ -37,12 +37,13 @@ const HeroSection = () => {
             />
           </div>
           {/* background overlay */}
-          <div className="absolute inset-0 bg-black opacity-30" />
+          <div className="absolute inset-0 bg-black opacity-40" />
           {/* hero heading text */}
           <div className="absolute inset-0 flex flex-col justify-center items-center gap-4 px-4">
             <TextAnimation
               by="word"
-              text={"Welcome to Mansha Interiors"}
+              // text={"Welcome to Mansha Interiors"}
+              text={"Transform Your Space, Elevate Your Life"}
               className="text-3xl sm:text-4xl lg:text-6xl xl:text-7xl text-center tracking-wider text-white text-balance max-w-5xl"
               staggerChildren={0.05}
             />

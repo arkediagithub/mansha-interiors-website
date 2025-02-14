@@ -6,7 +6,7 @@ const AboutPageIntro = () => {
   return (
     <>
       <SectionWrapper>
-        <SectionHeading className="text-center">
+        <SectionHeading className="text-center font-against">
           About Mansha Interiors
         </SectionHeading>
         <SectionParagraph className="sm:text-center max-w-6xl mx-auto">
