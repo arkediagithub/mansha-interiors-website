@@ -44,7 +44,7 @@ const HeroSection = () => {
               by="word"
               // text={"Welcome to Mansha Interiors"}
               text={"Transform Your Space, Elevate Your Life"}
-              className="text-3xl sm:text-4xl lg:text-6xl xl:text-7xl text-center tracking-wider text-white text-balance max-w-5xl"
+              className="text-2xl sm:text-3xl lg:text-5xl xl:text-6xl text-center tracking-wider text-white text-balance max-w-5xl"
               staggerChildren={0.05}
             />
           </div>

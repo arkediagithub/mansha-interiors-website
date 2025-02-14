@@ -9,15 +9,17 @@ const SectionGallery = ({ title, subtitle, images }) => {
     <>
       <SectionWrapper>
         <Reveal className="w-full">
-          <SectionHeading className="text-center pb-4">
+          <SectionHeading className="text-center pb-8">
             {title || "title"}
           </SectionHeading>
-          {subtitle && (
+        </Reveal>
+        {subtitle && (
+          <Reveal className="w-full">
             <SectionParagraph className="text-center mb-6">
               {subtitle}
             </SectionParagraph>
-          )}
-        </Reveal>
+          </Reveal>
+        )}
 
         {/* service gallery */}
         <Reveal className="w-full">

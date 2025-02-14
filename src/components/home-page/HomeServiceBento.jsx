@@ -76,7 +76,7 @@ const HomeServiceBento = () => {
               </p>
             </Reveal>
             <Reveal>
-              <SectionHeading className="lg:text-4xl xl:text-5xl">
+              <SectionHeading className="lg:text-3xl xl:text-4xl">
                 Designing with Purpose and Passion
               </SectionHeading>
             </Reveal>

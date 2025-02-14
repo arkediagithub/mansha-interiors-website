@@ -4,7 +4,7 @@ const SectionHeading = ({ children, className = "" }) => {
   return (
     <h2
       className={twMerge(
-        "text-3xl lg:text-5xl tracking-wider my-2 md:my-4",
+        "text-2xl lg:text-4xl tracking-wider my-2 md:my-4",
         className
       )}
     >

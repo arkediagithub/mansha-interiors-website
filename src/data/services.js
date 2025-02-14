@@ -1,4 +1,20 @@
 import { randomId } from "@mantine/hooks";
+import {
+  IconBriefcase,
+  IconBuildingSkyscraper,
+  IconChecklist,
+  IconColorSwatch,
+  IconCrane,
+  IconFileText,
+  IconHammer,
+  IconHeartHandshake,
+  IconHomeSearch,
+  IconLayersIntersect,
+  IconLifebuoy,
+  IconRuler,
+  IconTools,
+  IconUsers,
+} from "@tabler/icons-react";
 
 export const servicesTabs = [
   {
@@ -96,36 +112,42 @@ export const residentialServiceProcess = [
     title: "Initial Consultation",
     description:
       "We visit your place to understand your vision, style, and project needs.",
+    icon: IconHomeSearch,
   },
   {
     id: randomId(),
     title: "Design Proposal",
     description:
       "We present a design proposal with sketches, mood boards, and layouts.",
+    icon: IconFileText,
   },
   {
     id: randomId(),
     title: "Design Development",
     description:
       "We refine the design, selecting materials and providing 3D renderings.",
+    icon: IconRuler,
   },
   {
     id: randomId(),
     title: "Start the Project",
     description:
       "We manage the build and installation to bring the design to life.",
+    icon: IconTools,
   },
   {
     id: randomId(),
     title: "Final Walkthrough",
     description:
       "We review the project with you to ensure it meets your expectations.",
+    icon: IconChecklist,
   },
   {
     id: randomId(),
     title: "Hand Over",
     description:
       "We officially hand over the project and offer post-project support.",
+    icon: IconHeartHandshake,
   },
 ];
 
@@ -134,31 +156,37 @@ export const commercialServiceProcess = [
     id: randomId(),
     title: "Initial Consultation",
     description: "Understand business goals, branding, and spatial needs.",
+    icon: IconBriefcase,
   },
   {
     id: randomId(),
     title: "Concept & Design",
     description: "Develop 3D renders and visual layouts.",
+    icon: IconLayersIntersect,
   },
   {
     id: randomId(),
     title: "Material & Finish Selection",
     description: "Choose furniture, textures, and branding elements.",
+    icon: IconColorSwatch,
   },
   {
     id: randomId(),
     title: "Project Execution",
     description: "Oversee construction, installation, and quality checks.",
+    icon: IconHammer,
   },
   {
     id: randomId(),
     title: "Final Walkthrough",
     description: "Ensure every element aligns with the client's expectations.",
+    icon: IconChecklist,
   },
   {
     id: randomId(),
     title: "Post-Project Support",
     description: "Assistance with maintenance, upgrades, and modifications.",
+    icon: IconLifebuoy,
   },
 ];
 
@@ -167,30 +195,36 @@ export const architecturalServiceProcess = [
     id: randomId(),
     title: "Initial Consultation",
     description: "Understanding the client’s vision, needs, and budget.",
+    icon: IconUsers,
   },
   {
     id: randomId(),
     title: "Concept & Blueprinting",
     description: "Crafting sketches, floor plans, and 3D models.",
+    icon: IconLayersIntersect,
   },
   {
     id: randomId(),
     title: "Structural Engineering",
     description: "Ensuring safety, stability, and compliance with regulations.",
+    icon: IconBuildingSkyscraper,
   },
   {
     id: randomId(),
     title: "Material & Design Finalization",
     description: "Selecting sustainable, durable, and aesthetic materials.",
+    icon: IconColorSwatch,
   },
   {
     id: randomId(),
     title: "Construction & Execution",
     description: "Overseeing on-site implementation and project progress.",
+    icon: IconCrane,
   },
   {
     id: randomId(),
     title: "Final Inspection & Handover",
     description: "Ensuring flawless execution and client satisfaction.",
+    icon: IconChecklist,
   },
 ];

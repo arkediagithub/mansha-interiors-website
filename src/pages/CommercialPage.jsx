@@ -1,9 +1,9 @@
 import { useEffect } from "react";
-import { serviceSteps } from "../data/services";
+import { commercialServiceProcess } from "../data/services";
 import MetaTags from "../components/MetaTags";
 import PageHeader from "../components/PageHeader";
 import ServiceAboutSection from "../components/studio-page/ServiceAboutSection";
-import ServiceBeforeAfter from "../components/studio-page/ServiceBeforeAfter";
+// import ServiceBeforeAfter from "../components/studio-page/ServiceBeforeAfter";
 import SectionGallery from "../components/studio-page/SectionGallery";
 import SectionSteps from "../components/SectionSteps";
 import CTASection from "../components/CTASection";
@@ -42,21 +42,21 @@ const CommercialPage = () => {
           "Healthcare & Wellness Centers (Clinics, Salons, Spas)",
         ]}
       />
-      <ServiceBeforeAfter
+      {/* <ServiceBeforeAfter
         title={"Redefining Business Environments"}
         subtitle={
           "For [Company Name], we designed a contemporary office space that balances comfort, efficiency, and brand identity. The transformation included ergonomic workstations, mood-enhancing lighting, and collaborative zones."
         }
         beforeImage={"https://placehold.co/1080x720"}
         afterImage={"https://placehold.co/1080x820"}
-      />
+      /> */}
       <SectionGallery
         title={"Our Completed Commercial Projects"}
         images={commercialServiceImages}
       />
       <SectionSteps
         title="Our Design Process is Simple & Seamless"
-        steps={serviceSteps}
+        steps={commercialServiceProcess}
       />
       <CTASection
         title="Book a Consultation for Your Business Space"

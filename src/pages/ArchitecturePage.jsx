@@ -3,7 +3,7 @@ import { architecturalServiceProcess } from "../data/services";
 import MetaTags from "../components/MetaTags";
 import PageHeader from "../components/PageHeader";
 import ServiceAboutSection from "../components/studio-page/ServiceAboutSection";
-import ServiceBeforeAfter from "../components/studio-page/ServiceBeforeAfter";
+// import ServiceBeforeAfter from "../components/studio-page/ServiceBeforeAfter";
 import SectionGallery from "../components/studio-page/SectionGallery";
 import SectionSteps from "../components/SectionSteps";
 import CTASection from "../components/CTASection";
@@ -42,14 +42,14 @@ const ArchitecturePage = () => {
           "Urban & Landscape Architecture (Outdoor Spaces & City Planning)",
         ]}
       />
-      <ServiceBeforeAfter
+      {/* <ServiceBeforeAfter
         title={"From Vision to Reality"}
         subtitle={
           "For [Client Name], we designed an ultra-modern residential villa integrating open spaces, natural lighting, and eco-friendly materials. The result? A seamless blend of luxury and sustainability."
         }
         beforeImage={"https://placehold.co/1080x720"}
         afterImage={"https://placehold.co/1080x820"}
-      />
+      /> */}
       <SectionGallery
         title={"Our Completed Architectural Projects"}
         images={architectureServiceImages}

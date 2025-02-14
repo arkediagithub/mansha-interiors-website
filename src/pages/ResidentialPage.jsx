@@ -4,7 +4,7 @@ import MetaTags from "../components/MetaTags";
 import PageHeader from "../components/PageHeader";
 import CTASection from "../components/CTASection";
 import ServiceAboutSection from "../components/studio-page/ServiceAboutSection";
-import ServiceBeforeAfter from "../components/studio-page/ServiceBeforeAfter";
+// import ServiceBeforeAfter from "../components/studio-page/ServiceBeforeAfter";
 import SectionGallery from "../components/studio-page/SectionGallery";
 import SectionSteps from "../components/SectionSteps";
 
@@ -42,14 +42,14 @@ const ResidentialPage = () => {
           "Smart Home Integration",
         ]}
       />
-      <ServiceBeforeAfter
+      {/* <ServiceBeforeAfter
         title={"Transforming Dreams into Reality"}
         subtitle={
           "We redesigned a contemporary apartment in Siliguri, optimizing space, adding warm textures, and incorporating smart lighting to enhance ambiance."
         }
         beforeImage={"https://placehold.co/1080x720"}
         afterImage={"https://placehold.co/1080x820"}
-      />
+      /> */}
       <SectionGallery
         title={"Our Completed Residential Projects"}
         images={residentialServiceImages}

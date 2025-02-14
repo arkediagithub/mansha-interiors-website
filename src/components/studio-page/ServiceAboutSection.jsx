@@ -12,7 +12,7 @@ const ServiceAboutSection = ({
   description = "description",
 }) => {
   return (
-    <SectionWrapper id="home_page_about_section" className="md:my-32">
+    <SectionWrapper id="home_page_about_section" className="md:mt-32 md:mb-24">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10">
         <Reveal className="w-full max-md:order-2 rounded-2xl overflow-hidden">
           <img
