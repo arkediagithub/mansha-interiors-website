@@ -14,11 +14,19 @@ const ProjectCard = ({ project }) => {
             loading="lazy"
           />
 
-          {/* overlay */}
-          <div className="absolute bg-black opacity-0 inset-0 transition-all group-hover:opacity-30 group-hover:z-10 pointer-events-none"></div>
+          {/* mobile overlay */}
+          <div className="absolute inset-0 bg-black opacity-20 z-10 pointer-events-none lg:hidden"></div>
 
-          {/* project name */}
-          <p className="absolute bottom-5 left-5 opacity-0 transition-all group-hover:opacity-100 group-hover:z-10 text-xl text-white pointer-events-none font-unbounded-variable">
+          {/* desktop overlay */}
+          <div className="absolute bg-black opacity-0 inset-0 transition-all group-hover:opacity-30 group-hover:z-10 pointer-events-none max-lg:hidden"></div>
+
+          {/* mobile project name */}
+          <p className="absolute bottom-5 left-5 opacity-100 z-10 text-xl text-white pointer-events-none lg:hidden">
+            {project.name}
+          </p>
+
+          {/* desktop project name */}
+          <p className="absolute bottom-5 left-5 opacity-0 transition-all group-hover:opacity-100 group-hover:z-10 text-xl text-white pointer-events-none max-lg:hidden">
             {project.name}
           </p>
         </div>

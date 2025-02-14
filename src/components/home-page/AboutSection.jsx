@@ -34,6 +34,12 @@ const AboutSection = () => {
 
           <div id="about_details" className="flex flex-col justify-center">
             <Reveal>
+              <p className="text-roti-400 text-xl font-semibold md:font-bold max-md:hidden">
+                Who We Are
+              </p>
+            </Reveal>
+
+            <Reveal>
               <SectionHeading>
                 Live in Style, Designed with Intention
               </SectionHeading>

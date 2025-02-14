@@ -36,25 +36,25 @@ const otherServices = [
   {
     title: "Office Interior Design",
     description:
-      "Create functional and stylish office spaces that enhance productivity and reflect your brand identity.",
+      "Crafting workspaces that inspire productivity and innovation.",
     image: "https://placehold.co/400x300?text=Office+Image",
   },
   {
     title: "Showroom Interior Design",
     description:
-      "Design visually striking showrooms that showcase your products beautifully and attract customers.",
+      "Designing captivating spaces that enhance brand presence and customer experience.",
     image: "https://placehold.co/400x300?text=Showroom+Image",
   },
   {
     title: "Hospital Interior Design",
     description:
-      "Craft healing environments with ergonomic and hygienic designs that enhance patient care.",
+      "Creating healing environments with comfort, efficiency, and care at the core.",
     image: "https://placehold.co/400x300?text=Hospital+Image",
   },
   {
     title: "Hospitality Interior Design",
     description:
-      "Design inviting and luxurious hospitality spaces that offer comfort and a memorable experience.",
+      "Elevating guest experiences with elegant and immersive spaces.",
     image: "https://placehold.co/400x300?text=Hospitality+Image",
   },
 ];
@@ -66,7 +66,7 @@ const HomeServiceBento = () => {
         {/* first grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6">
           {/* left */}
-          <div className="lg:pr-10 lg:pt-2">
+          <div className="lg:pr-10 lg:pt-4 lg:pl-2">
             <Reveal>
               <p className="text-roti-400 text-xl font-semibold md:font-bold">
                 What We Do
@@ -111,7 +111,7 @@ const HomeServiceBento = () => {
                 />
               </div>
               <div className="h-auto p-4 lg:p-6">
-                <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
+                <h3 className="text-lg font-semibold mb-2">{service.title}</h3>
                 <p className="">{service.description}</p>
               </div>
             </motion.div>

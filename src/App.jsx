@@ -44,7 +44,6 @@ const router = createBrowserRouter([
       },
       {
         path: "services",
-        // element: <ServicesPage />,
         children: [
           {
             index: true,

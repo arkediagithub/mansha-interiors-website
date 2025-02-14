@@ -8,7 +8,7 @@ export default function FounderSection() {
   return (
     <>
       <SectionWrapper id="home_page_about_section" className="md:my-32">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
           <Reveal className="w-full">
             <img
               src={founder.image}
@@ -29,7 +29,7 @@ export default function FounderSection() {
             </Reveal>
 
             <Reveal>
-              <SectionParagraph>
+              {/* <SectionParagraph>
                 Meet Gautam Agarwal, the visionary founder of Mansha Interiors.
                 With a B.Com degree and a prestigious diploma in Interior Design
                 from INIFD, he embarked on his design journey 13 years ago with
@@ -40,28 +40,30 @@ export default function FounderSection() {
                 begins with understanding each client’s unique needs, ensuring
                 every project flows effortlessly and resonates on a personal
                 level.
+              </SectionParagraph> */}
+              <SectionParagraph>
+                Gautam Agarwal, founder of Mansha Interiors, blends creativity
+                with precision. With a B.Com and an Interior Design diploma from
+                INIFD, he’s spent 13 years crafting spaces that are both stylish
+                and inviting.
               </SectionParagraph>
             </Reveal>
 
             <Reveal>
-              <SectionParagraph>
+              {/* <SectionParagraph>
                 Under his leadership, Mansha Interiors has become synonymous
                 with innovation, modern aesthetics, and highly personalized
                 design. Gautam’s mission is simple: to create spaces that not
                 only impress but also evoke warmth, comfort, and a true sense of
                 belonging.
+              </SectionParagraph> */}
+              <SectionParagraph>
+                His client-first approach has shaped Mansha Interiors into a
+                name synonymous with innovation, modern aesthetics, and bespoke
+                design. His vision ensures every space is not just beautifully
+                designed but also deeply personal and functional.
               </SectionParagraph>
             </Reveal>
-
-            {/* <Reveal>
-              <SectionParagraph>
-                Under Gautam&apos;s leadership, Mansha Interiors has become a
-                hallmark of innovative, modern, and highly personalized design.
-                Gautam&apos;s mission is simple: to craft environments that not
-                only wow but also create a sense of comfort, warmth, and
-                belonging, making each space feel alive and full of possibility.
-              </SectionParagraph>
-            </Reveal> */}
           </div>
         </div>
       </SectionWrapper>

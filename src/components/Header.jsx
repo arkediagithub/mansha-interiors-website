@@ -91,7 +91,7 @@ const Header = () => {
     {
       id: randomId(),
       to: "/contact",
-      label: "Contact",
+      label: "Contact Us",
     },
   ];
 
@@ -137,7 +137,7 @@ const Header = () => {
     {
       id: randomId(),
       to: "/contact",
-      label: "Contact",
+      label: "Contact Us",
     },
   ];
 
