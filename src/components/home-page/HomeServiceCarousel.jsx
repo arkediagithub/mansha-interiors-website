@@ -1,6 +1,7 @@
 import { IconChevronLeft, IconChevronRight } from "@tabler/icons-react";
 import { motion, AnimatePresence } from "motion/react";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const HomeServiceCarousel = ({ services }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -40,9 +41,11 @@ const HomeServiceCarousel = ({ services }) => {
             className="aspect-[16/9] w-full rounded-xl pointer-events-none"
           />
           <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4 py-2 rounded-b-lg">
-            <h3 className="text-lg lg:text-xl font-semibold mb-2">
-              {services[currentIndex].title}
-            </h3>
+            <Link to={services[currentIndex].to}>
+              <h3 className="text-lg lg:text-xl font-semibold mb-2">
+                {services[currentIndex].title}
+              </h3>
+            </Link>
             <p className="text-white leading-5 lg:max-w-[85%]">
               {services[currentIndex].description}
             </p>

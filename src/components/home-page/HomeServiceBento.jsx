@@ -13,6 +13,7 @@ const mainServices = [
       "We craft inviting and functional living spaces tailored to your style, from modern minimalism to classic elegance.",
     image:
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739262671/homepage_hero_slide_banner_1_u9rwjh.png",
+    to: "/services/residential",
   },
   {
     id: 2,
@@ -21,6 +22,7 @@ const mainServices = [
       "Our visionary designs blend form, function, and sustainability, creating timeless structures that inspire.",
     image:
       "https://images.unsplash.com/photo-1721294104781-4f00f6ffef99?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    to: "/services/architecture",
   },
   {
     id: 3,
@@ -29,6 +31,7 @@ const mainServices = [
       "We design vibrant landscapes that enhance spaces, promoting harmony between nature and architecture.",
     image:
       "https://images.unsplash.com/photo-1705909772719-8d3bf32552be?q=80&w=1718&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    to: "/services/commercial",
   },
 ];
 
