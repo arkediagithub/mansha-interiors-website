@@ -30,12 +30,6 @@ const HomeServiceCarousel = ({ services }) => {
           exit={{ opacity: 0.3 }}
           transition={{ duration: 1 }}
           className="relative aspect-video h-full"
-          // drag="x"
-          // dragConstraints={{ left: 0, right: 0 }}
-          // onDragEnd={(event, info) => {
-          //   if (info.offset.x < -50) nextSlide();
-          //   if (info.offset.x > 50) prevSlide();
-          // }}
         >
           <img
             src={
@@ -45,11 +39,13 @@ const HomeServiceCarousel = ({ services }) => {
             alt={services[currentIndex].title}
             className="aspect-[16/9] w-full rounded-xl pointer-events-none"
           />
-          <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4 rounded-b-lg">
-            <h3 className="text-xl font-semibold mb-2">
+          <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4 py-2 rounded-b-lg">
+            <h3 className="text-lg lg:text-xl font-semibold mb-2">
               {services[currentIndex].title}
             </h3>
-            <p className="text-white">{services[currentIndex].description}</p>
+            <p className="text-white leading-5 lg:max-w-[85%]">
+              {services[currentIndex].description}
+            </p>
           </div>
         </motion.div>
       </AnimatePresence>

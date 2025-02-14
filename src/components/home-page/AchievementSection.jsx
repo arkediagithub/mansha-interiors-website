@@ -10,13 +10,9 @@ const AchievementSection = () => {
     >
       <div className="container mx-auto flex flex-col lg:flex-row gap-4 md:gap-8">
         <div id="achievementHeading" className="lg:max-w-lg">
-          {/* <p className="text-accent text-xl font-semibold md:font-bold">
-            TRUSTED EXPERIENCE
-          </p> */}
           <p className="text-accent text-xl font-semibold md:font-bold">
             Since 2012
           </p>
-          {/* <SectionHeading>Modern Design Solutions</SectionHeading> */}
           <SectionHeading>Numbers You can Trust</SectionHeading>
         </div>
 
@@ -67,11 +63,12 @@ const AchievementSection = () => {
                   maximum={5}
                   delay={200}
                   prefix="~"
+                  suffix="L"
                   className="lg:text-5xl"
                 />
               </div>
               <p className="stat-desc whitespace-normal text-base text-gray-300">
-                Sq Ft Worked (Lakh)
+                Sq. Ft. Project Completed
               </p>
             </div>
           </div>
@@ -88,7 +85,7 @@ const AchievementSection = () => {
                 />
               </div>
               <p className="stat-desc whitespace-normal text-base text-gray-300">
-                Work in Progress
+                Ongoing Project
               </p>
             </div>
           </div>

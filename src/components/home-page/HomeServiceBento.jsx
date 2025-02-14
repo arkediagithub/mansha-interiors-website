@@ -92,7 +92,7 @@ const HomeServiceBento = () => {
           </div>
         </div>
 
-        {/*  */}
+        {/* second grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 lg:gap-6 mt-4 lg:mt-6">
           {otherServices.map((service, i) => (
             <motion.div
@@ -100,13 +100,14 @@ const HomeServiceBento = () => {
               className="text-center shadow-lg max-h-[450px] border-2 border-roti-400 rounded-xl"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.2 }}
             >
               <div className="rounded-t-xl overflow-hidden max-h-[250px]">
                 <img
                   src={service.image}
                   alt="image"
-                  className="w-full h-full"
+                  className="w-full h-full pointer-events-none"
                 />
               </div>
               <div className="h-auto p-4 lg:p-6">
