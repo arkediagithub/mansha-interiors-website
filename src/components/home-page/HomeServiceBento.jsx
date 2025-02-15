@@ -100,22 +100,22 @@ const HomeServiceBento = () => {
           {otherServices.map((service, i) => (
             <motion.div
               key={i}
-              className="text-center shadow-lg max-h-[450px] border-2 border-roti-400 rounded-xl"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.2 }}
+              className="card card-compact bg-base-100 shadow-xl"
             >
-              <div className="rounded-t-xl overflow-hidden max-h-[250px]">
+              <figure>
                 <img
                   src={service.image}
-                  alt="image"
+                  alt="other service images"
                   className="w-full h-full pointer-events-none"
                 />
-              </div>
-              <div className="h-auto p-4 lg:p-6">
-                <h3 className="text-lg font-semibold mb-2">{service.title}</h3>
-                <p className="">{service.description}</p>
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title">{service.title}</h2>
+                <p className="text-base">{service.description}</p>
               </div>
             </motion.div>
           ))}
