@@ -52,13 +52,13 @@ export const testimonials = [
   {
     id: randomId(),
     image: "https://placehold.co/400",
-    name: "Neha Goyel",
+    name: "Neeraj poddar",
     text: "We entrusted them with designing our new office, and they delivered beyond what we imagined. The space now feels welcoming, efficient, and truly reflects the essence of our business. We constantly receive compliments, and it has significantly enhanced our working environment!",
   },
   {
     id: randomId(),
     image: "https://placehold.co/400",
-    name: "Nesh Agarwal",
+    name: "Neha Goyel",
     text: "I had always envisioned a cozy yet elegant home, and the designers made that dream a reality. From the furniture selection to the perfect lighting arrangement, every aspect was handled with utmost professionalism. My family and I couldn’t be happier with the results!",
   },
 ];
