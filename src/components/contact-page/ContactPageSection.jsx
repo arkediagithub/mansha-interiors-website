@@ -3,6 +3,7 @@ import { contactInfo } from "../../data/contact";
 import Reveal from "../Reveal";
 import SectionWrapper from "../SectionWrapper";
 import ContactPageForm from "./ContactPageForm";
+import ContactPhoneNumber from "./ContactPhoneNumber";
 
 const ContactPageSection = () => {
   return (
@@ -24,14 +25,29 @@ const ContactPageSection = () => {
               <div className="space-y-4">
                 {contactInfo.map((contact) => (
                   <Reveal key={contact.id}>
-                    <p className="flex items-center gap-4">
+                    <div className="flex items-center gap-4 text-gray-500 md:text-lg">
                       <contact.icon stroke={2} />
-                      {contact.type === "link" ? (
-                        <Link to={contact.linkTo}>{contact.description}</Link>
+                      {contact.type === "email" ? (
+                        <Link
+                          to={`mailto:${contact.to}`}
+                          className="hover:text-roti-500"
+                        >
+                          {contact.description}
+                        </Link>
+                      ) : contact.type === "phone" ? (
+                        <ContactPhoneNumber phoneNumber={contact} />
+                      ) : contact.type === "location" ? (
+                        <Link
+                          to={contact.to}
+                          target="_blank"
+                          className="hover:text-roti-500"
+                        >
+                          {contact.description}
+                        </Link>
                       ) : (
                         <span>{contact.description}</span>
                       )}
-                    </p>
+                    </div>
                   </Reveal>
                 ))}
               </div>

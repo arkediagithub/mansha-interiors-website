@@ -9,11 +9,27 @@ import {
 export const contactInfo = [
   {
     id: randomId(),
+    title: "Email",
+    description: "work@manshainteriors.com",
+    icon: IconMail,
+    type: "email",
+    to: "work@manshainteriors.com",
+  },
+  {
+    id: randomId(),
+    title: "Phone",
+    description: "9609930991/9832049481/9749405567",
+    icon: IconPhone,
+    type: "phone",
+    to: "tel:919609930991",
+  },
+  {
+    id: randomId(),
     title: "Location",
     description: "Shop No.9, 2nd Floor, Time Square Building, Siliguri",
     icon: IconMapPin,
-    type: "text",
-    linkTo: "",
+    type: "location",
+    to: "https://maps.app.goo.gl/zYyLB4avcZh4VaAz7",
   },
   {
     id: randomId(),
@@ -21,22 +37,6 @@ export const contactInfo = [
     description: "Monday-Saturday: 10AM-7PM",
     icon: IconClockHour4,
     type: "text",
-    linkTo: "",
-  },
-  {
-    id: randomId(),
-    title: "Email",
-    description: "work@manshainteriors.com",
-    icon: IconMail,
-    type: "link",
-    linkTo: "mailto:work@manshainteriors.com",
-  },
-  {
-    id: randomId(),
-    title: "Phone",
-    description: "9609930991/9832049481/9749405567",
-    icon: IconPhone,
-    type: "link",
-    linkTo: "tel:919609930991",
+    to: "",
   },
 ];
