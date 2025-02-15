@@ -50,11 +50,11 @@ const router = createBrowserRouter([
             element: <ServicesPage />,
           },
           {
-            path: "residential",
+            path: "interior",
             element: <ResidentialPage />,
           },
           {
-            path: "commercial",
+            path: "landscape",
             element: <CommercialPage />,
           },
           {

@@ -57,21 +57,6 @@ const Footer = () => {
           </ul>
         </aside>
 
-        <nav className="">
-          <h6 className="footer-title opacity-80 text-white tracking-widest">
-            Services
-          </h6>
-          {serviceLinks.map((link) => (
-            <Link
-              key={link.id}
-              to={link.to}
-              className="link link-hover text-base"
-            >
-              {link.label}
-            </Link>
-          ))}
-        </nav>
-
         <nav>
           <h6 className="footer-title opacity-80 text-white tracking-widest">
             Quick Links
@@ -80,7 +65,22 @@ const Footer = () => {
             <Link
               key={link.id}
               to={link.to}
-              className="link link-hover text-base"
+              className="link no-underline text-base hover:text-accent"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </nav>
+
+        <nav>
+          <h6 className="footer-title opacity-80 text-white tracking-widest">
+            Services
+          </h6>
+          {serviceLinks.map((link) => (
+            <Link
+              key={link.id}
+              to={link.to}
+              className="link no-underline text-base hover:text-accent"
             >
               {link.label}
             </Link>
@@ -95,7 +95,7 @@ const Footer = () => {
             <Link
               key={social.id}
               to={social.to}
-              className="link link-hover text-base"
+              className="link no-underline text-base hover:text-accent"
             >
               {social.label}
             </Link>
@@ -108,8 +108,8 @@ const Footer = () => {
         className="footer footer-center bg-base-200 p-4 border-t"
       >
         <p className="text-gray-400 text-base lg:text-lg">
-          Copyright © {new Date().getFullYear()} - All right reserved by Mansha
-          Interiors
+          Copyright &copy; {new Date().getFullYear()} &ndash; All right reserved
+          by Mansha Interiors
         </p>
       </div>
     </footer>

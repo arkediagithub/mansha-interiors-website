@@ -49,7 +49,7 @@ const otherServices = [
     image: "https://placehold.co/400x300?text=Showroom+Image",
   },
   {
-    title: "Hospital Interior Design",
+    title: "Residence Interior Design",
     description:
       "Creating healing environments with comfort, efficiency, and care at the core.",
     image: "https://placehold.co/400x300?text=Hospital+Image",

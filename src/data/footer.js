@@ -1,15 +1,13 @@
 import { randomId } from "@mantine/hooks";
 
 export const serviceLinks = [
-  { id: randomId(), to: "/services/residential", label: "Residential Design" },
-  { id: randomId(), to: "/services/commercial", label: "Commercial Design" },
-  { id: randomId(), to: "/contact", label: "Landscape Design" },
+  { id: randomId(), to: "/services/interior", label: "Interior Design" },
+  { id: randomId(), to: "/services/landscape", label: "Landscape Design" },
   {
     id: randomId(),
     to: "/services/architecture",
     label: "Architecture Design",
   },
-  { id: randomId(), to: "/contact", label: "Renovation and Remodeling" },
 ];
 
 export const quickLinks = [

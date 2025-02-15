@@ -48,7 +48,7 @@ const TextAnimation = ({
         whileInView={startOnView ? "show" : undefined}
         animate={startOnView ? undefined : "show"}
         viewport={{ once }}
-        className={twMerge("whitespace-pre-wrap font-against", className)}
+        className={twMerge("pb-3 whitespace-pre-wrap font-against", className)}
         transition={{ staggerChildren }}
       >
         {segments.map((segment, i) => (
