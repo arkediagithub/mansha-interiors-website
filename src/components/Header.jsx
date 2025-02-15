@@ -240,7 +240,7 @@ const Header = () => {
         <div className="navbar-end lg:hidden">
           <label
             htmlFor="my-drawer"
-            className="btn btn-circle btn-outline drawer-button lg:hidden"
+            className="btn btn-circle btn-ghost drawer-button lg:hidden"
           >
             <IconMenuDeep stroke={2} />
           </label>
