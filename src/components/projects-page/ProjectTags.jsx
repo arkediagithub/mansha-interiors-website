@@ -1,19 +1,20 @@
+import { twMerge } from "tailwind-merge";
 import SectionWrapper from "../SectionWrapper";
 
-const ProjectTags = ({ tags, tagClick, selectedTags }) => {
+const ProjectTags = ({ tags, tagClick, selectedTag }) => {
   return (
     <SectionWrapper className="-my-6">
       <div className="flex items-center justify-center gap-2 my-4 flex-wrap px-4">
-        {tags.map((tag, idx) => (
+        {tags.map((tag, i) => (
           <div
-            key={idx}
-            className={`badge cursor-pointer p-4 ${
-              selectedTags.includes(tag) ? "badge-neutral" : "badge-ghost"
-            }`}
+            key={i}
             onClick={() => tagClick(tag)}
+            className={twMerge(
+              "badge cursor-pointer py-5 px-6 border",
+              selectedTag === tag ? "badge-neutral" : "badge-outline"
+            )}
           >
-            {/* {tag.charAt(0).toUpperCase() + tag.slice(1)} */}
-            {tag.toUpperCase()}
+            <span className="text-lg">{tag.toUpperCase()}</span>
           </div>
         ))}
       </div>

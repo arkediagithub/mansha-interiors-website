@@ -6,7 +6,7 @@ export const projects = [
     name: "Sunil Gupta, Lumina",
     image:
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171842/Camera.005_10_qh0oa2.jpg",
-    tags: ["residential"],
+    tag: ["residential"],
     type: "Residential",
     otherImages: [
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739171842/Camera.005_10_qh0oa2.jpg",
@@ -30,7 +30,7 @@ export const projects = [
     name: "Shanky Airen, Darpan",
     image:
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739186792/Master_op_V1_v9lcl5.jpg",
-    tags: ["residential"],
+    tag: ["residential"],
     type: "Residential",
     otherImages: [
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739186792/Master_op_V1_v9lcl5.jpg",
@@ -43,10 +43,30 @@ export const projects = [
   },
   {
     id: randomId(),
+    name: "Neeraj Poddar, Balaram Hut",
+    image:
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739190270/Camera.016_xaeiwe.jpg",
+    tag: ["commercial"],
+    type: "Commercial",
+    otherImages: [
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739190270/Camera.016_xaeiwe.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739190270/WhatsApp_Image_2025-01-18_at_1.13.23_PM_lw551n.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739190269/WhatsApp_Image_2025-01-16_at_12.39.35_PM_kqjfff.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739190269/WhatsApp_Image_2025-01-16_at_12.39.34_PM_e37tux.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739190269/Camera.018_vdgdws.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739190266/Camera.013_lcjgzt.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739190268/Camera.001_bxcupx.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739190273/Camera.002_ute977.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739190273/Camera.007_mk0sbz.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739190273/Camera.002_ute977.jpg",
+    ],
+  },
+  {
+    id: randomId(),
     name: "Sanjay Agarwal, Palacio",
     image:
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739186906/Camera.001_jx6us2.jpg",
-    tags: ["commercial"],
+    tag: ["residential"],
     type: "Residential",
     otherImages: [
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739186909/Camera.002_vag1z5.jpg",
@@ -64,7 +84,7 @@ export const projects = [
     name: "Sandeep Agarwal, Palacio",
     image:
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739186968/ROUGH_RENDER_MOTHER_S_BEDROM_V2_e64nz3.jpg",
-    tags: ["residential"],
+    tag: ["residential"],
     type: "Residential",
     otherImages: [
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739186968/ROUGH_RENDER_MOTHER_S_BEDROM_V2_e64nz3.jpg",
@@ -83,7 +103,7 @@ export const projects = [
     name: "Saksham Garg, Darpan",
     image:
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739187018/Camera.005_cn7fmz.jpg",
-    tags: ["residential"],
+    tag: ["residential"],
     type: "Residential",
     otherImages: [
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739187014/Camera.001_tvei8w.jpg",
@@ -100,7 +120,7 @@ export const projects = [
     name: "Ramesh Kabra, Nepal",
     image:
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739190010/Camera.004_maz9rp.jpg",
-    tags: ["residential"],
+    tag: ["residential"],
     type: "Residential",
     otherImages: [
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739190010/Camera.004_maz9rp.jpg",
@@ -119,7 +139,7 @@ export const projects = [
     name: "Rajesh Poddar, Guwahati",
     image:
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739189787/M2_cp7o8c.jpg",
-    tags: ["residential"],
+    tag: ["residential"],
     type: "Residential",
     otherImages: [
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739189787/M2_cp7o8c.jpg",
@@ -132,7 +152,7 @@ export const projects = [
     name: "Rajesh Agarwal, Guwahati",
     image:
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739189864/V1_pwwndm.jpg",
-    tags: ["commercial", "architectural"],
+    tag: ["residential"],
     type: "Residential",
     otherImages: [
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739189864/V1_pwwndm.jpg",
@@ -147,7 +167,7 @@ export const projects = [
     name: "Rajesh Agarwal, Ambience",
     image:
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739432317/Camera.003_o1l9dg.jpg",
-    tags: ["commercial", "architectural"],
+    tag: ["residential"],
     type: "Residential",
     otherImages: [
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739432317/Camera.003_o1l9dg.jpg",
@@ -177,7 +197,7 @@ export const projects = [
     name: "Nesh Agarwal, Ambience",
     image:
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739190121/LIV01_stz6qt.jpg",
-    tags: ["residential"],
+    tag: ["residential"],
     type: "Residential",
     otherImages: [
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739190042/DEN_2_zfcqfp.jpg",
@@ -197,7 +217,7 @@ export const projects = [
     name: "Neha Goyel, Windsor Park",
     image:
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739190307/Camera.001_loc8kt.jpg",
-    tags: ["residential"],
+    tag: ["residential"],
     type: "Residential",
     otherImages: [
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739190307/Camera.001_loc8kt.jpg",
@@ -212,30 +232,10 @@ export const projects = [
   },
   {
     id: randomId(),
-    name: "Neeraj Poddar, Balaram Hut",
-    image:
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739190270/Camera.016_xaeiwe.jpg",
-    tags: ["commmercial"],
-    type: "Commercial",
-    otherImages: [
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739190270/Camera.016_xaeiwe.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739190270/WhatsApp_Image_2025-01-18_at_1.13.23_PM_lw551n.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739190269/WhatsApp_Image_2025-01-16_at_12.39.35_PM_kqjfff.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739190269/WhatsApp_Image_2025-01-16_at_12.39.34_PM_e37tux.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739190269/Camera.018_vdgdws.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739190266/Camera.013_lcjgzt.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739190268/Camera.001_bxcupx.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739190273/Camera.002_ute977.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739190273/Camera.007_mk0sbz.jpg",
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739190273/Camera.002_ute977.jpg",
-    ],
-  },
-  {
-    id: randomId(),
     name: "Narendra Patel, Queens Park",
     image:
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739190334/cam_v1_kvbp2r.jpg",
-    tags: ["residential"],
+    tag: ["residential"],
     type: "Residential",
     otherImages: [
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739190334/cam_v1_kvbp2r.jpg",
@@ -257,7 +257,7 @@ export const projects = [
     name: "Mayank Agarwal, Punjabi Para",
     image:
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739189898/v2_nl5peb.jpg",
-    tags: ["residential"],
+    tag: ["residential"],
     type: "Residential",
     otherImages: [
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739189898/v2_nl5peb.jpg",
@@ -273,7 +273,7 @@ export const projects = [
     name: "Manoj Minda, Guwahati",
     image:
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739251748/cam1_View010000_hypz13.jpg",
-    tags: ["residential"],
+    tag: ["residential"],
     type: "Residential",
     otherImages: [
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739251748/cam1_View010000_hypz13.jpg",
@@ -293,7 +293,7 @@ export const projects = [
     name: "Manoj Kedia, Upwan",
     image:
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739251636/Camera.001_x2civx.jpg",
-    tags: ["residential"],
+    tag: ["residential"],
     type: "Residential",
     otherImages: [
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739251688/Camera.006_rz5gmp.jpg",
@@ -318,7 +318,7 @@ export const projects = [
     name: "Manoj Agarwal, Model Town",
     image:
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739252035/REV5_MANOJ_JI__MASTER_BEDROOM_V11_ebxfd7.jpg",
-    tags: ["residential"],
+    tag: ["residential"],
     type: "Residential",
     otherImages: [
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739252035/REV5_MANOJ_JI__MASTER_BEDROOM_V11_ebxfd7.jpg",
@@ -338,7 +338,7 @@ export const projects = [
     name: "Ankur Bansal, Shaktigar",
     image:
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739252297/V1_rev_2_lv0tut.jpg",
-    tags: ["residential"],
+    tag: ["residential", "architecture"],
     type: "Residential",
     otherImages: [
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739252297/V1_rev_2_lv0tut.jpg",
@@ -356,7 +356,7 @@ export const projects = [
     name: "Aman Agarwal, Ambience",
     image:
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739193942/V2_1_odkfz1.jpg",
-    tags: ["residential"],
+    tag: ["residential"],
     type: "Residential",
     otherImages: [
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739193942/V2_1_odkfz1.jpg",
@@ -379,7 +379,7 @@ export const projects = [
     name: "Ankur Agarwal, Uttorayan",
     image:
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739193720/Camera.004_nzwmxf.jpg",
-    tags: ["residential"],
+    tag: ["residential"],
     type: "Residential",
     otherImages: [
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739193731/Camera.001_hhoocb.jpg",
@@ -397,6 +397,169 @@ export const projects = [
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739193604/Camera.001_10_ox6cd4.jpg",
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739193602/Camera.004_7_y4bi7g.jpg",
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739193706/1_tp1l5f.jpg",
+    ],
+  },
+  {
+    id: randomId(),
+    name: "Ankit Kedia, Eastern Bypass",
+    image:
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877457/Camera.001_caqmsd.jpg",
+    tag: ["commercial"],
+    type: "Commercial",
+    otherImages: [
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877457/Camera.001_caqmsd.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877461/Camera.004_xpvvim.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877460/1_ol0l31.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877468/Camera.034_wrrwu4.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877464/Camera.033_fvt8nh.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877461/Camera.010_nu7y7n.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877459/Camera.007_thrifj.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877462/Camera.021_mfysbw.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877467/Camera.022_wiituy.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877461/4_pqju42.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877466/2_cujnjz.jpg",
+    ],
+  },
+  {
+    id: randomId(),
+    name: "Ankur Agarwal, F-06, Uttarayon",
+    image:
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877456/WhatsApp_Image_2025-02-15_at_1.29.08_PM_bocofu.jpg",
+    tag: ["architecture"],
+    type: "Architecture",
+    otherImages: [
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877456/WhatsApp_Image_2025-02-15_at_1.29.08_PM_bocofu.jpg",
+    ],
+  },
+  {
+    id: randomId(),
+    name: "Chetan Agarwal, GDSQ, Silver Queens",
+    image:
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877462/4_o219v4.jpg",
+    tag: ["commercial", "showroom"],
+    type: "Commercial",
+    otherImages: [
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877462/4_o219v4.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877465/6_d5350r.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877465/2_zki8xe.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877462/3_hckp7x.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877461/8_ysqaia.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877460/9_vorpaa.jpg",
+    ],
+  },
+  {
+    id: randomId(),
+    name: "Govind Agarwal, E-04, Uttarayon",
+    image:
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877456/WhatsApp_Image_2025-02-15_at_1.29.07_PM_yaf4zs.jpg",
+    tag: ["architecture"],
+    type: "Architecture ",
+    otherImages: [
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877456/WhatsApp_Image_2025-02-15_at_1.29.07_PM_yaf4zs.jpg",
+    ],
+  },
+  {
+    id: randomId(),
+    name: "Govind Agarwal, G-02, Uttarayon",
+    image:
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877457/WhatsApp_Image_2025-02-15_at_1.29.08_PM_1_uahg9k.jpg",
+    tag: ["architecture"],
+    type: "Architecture ",
+    otherImages: [
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877457/WhatsApp_Image_2025-02-15_at_1.29.08_PM_1_uahg9k.jpg",
+    ],
+  },
+  {
+    id: randomId(),
+    name: "Joy Choudhary, Falakata",
+    image:
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877458/WhatsApp_Image_2025-02-15_at_1.29.12_PM_1_fsf3gg.jpg",
+    tag: ["architecture"],
+    type: "Architecture ",
+    otherImages: [
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877458/WhatsApp_Image_2025-02-15_at_1.29.12_PM_1_fsf3gg.jpg",
+    ],
+  },
+  {
+    id: randomId(),
+    name: "Naitik Agarwal, Rangapani",
+    image:
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877456/WhatsApp_Image_2025-02-15_at_1.29.12_PM_ou0fmo.jpg",
+    tag: ["architecture"],
+    type: "Architecture ",
+    otherImages: [
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877456/WhatsApp_Image_2025-02-15_at_1.29.12_PM_ou0fmo.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877458/WhatsApp_Image_2025-02-15_at_1.29.11_PM_dpyxmn.jpg",
+    ],
+  },
+  {
+    id: randomId(),
+    name: "Pawan Agarwal, Hardware Showroom, Nepal",
+    image:
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877471/Camera.007_dx078o.jpg",
+    tag: ["commercial", "showroom"],
+    type: "Commercial ",
+    otherImages: [
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877471/Camera.007_dx078o.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877469/Camera.006_rihlby.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877469/Camera.002_ztsdrw.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877469/Camera.005_nmtczf.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877467/Camera.001_jjiheu.jpg",
+    ],
+  },
+  {
+    id: randomId(),
+    name: "Pawan Agarwal, Office, Nepal",
+    image:
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877463/Camera.007_icew0c.jpg",
+    tag: ["commercial"],
+    type: "Commercial ",
+    otherImages: [
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877463/Camera.007_icew0c.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877460/Camera.006_jluj7n.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877464/Camera.005_gbfo6i.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877462/Camera.002_iwton9.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877459/Camera.003_ouznnr.jpg",
+    ],
+  },
+  {
+    id: randomId(),
+    name: "Pradeep Agarwal, Jwellery Showroom, Planet Mall",
+    image:
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877474/Camera.011_mkznyz.jpg",
+    tag: ["commercial", "showroom"],
+    type: "Commercial ",
+    otherImages: [
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877474/Camera.011_mkznyz.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877460/Camera.006_jluj7n.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877473/Camera.002_zffphw.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877473/Camera.001_vcrqle.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877472/Camera.006_h6zb8c.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877471/Camera.003_i1hpqu.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877471/Camera.005_q3ggeg.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877469/Camera.010_t8myz8.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877466/Camera.008_inrv9u.jpg",
+    ],
+  },
+  {
+    id: randomId(),
+    name: "Rohit Tiwari, Office, Bardhaman Road",
+    image:
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877469/Camera.014_3_ynloyi.jpg",
+    tag: ["commercial"],
+    type: "Commercial ",
+    otherImages: [
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877469/Camera.014_3_ynloyi.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877468/Camera.008_3_gsgso0.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877468/Camera.009_4_kk9h2o.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877468/Camera.016_1_k3fhnq.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877467/Camera.015_1_zkrrst.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877466/Camera.017_1_o2mfat.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877466/Camera.011_1_ryxk2j.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877465/Camera.004_12_vczi6f.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877465/Camera.020_2_zapkpl.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877464/Camera.007_4_hue1lk.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877464/Camera.006_6_mdcpso.jpg",
     ],
   },
 ];

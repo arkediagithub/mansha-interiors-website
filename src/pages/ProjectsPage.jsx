@@ -13,24 +13,19 @@ const ProjectsPage = () => {
     });
   }, []);
 
-  const [selectedTags, setSelectedTags] = useState([]);
-
   const tagOptions = Array.from(
-    new Set(projects.flatMap((project) => project.tags))
+    new Set(projects.flatMap((project) => project.tag))
   );
-  console.log(tagOptions);
+
+  const [selectedTag, setSelectedTag] = useState("");
 
   const handleTagClick = (givenTag) => {
-    if (selectedTags.includes(givenTag)) {
-      setSelectedTags(selectedTags.filter((tag) => tag !== givenTag));
-    } else {
-      setSelectedTags([...selectedTags, givenTag]);
-    }
+    setSelectedTag(selectedTag === givenTag ? "" : givenTag);
   };
 
-  const filteredProjects = projects.filter((project) =>
-    selectedTags.every((tag) => project.tags.includes(tag))
-  );
+  const filteredProjects = selectedTag
+    ? projects.filter((project) => project.tag.includes(selectedTag))
+    : projects;
 
   return (
     <>
@@ -41,7 +36,7 @@ const ProjectsPage = () => {
       />
       <ProjectTags
         tags={tagOptions}
-        selectedTags={selectedTags}
+        selectedTag={selectedTag}
         tagClick={handleTagClick}
       />
       <ProjectList projectList={filteredProjects} />
