@@ -23,7 +23,7 @@ const SectionGallery = ({ title, subtitle, images }) => {
 
         {/* service gallery */}
         <Reveal className="w-full">
-          <div className="container grid grid-cols-2 gap-4 mx-auto md:grid-cols-4">
+          <div className="container grid grid-cols-2 gap-2 lg:gap-4 mx-auto md:grid-cols-4">
             {images.map((image, index) => {
               const specialClasses =
                 index === 0

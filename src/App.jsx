@@ -5,20 +5,17 @@ import AppLayout from "./layout/AppLayout";
 
 import HomePage from "./pages/HomePage";
 import ServicesPage from "./pages/ServicesPage";
-import TeamPage from "./pages/TeamPage";
 import ContactPage from "./pages/ContactPage";
 import NotFoundPage from "./pages/NotFoundPage";
-import ProjectsPage from "./pages/ProjectsPage";
 import AboutUsPage from "./pages/AboutUsPage";
 import FaqsPage from "./pages/FaqsPage";
 import GalleryPage from "./pages/GalleryPage";
 import CareersPage from "./pages/CareersPage";
-import StudioPage from "./pages/StudioPage";
 import TestimonialsPage from "./pages/TestimonialsPage";
-import ResidentialPage from "./pages/ResidentialPage";
-import CommercialPage from "./pages/CommercialPage";
 import ArchitecturePage from "./pages/ArchitecturePage";
 import SingleGalleryPage from "./pages/SingleGalleryPage";
+import LandscapeServicePage from "./pages/LandscapeServicePage";
+import InteriorServicePage from "./pages/InteriorServicePage";
 
 const router = createBrowserRouter([
   {
@@ -33,14 +30,14 @@ const router = createBrowserRouter([
         path: "about",
         element: <AboutUsPage />,
       },
-      {
-        path: "team",
-        element: <TeamPage />,
-      },
-      {
-        path: "studio",
-        element: <StudioPage />,
-      },
+      // {
+      //   path: "team",
+      //   element: <TeamPage />,
+      // },
+      // {
+      //   path: "studio",
+      //   element: <StudioPage />,
+      // },
       {
         path: "services",
         children: [
@@ -50,11 +47,11 @@ const router = createBrowserRouter([
           },
           {
             path: "interior",
-            element: <ResidentialPage />,
+            element: <InteriorServicePage />,
           },
           {
             path: "landscape",
-            element: <CommercialPage />,
+            element: <LandscapeServicePage />,
           },
           {
             path: "architecture",
@@ -70,10 +67,10 @@ const router = createBrowserRouter([
         path: "gallery/:id",
         element: <SingleGalleryPage />,
       },
-      {
-        path: "projects",
-        element: <ProjectsPage />,
-      },
+      // {
+      //   path: "projects",
+      //   element: <ProjectsPage />,
+      // },
       {
         path: "testimonials",
         element: <TestimonialsPage />,

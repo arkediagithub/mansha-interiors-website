@@ -37,7 +37,7 @@ const HeroSection = () => {
             />
           </div>
           {/* background overlay */}
-          <div className="absolute inset-0 bg-black opacity-40" />
+          <div className="absolute inset-0 bg-black opacity-30" />
           {/* hero heading text */}
           <div className="absolute inset-0 flex flex-col justify-center items-center gap-4 px-4">
             <TextAnimation

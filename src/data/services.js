@@ -11,6 +11,7 @@ import {
   IconHomeSearch,
   IconLayersIntersect,
   IconLifebuoy,
+  IconPlant,
   IconRuler,
   IconTools,
   IconUsers,
@@ -106,7 +107,7 @@ export const serviceSteps = [
   },
 ];
 
-export const residentialServiceProcess = [
+export const interiorServiceProcess = [
   {
     id: randomId(),
     title: "Initial Consultation",
@@ -151,41 +152,44 @@ export const residentialServiceProcess = [
   },
 ];
 
-export const commercialServiceProcess = [
+export const landscapeServiceProcess = [
   {
     id: randomId(),
     title: "Initial Consultation",
-    description: "Understand business goals, branding, and spatial needs.",
+    description: "Understanding your vision, space, and environmental needs.",
     icon: IconBriefcase,
   },
   {
     id: randomId(),
     title: "Concept & Design",
-    description: "Develop 3D renders and visual layouts.",
+    description: "Creating 3D visualizations and detailed landscape plans.",
     icon: IconLayersIntersect,
   },
   {
     id: randomId(),
-    title: "Material & Finish Selection",
-    description: "Choose furniture, textures, and branding elements.",
-    icon: IconColorSwatch,
+    title: "Material & Plant Selection",
+    description:
+      "Choosing sustainable and high-quality materials, plants, and outdoor features.",
+    icon: IconPlant,
   },
   {
     id: randomId(),
     title: "Project Execution",
-    description: "Oversee construction, installation, and quality checks.",
+    description:
+      "Implementing the design with expert craftsmanship and precision.",
     icon: IconHammer,
   },
   {
     id: randomId(),
     title: "Final Walkthrough",
-    description: "Ensure every element aligns with the client's expectations.",
+    description: "Ensuring every detail aligns with your expectations.",
     icon: IconChecklist,
   },
   {
     id: randomId(),
     title: "Post-Project Support",
-    description: "Assistance with maintenance, upgrades, and modifications.",
+    description:
+      "Providing maintenance guidance, upgrades, and seasonal care tips.",
     icon: IconLifebuoy,
   },
 ];
