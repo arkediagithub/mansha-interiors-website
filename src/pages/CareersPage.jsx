@@ -3,6 +3,7 @@ import { IconArrowUpRight } from "@tabler/icons-react";
 import CareerPageSection from "../components/career-page/CareerPageSection";
 import MetaTags from "../components/MetaTags";
 import PageHeader from "../components/PageHeader";
+// import LightBoxGallery from "../components/LightBoxGallery";
 
 const CareersPage = () => {
   useEffect(() => {
@@ -22,12 +23,13 @@ const CareersPage = () => {
 
   return (
     <>
-      <MetaTags title="Contact Us | Mansha Interior" />
+      <MetaTags title="Careers | Mansha Interior" />
       <PageHeader
         title="Grow with Us, Shape the Future"
         image={"https://placehold.co/1080x720?text=Team+Photo"}
       />
       <CareerPageSection section={careerSectionContent} />
+      {/* <LightBoxGallery /> */}
     </>
   );
 };

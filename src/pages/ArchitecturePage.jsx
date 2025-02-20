@@ -3,7 +3,6 @@ import { architecturalServiceProcess } from "../data/services";
 import MetaTags from "../components/MetaTags";
 import PageHeader from "../components/PageHeader";
 import ServiceAboutSection from "../components/studio-page/ServiceAboutSection";
-// import ServiceBeforeAfter from "../components/studio-page/ServiceBeforeAfter";
 import SectionGallery from "../components/studio-page/SectionGallery";
 import SectionSteps from "../components/SectionSteps";
 import CTASection from "../components/CTASection";
@@ -43,14 +42,6 @@ const ArchitecturePage = () => {
         ]}
         image={'https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877456/WhatsApp_Image_2025-02-15_at_1.29.07_PM_yaf4zs.jpg'}
       />
-      {/* <ServiceBeforeAfter
-        title={"From Vision to Reality"}
-        subtitle={
-          "For [Client Name], we designed an ultra-modern residential villa integrating open spaces, natural lighting, and eco-friendly materials. The result? A seamless blend of luxury and sustainability."
-        }
-        beforeImage={"https://placehold.co/1080x720"}
-        afterImage={"https://placehold.co/1080x820"}
-      /> */}
       <SectionGallery
         title={"Our Completed Architectural Projects"}
         images={architectureServiceImages}

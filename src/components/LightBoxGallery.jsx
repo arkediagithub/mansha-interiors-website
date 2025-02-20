@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
-import { useClickOutside } from "@mantine/hooks";
 import { IconChevronLeft, IconChevronRight, IconX } from "@tabler/icons-react";
+import { useClickOutside } from "@mantine/hooks";
 
 // const images = [
 //   "https://placehold.co/600x400?text=nature",
@@ -12,7 +12,7 @@ import { IconChevronLeft, IconChevronRight, IconX } from "@tabler/icons-react";
 //   "https://placehold.co/300x400?text=animals",
 // ];
 
-export default function MasonryGallery({ images }) {
+const LightBoxGallery = ({ images }) => {
   const [selectedIndex, setSelectedIndex] = useState(null);
   const ref = useClickOutside(() => setSelectedIndex(null));
 
@@ -78,4 +78,6 @@ export default function MasonryGallery({ images }) {
       )}
     </div>
   );
-}
+};
+
+export default LightBoxGallery;
