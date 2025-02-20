@@ -12,7 +12,7 @@ import { useClickOutside } from "@mantine/hooks";
 //   "https://placehold.co/300x400?text=animals",
 // ];
 
-const LightBoxGallery = ({ images }) => {
+const CustomGallery = ({ images }) => {
   const [selectedIndex, setSelectedIndex] = useState(null);
   const ref = useClickOutside(() => setSelectedIndex(null));
 
@@ -28,17 +28,34 @@ const LightBoxGallery = ({ images }) => {
 
   return (
     <div>
-      <div className="masonry-sm md:masonry-md">
-        {images.map((src, i) => (
-          <div key={i} className="py-2 break-inside">
-            <img
-              src={src}
-              alt={`Gallery Image ${i + 1}`}
-              className="w-full h-full cursor-pointer rounded-lg shadow-md hover:opacity-80 transition"
-              onClick={() => setSelectedIndex(i)}
-            />
-          </div>
-        ))}
+      <div className="grid grid-cols-2 gap-4 mx-auto md:grid-cols-4">
+        {images.map((image, index) => {
+          const specialClasses =
+            index === 0
+              ? "md:col-start-1 md:row-start-1 col-span-2 row-span-2 min-h-96"
+              : index === images.length - 1
+              ? "md:col-start-3 md:row-start-3 col-span-2 row-span-2 min-h-96"
+              : "min-h-48";
+
+          return (
+            <div
+              key={index}
+              className={twMerge(
+                "w-full h-full rounded-2xl overflow-hidden group",
+                specialClasses
+              )}
+            >
+              <img
+                src={image}
+                alt={`Studio Gallery Image ${index + 1}`}
+                className={twMerge(
+                  "w-full h-full cursor-pointer rounded-lg shadow-md hover:opacity-80 transition"
+                )}
+                onClick={() => setSelectedIndex(index)}
+              />
+            </div>
+          );
+        })}
       </div>
 
       {selectedIndex !== null && (
@@ -80,4 +97,4 @@ const LightBoxGallery = ({ images }) => {
   );
 };
 
-export default LightBoxGallery;
+export default CustomGallery;

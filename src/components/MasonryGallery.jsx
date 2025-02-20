@@ -34,7 +34,7 @@ export default function MasonryGallery({ images }) {
             <img
               src={src}
               alt={`Gallery Image ${i + 1}`}
-              className="w-full h-full cursor-pointer rounded-lg shadow-md hover:opacity-80 transition"
+              className="w-full h-full cursor-pointer rounded-lg shadow-md hover:opacity-80 transition object-cover"
               onClick={() => setSelectedIndex(i)}
             />
           </div>
