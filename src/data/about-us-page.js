@@ -8,7 +8,7 @@ export const founder = {
     "Gautam's noble aim is create joy with his designs. He is stickler for details and is dedicated in making every project unique. His approach towards design is driven by an in- depth understanding of the users requirements, creative space planning and a careful study of volumes and forms.",
   ],
   image:
-    "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1740202696/DSC_5319_apqc8n.jpg",
+    "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1740205682/DSC_5319_11zon_xzwls1.jpg",
 };
 
 export const teamMembers = [
