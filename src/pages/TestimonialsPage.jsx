@@ -16,7 +16,10 @@ export default function TestimonialsPage() {
 
   return (
     <>
-      <MetaTags title="Testimonials | Mansha Interior" />
+      <MetaTags
+        title="Mansha Interiors - Client Testimonials"
+        description="Hear from our satisfied clients! See how Mansha Interiors transforms spaces with stunning designs and impeccable craftsmanship."
+      />
       <PageHeader
         title="Voices of Satisfaction & Trust"
         image={

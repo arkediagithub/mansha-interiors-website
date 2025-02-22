@@ -20,7 +20,10 @@ const LandscapeServicePage = () => {
 
   return (
     <>
-      <MetaTags title="Landscape Design | Mansha Interior" />
+      <MetaTags
+        title="Landscape Design Services - Mansha Interiors"
+        description="Elevate your outdoor spaces with our landscape design services. Stunning, sustainable, and functional landscaping solutions."
+      />
       <PageHeader
         image={"https://placehold.co/1080x720"}
         title="Designing Breathtaking Outdoor Landscapes"

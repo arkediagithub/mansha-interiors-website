@@ -16,7 +16,10 @@ const AboutUsPage = () => {
 
   return (
     <>
-      <MetaTags title="About Us | Mansha Interior" />
+      <MetaTags
+        title="About Mansha Interiors - Crafting Dream Spaces"
+        description="Discover Mansha Interiors—where creativity meets functionality. We design spaces that reflect your personality and lifestyle."
+      />
       <PageHeader
         title="Who We Are"
         image={
@@ -27,7 +30,7 @@ const AboutUsPage = () => {
       <AboutPageIntro />
 
       <FounderSection />
-  
+
       <TeamSection />
 
       <StudioGallery />

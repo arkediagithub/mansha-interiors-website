@@ -20,7 +20,10 @@ const InteriorServicePage = () => {
 
   return (
     <>
-      <MetaTags title="Interior Design | Mansha Interior" />
+      <MetaTags
+        title="Interior Design Services - Mansha Interiors"
+        description="Transform your space with our expert interior design services. Elegant, functional, and timeless designs for your dream home."
+      />
       <PageHeader
         title="Creating Inspired Interiors"
         subtitle="Where elegance meets functionality—tailored designs that enhance your lifestyle and workspaces."

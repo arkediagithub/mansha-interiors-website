@@ -20,7 +20,7 @@ const ArchitecturePage = () => {
 
   return (
     <>
-      <MetaTags title="Architecture | Mansha Interior" />
+      <MetaTags title="Architecture Services - Mansha Interiors" description="Expert architectural solutions for residential and commercial spaces. Innovative designs tailored to your vision and lifestyle."/>
       <PageHeader
         image={
           "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877456/WhatsApp_Image_2025-02-15_at_1.29.12_PM_ou0fmo.jpg"

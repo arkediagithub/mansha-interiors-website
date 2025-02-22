@@ -10,7 +10,10 @@ import SectionSteps from "../components/SectionSteps";
 export const HomePage = () => {
   return (
     <>
-      <MetaTags />
+      <MetaTags
+        title="Mansha Interiors - Elevate Your Living Spaces"
+        description="Transform your home with Mansha Interiors. Expert interior design for elegant, functional, and stylish living spaces."
+      />
       <HeroSection />
       <AboutSection />
       <HomeServiceBento />

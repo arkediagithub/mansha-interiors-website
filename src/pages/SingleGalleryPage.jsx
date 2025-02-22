@@ -19,7 +19,10 @@ const SingleGalleryPage = () => {
 
   return (
     <>
-      <MetaTags title="Gallery Project | Mansha Interior" />
+      <MetaTags
+        title="Project Showcase - Mansha Interiors"
+        description="Explore our latest interior projects designed with creativity, elegance, and functionality."
+      />
       <PageHeader
         image={project?.image}
         overlay={false}

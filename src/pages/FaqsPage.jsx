@@ -15,7 +15,10 @@ const FaqsPage = () => {
 
   return (
     <>
-      <MetaTags title="FAQs | Mansha Interior" />
+      <MetaTags
+        title="FAQs - Mansha Interiors Answers Your Questions"
+        description="Find answers to common questions about our interior design, architecture, and landscaping services. Learn more today!"
+      />
       <PageHeader title={"Frequently Asked Questions"} />
       <SectionWrapper>
         <FaqsList faqs={faqs} />

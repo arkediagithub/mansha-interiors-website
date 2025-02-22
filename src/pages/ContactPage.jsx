@@ -14,7 +14,10 @@ const ContactPage = () => {
 
   return (
     <>
-      <MetaTags title="Contact Us | Mansha Interior" />
+      <MetaTags
+        title="Contact Mansha Interiors - Let's Connect"
+        description="Have a project in mind? Reach out to Mansha Interiors for expert interior design solutions tailored to your style and needs."
+      />
       <PageHeader
         title="Reach Out & Let’s Create Something Amazing"
         image={

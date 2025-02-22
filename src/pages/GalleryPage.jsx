@@ -27,7 +27,10 @@ export default function GalleryPage() {
 
   return (
     <>
-      <MetaTags title="Design Gallery | Mansha Interior" />
+      <MetaTags
+        title="Mansha Interiors Showcase - Stunning Designs"
+        description="Explore our design gallery featuring premium interior projects. Get inspired by our expert craftsmanship and creative vision."
+      />
       <PageHeader
         title="Designed by Us"
         image={

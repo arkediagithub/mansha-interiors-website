@@ -14,7 +14,10 @@ const CareersPage = () => {
 
   return (
     <>
-      <MetaTags title="Careers | Mansha Interior" />
+      <MetaTags
+        title="Careers at Mansha Interiors - Join Our Team"
+        description="Passionate about interior design? Explore career opportunities at Mansha Interiors and be part of a creative, dynamic team."
+      />
       <PageHeader
         title="Grow with Us, Shape the Future"
         image={
