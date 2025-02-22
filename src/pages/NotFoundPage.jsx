@@ -16,8 +16,8 @@ const NotFoundPage = () => {
           />
 
           <div className="flex flex-col justify-center gap-4 lg:pr-20">
-            <h1 className="text-3xl md:text-5xl  font-semibold m-0 p-0 text-roti-300">
-              Something is not right...
+            <h1 className="text-3xl md:text-5xl font-semibold m-0 p-0 text-roti-300">
+              Something is not right<span className="tracking-widest">...</span>
             </h1>
             <p className="text-xl text-gray-300">
               Page you are trying to open does not exist. You may have mistyped
