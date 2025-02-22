@@ -1,4 +1,4 @@
-import { teamMembers } from "../../data/teamMembers";
+import { teamMembers } from "../../data/about-us-page";
 import FlipCard from "../FlipCard";
 import SectionHeading from "../SectionHeading";
 import SectionParagraph from "../SectionParagraph";

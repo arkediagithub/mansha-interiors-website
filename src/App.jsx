@@ -1,10 +1,13 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  Navigate,
+  RouterProvider,
+} from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 
 import AppLayout from "./layout/AppLayout";
 
 import HomePage from "./pages/HomePage";
-import ServicesPage from "./pages/ServicesPage";
 import ContactPage from "./pages/ContactPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import AboutUsPage from "./pages/AboutUsPage";
@@ -30,20 +33,12 @@ const router = createBrowserRouter([
         path: "about",
         element: <AboutUsPage />,
       },
-      // {
-      //   path: "team",
-      //   element: <TeamPage />,
-      // },
-      // {
-      //   path: "studio",
-      //   element: <StudioPage />,
-      // },
       {
         path: "services",
         children: [
           {
             index: true,
-            element: <ServicesPage />,
+            element: <Navigate to="interior" replace />,
           },
           {
             path: "interior",
@@ -67,10 +62,6 @@ const router = createBrowserRouter([
         path: "gallery/:id",
         element: <SingleGalleryPage />,
       },
-      // {
-      //   path: "projects",
-      //   element: <ProjectsPage />,
-      // },
       {
         path: "testimonials",
         element: <TestimonialsPage />,

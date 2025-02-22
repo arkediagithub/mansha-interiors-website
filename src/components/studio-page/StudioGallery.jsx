@@ -1,20 +1,8 @@
+import { studioImages } from "../../data/about-us-page";
 import SectionWrapper from "../SectionWrapper";
 import SectionHeading from "../SectionHeading";
 import SectionParagraph from "../SectionParagraph";
 import CustomGallery from "../CustomGallery";
-
-const images = [
-  "https://placehold.co/600",
-  "https://placehold.co/500",
-  "https://placehold.co/700",
-  "https://placehold.co/400",
-  "https://placehold.co/500",
-  "https://placehold.co/600",
-  "https://placehold.co/500",
-  "https://placehold.co/700",
-  "https://placehold.co/400",
-  "https://placehold.co/500",
-];
 
 const StudioGallery = () => {
   return (
@@ -30,7 +18,7 @@ const StudioGallery = () => {
       </SectionParagraph>
 
       {/* studio gallery */}
-      <CustomGallery images={images} />
+      <CustomGallery images={studioImages} />
     </SectionWrapper>
   );
 };

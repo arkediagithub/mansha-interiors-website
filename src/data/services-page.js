@@ -107,6 +107,14 @@ export const serviceSteps = [
   },
 ];
 
+export const interiorServiceImages = [
+  "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739252018/REV6_MANOJ_JI_SON_S_BEDROOM_v4_qa2snl.jpg",
+  "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739252035/REV5_MANOJ_JI__MASTER_BEDROOM_V11_ebxfd7.jpg",
+  "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739252034/REV6_MANOJ_JI_SON_S_BEDROOM_view2_gzgnkx.jpg",
+  "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877459/3_alxfd0.jpg",
+  "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877459/1_n4pzcg.jpg",
+];
+
 export const interiorServiceProcess = [
   {
     id: randomId(),
@@ -152,6 +160,14 @@ export const interiorServiceProcess = [
   },
 ];
 
+export const landscapeServiceImages = [
+  "https://placehold.co/600",
+  "https://placehold.co/600",
+  "https://placehold.co/600",
+  "https://placehold.co/600",
+  "https://placehold.co/600",
+];
+
 export const landscapeServiceProcess = [
   {
     id: randomId(),
@@ -192,6 +208,14 @@ export const landscapeServiceProcess = [
       "Providing maintenance guidance, upgrades, and seasonal care tips.",
     icon: IconLifebuoy,
   },
+];
+
+export const architectureServiceImages = [
+  "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739942000/image0_uwuek9.jpg",
+  "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739942000/V1_rev_2_cc3spo.jpg",
+  "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739942000/3_h0upjs.jpg",
+  "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739941998/1_1_bcnxts.jpg",
+  "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739942208/15_11zon_hcc4lt.jpg",
 ];
 
 export const architecturalServiceProcess = [

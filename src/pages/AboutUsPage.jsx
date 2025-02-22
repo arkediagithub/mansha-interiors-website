@@ -19,12 +19,15 @@ const AboutUsPage = () => {
       <MetaTags title="About Us | Mansha Interior" />
       <PageHeader
         title="Who We Are"
-        image={"https://placehold.co/1080x720?text=Office+Photo"}
+        image={
+          "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1740202684/DSC07520_waqhfi.jpg"
+        }
       />
 
       <AboutPageIntro />
 
       <FounderSection />
+  
       <TeamSection />
 
       <StudioGallery />

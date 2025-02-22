@@ -1,145 +1,15 @@
 import { IconMenuDeep } from "@tabler/icons-react";
 import { Link, NavLink } from "react-router-dom";
-import { randomId, useHeadroom } from "@mantine/hooks";
+import { useHeadroom } from "@mantine/hooks";
 import logo from "../assets/mansha-logo-w-no-bg.png";
+import {
+  menuLinksLeft,
+  menuLinksRight,
+  mobileMenuLinks,
+} from "../data/header-content";
 
 const Header = () => {
   const pinned = useHeadroom({ fixedAt: 120 });
-
-  // const menuLinks = [
-  //   {
-  //     id: randomId(),
-  //     to: "/",
-  //     label: "Home",
-  //   },
-  //   {
-  //     id: randomId(),
-  //     to: "/about",
-  //     label: "About Us",
-  //   },
-  //   // {
-  //   //   id: randomId(),
-  //   //   to: "/team",
-  //   //   label: "Our Team",
-  //   // },
-  //   // {
-  //   //   id: randomId(),
-  //   //   to: "/studio",
-  //   //   label: "Studio",
-  //   // },
-  //   // {
-  //   //   id: randomId(),
-  //   //   to: "/services",
-  //   //   label: "Services",
-  //   //   subMenu: [
-  //   //     { id: randomId(), to: "/residential", label: "Residential" },
-  //   //     { id: randomId(), to: "/commercial", label: "Commercial" },
-  //   //     { id: randomId(), to: "/architecture", label: "Architecture" },
-  //   //   ],
-  //   // },
-  //   {
-  //     id: randomId(),
-  //     to: "/gallery",
-  //     label: "Design Gallery",
-  //   },
-  //   {
-  //     id: randomId(),
-  //     to: "/testimonials",
-  //     label: "Testimonials",
-  //   },
-  //   {
-  //     id: randomId(),
-  //     to: "/careers",
-  //     label: "Careers",
-  //   },
-  //   {
-  //     id: randomId(),
-  //     to: "/contact",
-  //     label: "Contact",
-  //   },
-  // ];
-
-  const menuLinksLeft = [
-    {
-      id: randomId(),
-      to: "/",
-      label: "Home",
-    },
-    {
-      id: randomId(),
-      to: "/about",
-      label: "About Us",
-    },
-    {
-      id: randomId(),
-      to: "/gallery",
-      label: "Design Gallery",
-    },
-  ];
-
-  const menuLinksRight = [
-    {
-      id: randomId(),
-      to: "/testimonials",
-      label: "Testimonials",
-    },
-    {
-      id: randomId(),
-      to: "/careers",
-      label: "Careers",
-    },
-    {
-      id: randomId(),
-      to: "/contact",
-      label: "Contact Us",
-    },
-  ];
-
-  const mobileMenuLinks = [
-    {
-      id: randomId(),
-      to: "/",
-      label: "Home",
-    },
-    {
-      id: randomId(),
-      to: "/about",
-      label: "About Us",
-    },
-    // {
-    //   id: randomId(),
-    //   to: "/studio",
-    //   label: "Studio",
-    // },
-    // {
-    //   id: randomId(),
-    //   to: "/services",
-    //   label: "Services",
-    // },
-    // { id: randomId(), to: "/residential", label: "Residential Services" },
-    // { id: randomId(), to: "/commercial", label: "Commercial Services" },
-    // { id: randomId(), to: "/architecture", label: "Architecture Services" },
-    {
-      id: randomId(),
-      to: "/gallery",
-      label: "Design Gallery",
-    },
-    {
-      id: randomId(),
-      to: "/testimonials",
-      label: "Testimonials",
-    },
-    {
-      id: randomId(),
-      to: "/careers",
-      label: "Careers",
-    },
-    {
-      id: randomId(),
-      to: "/contact",
-      label: "Contact Us",
-    },
-  ];
 
   // Function to close the mobile drawer
   const closeDrawer = () => {

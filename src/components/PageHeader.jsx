@@ -9,12 +9,13 @@ const PageHeader = ({
   subtitle,
   overlay = true,
   className = "",
+  bgImageClassName = "",
 }) => {
   return (
     <>
       <section
         className={twMerge(
-          "mt-20 w-full h-[30vh] sm:h-[50vh] lg:h-[70vh] flex items-center justify-center relative p-4",
+          "mt-20 w-full h-[35vh] sm:h-[55vh] lg:h-[75vh] flex items-center justify-center relative p-4",
           className
         )}
       >
@@ -23,7 +24,7 @@ const PageHeader = ({
           <img
             src={image || homepage_hero_slide_banner_5}
             alt="background image"
-            className="w-full h-full object-cover"
+            className={twMerge("w-full h-full object-cover", bgImageClassName)}
           />
         </div>
         {overlay && (

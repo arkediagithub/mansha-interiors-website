@@ -1,9 +1,8 @@
 import { useEffect } from "react";
-import { IconArrowUpRight } from "@tabler/icons-react";
+import { careerPageContent } from "../data/career-page";
 import CareerPageSection from "../components/career-page/CareerPageSection";
 import MetaTags from "../components/MetaTags";
 import PageHeader from "../components/PageHeader";
-// import LightBoxGallery from "../components/LightBoxGallery";
 
 const CareersPage = () => {
   useEffect(() => {
@@ -13,23 +12,16 @@ const CareersPage = () => {
     });
   }, []);
 
-  const careerSectionContent = {
-    heading: "Join the Mansha Interiors Team!",
-    content:
-      "Are you ready to shape the future of design? At Mansha Interiors, we're always on the lookout for talented individuals who are passionate, innovative, and ready to make an impact. Join us to create stunning spaces that inspire and bring ideas to life.",
-    image: "https://placehold.co/600?text=Office+Photo",
-    icon: IconArrowUpRight,
-  };
-
   return (
     <>
       <MetaTags title="Careers | Mansha Interior" />
       <PageHeader
         title="Grow with Us, Shape the Future"
-        image={"https://placehold.co/1080x720?text=Team+Photo"}
+        image={
+          "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1740205659/DSC07504_11zon_cwcogb.jpg"
+        }
       />
-      <CareerPageSection section={careerSectionContent} />
-      {/* <LightBoxGallery /> */}
+      <CareerPageSection section={careerPageContent} />
     </>
   );
 };

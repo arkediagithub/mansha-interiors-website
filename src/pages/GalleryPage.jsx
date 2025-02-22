@@ -28,7 +28,12 @@ export default function GalleryPage() {
   return (
     <>
       <MetaTags title="Design Gallery | Mansha Interior" />
-      <PageHeader title="Designed by Us" />
+      <PageHeader
+        title="Designed by Us"
+        image={
+          "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1740205681/DSC07417_11zon_krfic5.jpg"
+        }
+      />
       <ProjectTags
         tags={tags}
         selectedTag={selectedTag}

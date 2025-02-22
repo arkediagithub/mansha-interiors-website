@@ -1,5 +1,8 @@
 import { useEffect } from "react";
-import { architecturalServiceProcess } from "../data/services";
+import {
+  architecturalServiceProcess,
+  architectureServiceImages,
+} from "../data/services-page";
 import MetaTags from "../components/MetaTags";
 import PageHeader from "../components/PageHeader";
 import ServiceAboutSection from "../components/studio-page/ServiceAboutSection";
@@ -15,19 +18,13 @@ const ArchitecturePage = () => {
     });
   }, []);
 
-  const architectureServiceImages = [
-    "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739942000/image0_uwuek9.jpg",
-    "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739942000/V1_rev_2_cc3spo.jpg",
-    "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739942000/3_h0upjs.jpg",
-    "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739941998/1_1_bcnxts.jpg",
-    "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739942208/15_11zon_hcc4lt.jpg",
-  ];
-
   return (
     <>
       <MetaTags title="Architecture | Mansha Interior" />
       <PageHeader
-        image={"https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877456/WhatsApp_Image_2025-02-15_at_1.29.12_PM_ou0fmo.jpg"}
+        image={
+          "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877456/WhatsApp_Image_2025-02-15_at_1.29.12_PM_ou0fmo.jpg"
+        }
         title="Designing Tomorrow, Today"
         subtitle="Innovative and sustainable architectural solutions for timeless spaces."
       />
@@ -40,7 +37,9 @@ const ArchitecturePage = () => {
           "Sustainable & Green Architecture (Eco-Friendly & Energy-Efficient Designs)",
           "Urban & Landscape Architecture (Outdoor Spaces & City Planning)",
         ]}
-        image={'https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877456/WhatsApp_Image_2025-02-15_at_1.29.07_PM_yaf4zs.jpg'}
+        image={
+          "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739877456/WhatsApp_Image_2025-02-15_at_1.29.07_PM_yaf4zs.jpg"
+        }
       />
       <SectionGallery
         title={"Our Completed Architectural Projects"}

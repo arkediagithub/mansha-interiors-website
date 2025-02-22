@@ -1,5 +1,9 @@
 import { Link } from "react-router-dom";
-import { quickLinks, serviceLinks, socialMediaLinks } from "../data/footer";
+import {
+  quickLinks,
+  serviceLinks,
+  socialMediaLinks,
+} from "../data/footer-content";
 
 const Footer = () => {
   return (

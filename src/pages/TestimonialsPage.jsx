@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { testimonials } from "../data/testimonials";
+import { testimonials } from "../data/testimonials-page";
 import MetaTags from "../components/MetaTags";
 import PageHeader from "../components/PageHeader";
 import SectionParagraph from "../components/SectionParagraph";
@@ -17,7 +17,13 @@ export default function TestimonialsPage() {
   return (
     <>
       <MetaTags title="Testimonials | Mansha Interior" />
-      <PageHeader title="Voices of Satisfaction & Trust" />
+      <PageHeader
+        title="Voices of Satisfaction & Trust"
+        image={
+          "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1740205675/DSC07398_11zon_s1wubz.jpg"
+        }
+        bgImageClassName="object-[50%_20%]"
+      />
 
       <SectionWrapper className="md:-mt-6">
         <SectionParagraph className="text-center lg:w-3/4 lg:mx-auto lg:text-xl">

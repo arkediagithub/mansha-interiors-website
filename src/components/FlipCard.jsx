@@ -52,7 +52,7 @@ const FlipCard = ({
         {/* Back */}
         <div
           className={twMerge(
-            "absolute h-full w-full rounded-tr-3xl rounded-bl-3xl bg-roti-400 p-4 text-slate-200 [backface-visibility:hidden] flex flex-col justify-center items-center",
+            "absolute h-full w-full rounded-tl-3xl rounded-br-3xl bg-roti-400 p-4 text-slate-200 [backface-visibility:hidden] flex flex-col justify-center items-center",
             self[1]
           )}
         >

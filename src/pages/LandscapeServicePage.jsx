@@ -1,5 +1,8 @@
 import { useEffect } from "react";
-import { landscapeServiceProcess } from "../data/services";
+import {
+  landscapeServiceImages,
+  landscapeServiceProcess,
+} from "../data/services-page";
 import MetaTags from "../components/MetaTags";
 import PageHeader from "../components/PageHeader";
 import ServiceAboutSection from "../components/studio-page/ServiceAboutSection";
@@ -7,7 +10,6 @@ import SectionGallery from "../components/studio-page/SectionGallery";
 import SectionSteps from "../components/SectionSteps";
 import CTASection from "../components/CTASection";
 
-// LandscapeServicePage
 const LandscapeServicePage = () => {
   useEffect(() => {
     window.scrollTo({
@@ -15,14 +17,6 @@ const LandscapeServicePage = () => {
       behavior: "smooth",
     });
   }, []);
-
-  const landscapeServiceImages = [
-    "https://placehold.co/600",
-    "https://placehold.co/600",
-    "https://placehold.co/600",
-    "https://placehold.co/600",
-    "https://placehold.co/600",
-  ];
 
   return (
     <>

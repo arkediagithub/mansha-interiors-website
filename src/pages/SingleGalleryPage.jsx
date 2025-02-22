@@ -1,8 +1,8 @@
+import { useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { projects } from "../data/projects";
 import MetaTags from "../components/MetaTags";
 import PageHeader from "../components/PageHeader";
-import { useEffect } from "react";
-import { projects } from "../data/projects";
 import ProjectShowcase from "../components/ProjectShowcase";
 
 const SingleGalleryPage = () => {

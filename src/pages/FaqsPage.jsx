@@ -1,19 +1,24 @@
+import { useEffect } from "react";
+import { faqs } from "../data/faq-page-content";
 import FaqsList from "../components/faq-page/FaqsList";
 import MetaTags from "../components/MetaTags";
 import PageHeader from "../components/PageHeader";
 import SectionWrapper from "../components/SectionWrapper";
-import { faqsPageContent } from "../data/faq-page-content";
 
 const FaqsPage = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
   return (
     <>
       <MetaTags title="FAQs | Mansha Interior" />
-      <PageHeader
-        title={faqsPageContent.title}
-        subtitle={faqsPageContent.subtitle}
-      />
+      <PageHeader title={"Frequently Asked Questions"} />
       <SectionWrapper>
-        <FaqsList faqs={faqsPageContent.faqs} />
+        <FaqsList faqs={faqs} />
       </SectionWrapper>
     </>
   );
