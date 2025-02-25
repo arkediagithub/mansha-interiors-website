@@ -19,7 +19,7 @@ const CareersPage = () => {
         description="Passionate about interior design? Explore career opportunities at Mansha Interiors and be part of a creative, dynamic team."
       />
       <PageHeader
-        title="Grow with Us, Shape the Future"
+        // title="Grow with Us, Shape the Future"
         image={
           "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1740205659/DSC07504_11zon_cwcogb.jpg"
         }
