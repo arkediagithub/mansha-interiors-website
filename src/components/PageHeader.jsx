@@ -1,6 +1,5 @@
 import { twMerge } from "tailwind-merge";
 import TextReveal from "./TextReveal";
-import { homepage_hero_slide_banner_5 } from "../images";
 import TextAnimation from "./TextAnimation";
 
 const PageHeader = ({
@@ -22,7 +21,7 @@ const PageHeader = ({
         {/* background images */}
         <div className="absolute inset-0">
           <img
-            src={image || homepage_hero_slide_banner_5}
+            src={image || "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739262678/homepage_hero_slide_banner_5_e10tze.png"}
             alt="background image"
             className={twMerge("w-full h-full object-cover", bgImageClassName)}
           />

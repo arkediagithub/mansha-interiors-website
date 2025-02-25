@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { IconArrowUpRight } from "@tabler/icons-react";
-import { homepage_hero_slide_banner_1 } from "../../images";
 import Reveal from "../Reveal";
 import SectionHeading from "../SectionHeading";
 import SectionParagraph from "../SectionParagraph";
@@ -14,7 +13,7 @@ const AboutSection = () => {
           <Reveal className="w-full max-md:order-2">
             <div className="relative">
               <img
-                src={homepage_hero_slide_banner_1}
+                src={"https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739262671/homepage_hero_slide_banner_1_u9rwjh.png"}
                 alt="interior design service image"
                 className="h-64 sm:h-96 md:h-[450px] w-full max-md:order-last object-fill rounded-2xl md:rounded-br-[200px]"
               />
