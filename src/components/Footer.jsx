@@ -45,12 +45,16 @@ const Footer = () => {
               <Link to={"tel:+919832049481"} className="hover:text-accent">
                 9832049481
               </Link>
+              /
+              <Link to={"tel:+919749405567"} className="hover:text-accent">
+                9749405567
+              </Link>
             </li>
             <li>
               <strong className="font-league-spartan-variable text-lg">
                 Timing:{" "}
               </strong>
-              <span>Monday-Friday: 10AM-7PM</span>
+              <span>Monday-Saturday: 10AM-7PM</span>
             </li>
             <li>
               <strong className="font-league-spartan-variable text-lg">
