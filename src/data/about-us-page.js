@@ -58,7 +58,7 @@ export const teamMembers = [
     designation: "Interior Designer",
     experience: "1+ Years of Experience",
     image:
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739257418/Moumita_dhar_bhowmik_w9yyft.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1740655066/DSC07498_qkvhvi.jpg",
     description:
       "A passionate designer from Siliguri who loves traveling and crafting unique spaces that inspire and comfort.",
   },
