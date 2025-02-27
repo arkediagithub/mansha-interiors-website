@@ -18,7 +18,7 @@ export const teamMembers = [
     designation: "Site Supervisor",
     experience: "7+ Years of Experience",
     image:
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739257425/Rahul-Paul_f18rew.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1740655056/DSC07511_w97x5v.jpg",
     description:
       "Dedicated and experienced site supervisor ensuring smooth operations and project success with strong leadership skills.",
   },
@@ -28,7 +28,7 @@ export const teamMembers = [
     designation: "Site Supervisor",
     experience: "7+ Years of Experience",
     image:
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739257444/Sujit-Sarkar_nywjb0.png",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1740655055/DSC07508_ioz0at.jpg",
     description:
       "Passionate about construction management, focused on quality control and timely project completion with efficiency.",
   },
@@ -38,7 +38,7 @@ export const teamMembers = [
     designation: "Site Supervisor",
     experience: "10+ Years of Experience",
     image:
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739257434/Amit-Paul_y2lghl.png",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1740655059/DSC07512_h5t4hh.jpg",
     description:
       "Ensuring site safety, efficiency, and high-quality work standards while managing teams and overseeing projects.",
   },
@@ -48,7 +48,7 @@ export const teamMembers = [
     designation: "Interior Designer",
     experience: "1+ Years of Experience",
     image:
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739257426/Arti_Bansal_swzqim.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1740655055/DSC07469_mtwk0h.jpg",
     description:
       "I find inspiration in creativity and design spaces that reflect individuality, style, and functionality seamlessly.",
   },
@@ -68,7 +68,7 @@ export const teamMembers = [
     designation: "Interior Designer",
     experience: "2.5+ Years of Experience",
     image:
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739257435/Riya_Tibrewal_xnvmkp.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1740655062/DSC07489_gga8db.jpg",
     description:
       "With experience in creating aesthetic, functional spaces, I focus on personalized interior solutions for clients.",
   },
@@ -78,7 +78,7 @@ export const teamMembers = [
     designation: "Interior Designer",
     experience: "1+ Years of Experience",
     image:
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739257435/Ritiksha_Gupta_eb4eyv.jpg",
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1740655056/DSC07495_umfrrg.jpg",
     description:
       "Creative and passionate about interiors, I aim to bring imaginative designs to life with a unique perspective.",
   },
