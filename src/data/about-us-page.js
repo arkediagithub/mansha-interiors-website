@@ -44,6 +44,16 @@ export const teamMembers = [
   },
   {
     id: randomId(),
+    name: "Anik Sarkar",
+    designation: "Receptionist",
+    experience: "1+ Years of Experience",
+    image:
+      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1740658289/IMG_4473_hx7h9h.jpg",
+    description:
+      "Friendly and professional receptionist, ensuring smooth communication, client interaction, and efficient front-desk management.",
+  },
+  {
+    id: randomId(),
     name: "Arti Bansal",
     designation: "Interior Designer",
     experience: "1+ Years of Experience",
@@ -81,16 +91,6 @@ export const teamMembers = [
       "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1740655056/DSC07495_umfrrg.jpg",
     description:
       "Creative and passionate about interiors, I aim to bring imaginative designs to life with a unique perspective.",
-  },
-  {
-    id: randomId(),
-    name: "Anik Sarkar",
-    designation: "Receptionist",
-    experience: "1+ Years of Experience",
-    image:
-      "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739257419/Anik-Sarkar_mirt3k.png",
-    description:
-      "Friendly and professional receptionist, ensuring smooth communication, client interaction, and efficient front-desk management.",
   },
 ];
 
