@@ -11,7 +11,7 @@ import { twMerge } from "tailwind-merge";
 
 const FloatingSocialLinks = {
   whatsapp: "https://wa.me/+919749405567",
-  instagram: "https://www.instagram.com/manshainteriors7/",
+  instagram: "https://www.instagram.com/officialmanshainteriors.in/",
   facebook: "https://www.facebook.com/manshainteriors.siliguri",
   phone: "tel:+919609930991",
 };
