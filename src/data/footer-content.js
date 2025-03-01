@@ -26,7 +26,7 @@ export const socialMediaLinks = [
   },
   {
     id: randomId(),
-    to: "https://www.instagram.com/manshainteriors7/",
+    to: "https://www.instagram.com/officialmanshainteriors.in/",
     label: "Instagram",
   },
 ];
