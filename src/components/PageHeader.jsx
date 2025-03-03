@@ -1,6 +1,7 @@
 import { twMerge } from "tailwind-merge";
 import TextReveal from "./TextReveal";
 import TextAnimation from "./TextAnimation";
+import BgOverlay from "./BgOverlay";
 
 const PageHeader = ({
   image,
@@ -21,14 +22,15 @@ const PageHeader = ({
         {/* background images */}
         <div className="absolute inset-0">
           <img
-            src={image || "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739262678/homepage_hero_slide_banner_5_e10tze.png"}
+            src={
+              image ||
+              "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739262678/homepage_hero_slide_banner_5_e10tze.png"
+            }
             alt="background image"
             className={twMerge("w-full h-full object-cover", bgImageClassName)}
           />
         </div>
-        {overlay && (
-          <div className="absolute inset-0 bg-black opacity-40"></div>
-        )}
+        {overlay && <BgOverlay className="opacity-40" />}
         <TextReveal>
           {title && (
             <TextAnimation
