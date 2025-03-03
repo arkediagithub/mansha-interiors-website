@@ -15,7 +15,7 @@ const SingleGalleryPage = () => {
     });
   }, []);
 
-  const project = projects.find((project) => project.id === id);
+  const project = projects.find((project) => project.id === Number(id));
 
   return (
     <>
