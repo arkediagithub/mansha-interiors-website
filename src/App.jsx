@@ -34,18 +34,6 @@ const router = createBrowserRouter([
         element: <AboutUsPage />,
       },
       {
-        path: "gallery",
-        element: <GalleryPage />,
-      },
-      {
-        path: "gallery/:id",
-        element: <SingleGalleryPage />,
-      },
-      {
-        path: "testimonials",
-        element: <TestimonialsPage />,
-      },
-      {
         path: "services",
         children: [
           {
@@ -65,6 +53,18 @@ const router = createBrowserRouter([
             element: <ArchitecturePage />,
           },
         ],
+      },
+      {
+        path: "gallery",
+        element: <GalleryPage />,
+      },
+      {
+        path: "gallery/:id",
+        element: <SingleGalleryPage />,
+      },
+      {
+        path: "testimonials",
+        element: <TestimonialsPage />,
       },
       {
         path: "careers",
