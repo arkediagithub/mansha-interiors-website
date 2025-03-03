@@ -26,7 +26,7 @@ const SingleGalleryPage = () => {
       <PageHeader
         image={project?.image}
         overlay={false}
-        className="h-[50vh] sm:h-[80vh] lg:h-[120vh]"
+        className="h-[60vh] sm:h-[90vh] lg:h-[130vh]"
       />
       <ProjectShowcase project={project} />
     </>
