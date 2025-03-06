@@ -23,7 +23,7 @@ const AboutUsPage = () => {
       <PageHeader
         title="Who We Are"
         image={
-          "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1740205668/DSC07396_11zon_cemsnj.jpg"
+          "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1740205684/DSC07442_11zon_blbpdp.jpg"
         }
       />
 
