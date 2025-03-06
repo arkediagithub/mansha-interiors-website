@@ -16,13 +16,12 @@ const TestimonialAnimation = ({ paragraph }) => {
   const characters = paragraph.split("");
 
   return (
-    <>
-      <motion.p
-        ref={element}
-        className="text-2xl md:text-3xl lg:text-3xl font-marck-script relative text-gray-600"
-      >
-        <span className="text-5xl mr-2">&quot;</span>
-        {/* {words.map((word, i) => {
+    <motion.p
+      ref={element}
+      className="text-2xl md:text-3xl lg:text-3xl font-marck-script relative text-gray-600"
+    >
+      <span className="text-5xl mr-2">&quot;</span>
+      {/* {words.map((word, i) => {
           const start = i / words.length; // Calculate start position for animation
           const end = start + 1 / words.length; // Calculate end position for animation
 
@@ -35,19 +34,18 @@ const TestimonialAnimation = ({ paragraph }) => {
           );
         })} */}
 
-        {characters.map((char, i) => {
-          const start = i / characters.length; // Calculate start position for animation
-          const end = start + 1 / characters.length; // Calculate end position for animation
+      {characters.map((char, i) => {
+        const start = i / characters.length; // Calculate start position for animation
+        const end = start + 1 / characters.length; // Calculate end position for animation
 
-          return (
-            <Character key={i} range={[start, end]} progress={scrollYProgress}>
-              {char}
-            </Character>
-          );
-        })}
-        <span className="text-5xl ml-2">&quot;</span>
-      </motion.p>
-    </>
+        return (
+          <Character key={i} range={[start, end]} progress={scrollYProgress}>
+            {char}
+          </Character>
+        );
+      })}
+      <span className="text-5xl ml-2">&quot;</span>
+    </motion.p>
   );
 };
 
