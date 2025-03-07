@@ -8,7 +8,7 @@ const NotFoundPage = () => {
     <>
       <MetaTags
         title="Page Not Found - Mansha Interiors"
-        description="Oops! The page you’re looking for isn’t here. Return to Mansha Interiors and explore our expert design services."
+        description="Oops! The page you're looking for isn't here. Return to Mansha Interiors and explore our expert design services."
       />
       <SectionWrapper className="">
         <div className="h-[85vh] grid grid-cols-1 lg:grid-cols-2 place-content-center gap-8 lg:gap-0">
