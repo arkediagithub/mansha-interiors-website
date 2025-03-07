@@ -125,7 +125,7 @@ const CareerPageForm = () => {
           ></textarea>
         </label>
 
-        <label className="block">
+        {/* <label className="block">
           <span className="mb-2 text-black sr-only">
             Resume or Portfolio file input
           </span>
@@ -138,7 +138,7 @@ const CareerPageForm = () => {
           <span className="text-xs text-gray-600">
             It is a Pro feature, isn&apos;t available in free plan.
           </span>
-        </label>
+        </label> */}
 
         <button
           type="submit"
