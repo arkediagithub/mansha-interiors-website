@@ -12,7 +12,7 @@ const FounderIntro = () => {
           <img
             src={founder.image}
             alt="Founder image"
-            className="w-full md:h-full max-md:aspect-[16/9] max-md:order-last object-cover"
+            className="w-full md:h-full max-md:aspect-[16/9] object-cover"
           />
 
           {/* founder content */}
