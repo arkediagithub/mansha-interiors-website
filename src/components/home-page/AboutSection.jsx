@@ -13,21 +13,27 @@ const AboutSection = () => {
           <Reveal className="w-full max-md:order-2">
             <div className="relative">
               <img
-                src={"https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739262671/homepage_hero_slide_banner_1_u9rwjh.png"}
+                src={
+                  "https://res.cloudinary.com/dmuqtk9yg/image/upload/v1739262671/homepage_hero_slide_banner_1_u9rwjh.png"
+                }
                 alt="interior design service image"
-                className="h-64 sm:h-96 md:h-[450px] w-full max-md:order-last object-fill rounded-2xl md:rounded-br-[200px]"
+                className="h-64 sm:h-96 md:h-[450px] w-full max-md:order-last object-fill rounded-2xl pointer-events-none"
               />
-              <Link
-                to={"/about"}
-                role="button"
-                className="absolute btn-circle border-[3px] border-roti-400 bottom-0 right-0 grid place-items-center w-24 h-24 group max-md:hidden"
-              >
-                <IconArrowUpRight
-                  stroke={2}
-                  size={"50%"}
-                  className="text-roti-400 group-hover:rotate-45 duration-500"
-                />
-              </Link>
+              <div className="absolute bottom-0 right-0 p-3 bg-white rounded-tl-7xl max-md:hidden">
+                <Link
+                  to={"/about"}
+                  role="button"
+                  className="w-24 h-24 btn-circle border-[3px] border-roti-400 grid place-items-center group"
+                >
+                  <IconArrowUpRight
+                    stroke={2}
+                    size={"50%"}
+                    className="text-roti-400 group-hover:rotate-45 duration-500"
+                  />
+                </Link>
+              </div>
+              <div className="absolute w-12 h-12 bottom-[120px] right-0 bg-transparent rounded-br-3xl shadow-[12px_8px_0px_0px_#ffffff] max-md:hidden" />
+              <div className="absolute w-12 h-12 bottom-0 right-[120px] bg-transparent rounded-br-3xl shadow-[12px_8px_0px_0px_#ffffff] max-md:hidden" />
             </div>
           </Reveal>
 
