@@ -1,16 +1,7 @@
-import { useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { twMerge } from "tailwind-merge";
 import { IconChevronLeft, IconChevronRight, IconX } from "@tabler/icons-react";
 import { useClickOutside } from "@mantine/hooks";
-
-// const images = [
-//   "https://placehold.co/600x400?text=nature",
-//   "https://placehold.co/600?text=city",
-//   "https://placehold.co/600?text=technology",
-//   "https://placehold.co/600x500?text=architecture",
-//   "https://placehold.co/600x400?text=food",
-//   "https://placehold.co/300x400?text=animals",
-// ];
 
 const CustomGallery = ({ images }) => {
   const [selectedIndex, setSelectedIndex] = useState(null);
@@ -26,36 +17,58 @@ const CustomGallery = ({ images }) => {
     );
   };
 
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (selectedIndex !== null) {
+        if (event.key === "ArrowRight") {
+          handleNext();
+        } else if (event.key === "ArrowLeft") {
+          handlePrev();
+        } else if (event.key === "Escape") {
+          setSelectedIndex(null);
+        }
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [selectedIndex]);
+
+  const specialClasses = useMemo(() => {
+    return images.map((_, index) => {
+      if (index === 0) {
+        return "md:col-start-1 md:row-start-1 col-span-2 row-span-2 min-h-96";
+      } else if (index === images.length - 1) {
+        return "md:col-start-3 md:row-start-3 col-span-2 row-span-2 min-h-96";
+      } else {
+        return "min-h-48";
+      }
+    });
+  }, [images]);
+
   return (
     <div>
       <div className="grid grid-cols-2 gap-4 mx-auto md:grid-cols-4">
-        {images.map((image, index) => {
-          const specialClasses =
-            index === 0
-              ? "md:col-start-1 md:row-start-1 col-span-2 row-span-2 min-h-96"
-              : index === images.length - 1
-              ? "md:col-start-3 md:row-start-3 col-span-2 row-span-2 min-h-96"
-              : "min-h-48";
-
-          return (
-            <div
-              key={index}
+        {images.map((image, index) => (
+          <div
+            key={index}
+            className={twMerge(
+              "w-full h-full rounded-2xl overflow-hidden group",
+              specialClasses[index]
+            )}
+          >
+            <img
+              src={image}
+              alt={`Studio Gallery Image ${index + 1}`}
               className={twMerge(
-                "w-full h-full rounded-2xl overflow-hidden group",
-                specialClasses
+                "w-full h-full cursor-pointer rounded-lg shadow-md hover:opacity-80 transition"
               )}
-            >
-              <img
-                src={image}
-                alt={`Studio Gallery Image ${index + 1}`}
-                className={twMerge(
-                  "w-full h-full cursor-pointer rounded-lg shadow-md hover:opacity-80 transition"
-                )}
-                onClick={() => setSelectedIndex(index)}
-              />
-            </div>
-          );
-        })}
+              onClick={() => setSelectedIndex(index)}
+            />
+          </div>
+        ))}
       </div>
 
       {selectedIndex !== null && (

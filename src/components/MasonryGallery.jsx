@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { twMerge } from "tailwind-merge";
 import { useClickOutside } from "@mantine/hooks";
 import { IconChevronLeft, IconChevronRight, IconX } from "@tabler/icons-react";
@@ -25,6 +25,25 @@ export default function MasonryGallery({ images }) {
       (prevIndex) => (prevIndex - 1 + images.length) % images.length
     );
   };
+
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (selectedIndex !== null) {
+        if (event.key === "ArrowRight") {
+          handleNext();
+        } else if (event.key === "ArrowLeft") {
+          handlePrev();
+        } else if (event.key === "Escape") {
+          setSelectedIndex(null);
+        }
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [selectedIndex]);
 
   return (
     <div>
