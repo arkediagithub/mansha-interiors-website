@@ -29,6 +29,7 @@ const FlipCard = ({
         "group w-full h-72 lg:h-80 xl:h-[400px] [perspective:1000px]",
         className
       )}
+      aria-label="Flip card"
     >
       <div
         className={twMerge(
@@ -43,6 +44,7 @@ const FlipCard = ({
             alt={imageAlt}
             className="h-full w-full rounded-tr-3xl rounded-bl-3xl object-cover shadow-2xl shadow-black/40"
             loading="lazy"
+            aria-label={`Front of the card with image`}
           />
           <div className="absolute bottom-4 left-4 text-xl font-bold text-white">
             {title}
@@ -55,6 +57,7 @@ const FlipCard = ({
             "absolute h-full w-full rounded-tl-3xl rounded-br-3xl bg-roti-400 p-4 text-slate-200 [backface-visibility:hidden] flex flex-col justify-center items-center",
             self[1]
           )}
+          aria-label="Back of the card"
         >
           <div className="w-24 aspect-square rounded-full overflow-hidden border-4 border-white mb-4 max-md:hidden">
             <img
@@ -62,6 +65,7 @@ const FlipCard = ({
               alt={imageAlt}
               className="w-full h-full object-cover"
               loading="lazy"
+              aria-label={`Back of the card with information`}
             />
           </div>
           <h2 className="lg:text-lg font-bold text-white text-center">{title}</h2>
