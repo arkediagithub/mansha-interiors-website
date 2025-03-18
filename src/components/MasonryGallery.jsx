@@ -45,7 +45,7 @@ export default function MasonryGallery({ images }) {
         <div className="fixed inset-0 z-[500] flex items-center justify-center bg-black/70 p-4">
           <div
             ref={ref}
-            className="relative max-w-2xl w-full flex items-center"
+            className="relative max-w-3xl w-full flex items-center"
           >
             <button
               className="absolute left-2 p-2 bg-white rounded-full shadow-md hover:bg-gray-200 transition"
@@ -56,7 +56,7 @@ export default function MasonryGallery({ images }) {
             <img
               src={images[selectedIndex]}
               alt="Selected"
-              className="rounded-lg w-full max-h-[90vh] shadow-lg"
+              className="w-full max-h-[100vh] shadow-lg object-contain"
             />
             <button
               className="absolute right-2 p-2 bg-white rounded-full shadow-md hover:bg-gray-200 transition"
